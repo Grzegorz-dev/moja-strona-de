@@ -8,11 +8,6 @@ import {
 import { useState, useEffect } from "react";
 import Head from 'next/head';
 
-import dynamic from "next/dynamic";
-const Swal = dynamic(() => import("sweetalert2").then((mod) => mod.default), {
-  ssr: false,
-});
-
 
 export default function Klienci() {
   <Head>
@@ -43,14 +38,11 @@ export default function Klienci() {
     const canceled = urlParams.get("canceled");
 
     if (success) {
-      import("sweetalert2").then((Swal) => {
+      import('sweetalert2').then((Swal) => {
         Swal.default.fire({
           icon: 'success',
-          title: 'Płatność zakończona sukcesem!',
-          text: 'Dziękujemy za zakup subskrypcji.',
-          confirmButtonText: 'OK',
-        }).then(() => {
-          window.history.replaceState(null, "", window.location.pathname);
+          title: 'Sukces!',
+          text: 'Twoja subskrypcja została aktywowana.',
         });
       });
     }
