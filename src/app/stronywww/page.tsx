@@ -3,10 +3,7 @@
 import "./strona-www.css";
 import {
   FaDesktop,
-  FaShoppingCart,
-  FaCogs,
   FaBullseye,
-  FaSync,
   FaRocket,
   FaServer,
   FaSearch,

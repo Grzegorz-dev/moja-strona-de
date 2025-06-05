@@ -19,7 +19,6 @@ import {
   FaLock,
   FaMinus
 } from "react-icons/fa";
-import Link from 'next/link';
 import Faq from './faq/Faq'
 import Head from 'next/head';
 

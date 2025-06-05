@@ -2,26 +2,9 @@
 
 import "./klienci.css";
 import {
-  FaDesktop,
-  FaShoppingCart,
-  FaCogs,
-  FaBullseye,
-  FaSync,
-  FaRocket,
-  FaServer,
-  FaSearch,
-  FaMobileAlt,
-  FaLock,
-  FaGlobe,
-  FaEnvelope,
-  FaEdit,
-  FaChartLine,
-  FaWpforms,
-  FaBalanceScale,
   FaHeadset,
   FaWrench,
 } from "react-icons/fa";
-import Link from 'next/link';
 import { useState, useEffect } from "react";
 import Head from 'next/head';
 

@@ -1,24 +1,7 @@
 import "./projekty.css";
 import {
-  FaDesktop,
-  FaShoppingCart,
-  FaCogs,
-  FaBullseye,
-  FaSync,
-  FaRocket,
-  FaServer,
-  FaSearch,
-  FaMobileAlt,
-  FaLock,
-  FaGlobe,
-  FaEnvelope,
-  FaEdit,
-  FaChartLine,
-  FaWpforms,
-  FaBalanceScale,
   FaArrowRight,
 } from "react-icons/fa";
-import Link from 'next/link';
 import Head from 'next/head';
 
 export default function Projekty() {

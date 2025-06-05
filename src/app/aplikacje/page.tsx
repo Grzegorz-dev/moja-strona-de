@@ -2,35 +2,21 @@
 
 import "./aplikacje.css";
 import {
-  FaDesktop,
-  FaShoppingCart,
   FaCogs,
-  FaBullseye,
-  FaSync,
-  FaRocket,
-  FaServer,
-  FaSearch,
   FaMobileAlt,
   FaLock,
   FaGlobe,
-  FaEnvelope,
-  FaEdit,
-  FaChartLine,
-  FaWpforms,
-  FaBalanceScale,
   FaBolt,
   FaShieldAlt,
   FaPuzzlePiece,
   FaBell,
   FaCloud,
   FaSyncAlt,
-  FaLaptopCode,
   FaCaretRight,
   FaMinus,
   FaDatabase,
   FaAdjust
 } from "react-icons/fa";
-import Link from 'next/link';
 import Head from 'next/head';
 import Faq from '../faq/Faq-aplikacje'
 

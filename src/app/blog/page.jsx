@@ -1,6 +1,5 @@
 import { getAllPosts } from "../../../lib/posts";
 import Link from "next/link";
-import Image from "next/image";
 import "./blog.css";
 import Head from 'next/head';
 
