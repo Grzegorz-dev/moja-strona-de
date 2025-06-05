@@ -1,10 +1,7 @@
 'use client';
 
-import "./faq.css";
-
-import { useState, useRef, useEffect } from 'react';
-import { FaChevronDown } from 'react-icons/fa';
-
+import './faq.css';
+import FaqList from '@/components/faq/FaqList'; // upewnij się, że ta ścieżka działa
 
 const questions = [
   {
@@ -38,58 +35,16 @@ const questions = [
 ];
 
 export default function Faq() {
-    const [openStates, setOpenStates] = useState<boolean[]>(questions.map(() => false));
-
-    const toggleAnswer = (index: number) => {
-    setOpenStates((prev) =>
-        prev.map((item, i) => (i === index ? !item : item))
-    );
-    };
-
   return (
     <section className="faq-section">
       <div className="faq-container animacja-z-dolu">
         <h2 className="faq-title">
           <span>FAQ</span> Najczęściej zadawane pytania
         </h2>
-        <div className="faq-list">
-            {questions.map((item, index) => {
-            const isOpen = openStates[index];
-            const answerRef = useRef<HTMLDivElement>(null);
 
-            useEffect(() => {
-                if (answerRef.current) {
-                answerRef.current.style.maxHeight = isOpen
-                    ? `${answerRef.current.scrollHeight}px`
-                    : "0px";
-                }
-            }, [isOpen]);
-
-            return (
-                <div
-                className={`faq-item ${isOpen ? "open" : ""}`}
-                key={index}
-                onClick={() => toggleAnswer(index)}
-                >
-                <div className="faq-question">
-                    <p>{item.question}</p>
-                    <FaChevronDown className={`faq-icon ${isOpen ? "rotate" : ""}`} />
-                </div>
-                <div
-                    ref={answerRef}
-                    className="faq-answer"
-                    style={{
-                    overflow: "hidden",
-                    transition: "max-height 0.4s ease",
-                    }}
-                >
-                    <p>{item.answer}</p>
-                </div>
-                </div>
-            );
-            })}
-        </div>
+        <FaqList questions={questions} />
       </div>
     </section>
   );
 }
+
