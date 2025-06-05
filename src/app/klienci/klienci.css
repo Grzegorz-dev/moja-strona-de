@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Ogólne */
+
+main{
+  background: #373636;
+  /*background: #434242;*/
+  font-family: 'Manrope';
+  box-sizing: border-box
+}
+
+.baner{
+  height: 500px;
+  background: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.baner-tresc {
+  color: white;
+  max-width: 1100px;
+  padding-top: 30px;
+}
+
+.baner-tresc h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: 'Inter';
+  margin-bottom: 1rem;
+}
+
+.baner-tresc p {
+  color: #d5d5d5;
+  max-width: 1100px;
+  margin: 0 auto 0rem auto;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 35px;
+}
+
+
+/* Laptopy (<= 1680px) */
+@media (max-width: 1440px) {
+  .baner{
+    height: 450px;
+  }
+
+  .baner-tresc h1 {
+    font-size: 2.4rem;
+  }
+
+  .baner-tresc p {
+    font-size: 22px;
+  }
+}
+  
+/* Tablet (<= 1023px) */
+@media (max-width: 1025px) {
+  .baner{
+    height: 420px;
+  }
+
+  .baner-tresc h1 {
+    font-size: 2.4rem;
+    line-height: 40px;
+  }
+
+  .baner-tresc p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+/* Smartfony (<= 767px) */
+@media (max-width: 767px) {
+  .baner{
+    height: 350px;
+  }
+
+  .baner-tresc h1 {
+    font-size: 2.2rem;
+    line-height: 36px;
+  }
+
+  .baner-tresc p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.typy-pomocy{
+  max-width: 1100px;
+  margin: 6rem auto;
+}
+
+.typy-pomocy-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: #b1b1b1;
+}
+
+.typy-pomocy-grid button {
+  display: inline-flex;
+  align-items: center;
+  padding: 2.6rem 2.2rem;
+  min-width: 400px;
+  border-radius: 10px;
+  background: #585858;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  transition: background 0.2s ease;
+  text-align: left;
+}
+
+.ikona-btn {
+  margin-right: 0.8rem;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.przycisk-pomocy .tekst-przycisku {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.przycisk-pomocy .tytul {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.przycisk-pomocy .podtytul {
+  font-size: 0.95rem;
+  color: #cf0031;
+}
+
+.typy-pomocy-grid .aktywny {
+  background-color: #ffffff;
+  color: #292929;
+}
+
+.typy-pomocy-grid button:not(.aktywny) .podtytul {
+  color: #b1b1b1;
+}
+
+
+.kolumny-pomoc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+.pakiet {
+  padding: 3.4rem;
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kolumny-pomoc .pakiet:nth-child(1) {
+  border-right: solid 1px #a5a5a5;
+}
+
+.pakiet h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.pakiet h3 span {
+  color: #cf0031;
+}
+
+.pakiet .cena {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  color: #cf0031;
+  font-family: 'nunito';
+}
+
+.pakiet .cena span{
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #757575;
+  font-family: 'Manrope';
+}
+
+.pakiet ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2.5rem;
+}
+
+.pakiet li {
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.check {
+  color: #cf0031;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.pakiet button {
+  padding: 0.7rem 1.2rem;
+  background-color: #cf0031;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 200px;
+}
+
+.pakiet button:hover {
+  box-shadow: 0 2px 30px #cf0031;
+  transition: all 0.3s;
+}
+
+
+.formularz {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.formularz input,
+.formularz textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formularz button {
+  padding: 0.7rem 1.2rem;
+  background-color: #cf0031;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.checkbox-zgoda {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+.checkbox-zgoda input[type="checkbox"] {
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+
+.checkbox-zgoda a {
+  color: #cf0031;
+  text-decoration: underline;
+}
+
+
+/* LAPTOPY max 1440px */
+@media (max-width: 1440px) {
+  .typy-pomocy-grid button {
+    min-width: 360px;
+    padding: 2.2rem 2rem;
+  }
+
+  .pakiet {
+    padding: 2.5rem;
+  }
+
+  .pakiet .cena {
+    font-size: 2.2rem;
+  }
+
+  .pakiet li {
+    font-size: 1.05rem;
+  }
+}
+
+/* TABLETY max 1024px */
+@media (max-width: 1025px) {
+  .pakiet {
+    flex: 1 1 0px;
+  }
+  
+  .typy-pomocy-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .typy-pomocy-grid button {
+    min-width: auto;
+    width: 90%;
+    max-width: 700px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tekst-przycisku {
+    align-items: center;
+  }
+
+  .kolumny-pomoc {
+    flex-direction: column;
+    padding: 1.5rem;
+    max-width: 700px;
+  }
+
+  .kolumny-pomoc .pakiet:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .pakiet {
+    padding: 2rem 1rem;
+  }
+
+  .pakiet button {
+    width: 100%;
+  }
+
+  .pakiet .cena {
+    font-size: 2rem;
+  }
+}
+
+/*  TELEFONY max 767px */
+@media (max-width: 767px) {
+  .typy-pomocy {
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .typy-pomocy-grid {
+    gap: 1rem;
+  }
+
+  .typy-pomocy-grid button {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .ikona-btn {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+  }
+
+  .kolumny-pomoc {
+    width: 90%;
+  }
+
+  .tytul {
+    font-size: 1rem;
+  }
+
+  .podtytul {
+    font-size: 0.85rem;
+  }
+
+  .pakiet h3 {
+    font-size: 1.3rem;
+  }
+
+  .pakiet .cena {
+    font-size: 1.7rem;
+  }
+
+  .pakiet li {
+    font-size: 0.95rem;
+  }
+
+  .formularz input,
+  .formularz textarea {
+    font-size: 1rem;
+  }
+
+  .formularz button {
+    font-size: 1rem;
+  }
+
+  .checkbox-zgoda {
+    font-size: 0.85rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
