@@ -1,16 +1,15 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 
-interface Props {
+type Props = {
   question: string;
   answer: string;
-  isOpen: boolean;
-  toggle: () => void;
-}
+};
 
-export default function FaqItem({ question, answer, isOpen, toggle }: Props) {
+export default function FaqItem({ question, answer }: Props) {
+  const [isOpen, setIsOpen] = useState(false);
   const answerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,7 +21,10 @@ export default function FaqItem({ question, answer, isOpen, toggle }: Props) {
   }, [isOpen]);
 
   return (
-    <div className={`faq-item ${isOpen ? 'open' : ''}`} onClick={toggle}>
+    <div
+      className={`faq-item ${isOpen ? 'open' : ''}`}
+      onClick={() => setIsOpen(!isOpen)}
+    >
       <div className="faq-question">
         <p>{question}</p>
         <FaChevronDown className={`faq-icon ${isOpen ? 'rotate' : ''}`} />
@@ -30,10 +32,7 @@ export default function FaqItem({ question, answer, isOpen, toggle }: Props) {
       <div
         ref={answerRef}
         className="faq-answer"
-        style={{
-          overflow: 'hidden',
-          transition: 'max-height 0.4s ease',
-        }}
+        style={{ overflow: 'hidden', transition: 'max-height 0.4s ease' }}
       >
         <p>{answer}</p>
       </div>
