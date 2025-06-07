@@ -29,9 +29,9 @@ export default function RootLayout({
           <footer className="footer">
             <div className="footer-container">
               <div className="footer-left">
-                <a href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
+                <Link href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
                   <img src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427" loading="lazy"/>
-                </a>
+                </Link>
                 <p>© {new Date().getFullYear()} Grzegorz Słowiaczek. Wszelkie prawa zastrzeżone.</p>
               </div>
 
@@ -50,8 +50,8 @@ export default function RootLayout({
 
               <div className="footer-center">
                 <ul>
-                  <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
-                  <li><a href="/regulamin">Regulamin</a></li>
+                  <li><Link href="/polityka-prywatnosci">Polityka prywatności</Link></li>
+                  <li><Link href="/regulamin">Regulamin</Link></li>
                 </ul>
               </div>
 

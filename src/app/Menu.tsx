@@ -24,13 +24,13 @@ export default function Menu() {
   return (
     <nav className={`menu ${scrolled ? 'scrolled' : ''}`}>
       <div className="menu-container">
-        <a href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
+        <Link href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
           <img src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427"/>
           <span className="logo-text">
             Grzegorz<br />
             Słowiaczek
           </span>
-        </a>
+        </Link>
 
         {/* 🔁 MENU LINKS na duże ekrany */}
         <ul className="menu-links">
