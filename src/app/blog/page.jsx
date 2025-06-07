@@ -2,6 +2,7 @@ import { getAllPosts } from "../../../lib/posts";
 import Link from "next/link";
 import styles from './blog.module.css';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default async function BlogPage() {
     <Head>
