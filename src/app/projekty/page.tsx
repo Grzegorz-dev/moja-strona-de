@@ -32,14 +32,14 @@ export default function Projekty() {
           <div className={styles.portfolioContent}>
             <h2>Projekty</h2>
             <p>Zobacz moje wybrane realizacje stron i aplikacji dla firm z różnych branż.</p>
-            <Link className={styles.scrollArrow} aria-label="Przejdź do portfolio">
+            <Link href="#firstProject" className={styles.scrollArrow} aria-label="Przejdź do portfolio">
               ↓
             </Link>
           </div>
           <div className={styles.ramka}></div>
         </section>
 
-        <section className={styles.gallery}>
+        <section className={styles.gallery} id="firstProject">
           <div className={styles.galleryGrid}>
             <Image
               src="/images/portfolio/projekt-strony-pasieki-na-urzadzeniach.webp"
