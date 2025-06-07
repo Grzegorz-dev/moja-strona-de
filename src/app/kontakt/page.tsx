@@ -63,32 +63,32 @@ export default function Kontakt() {
               <p></p>
                 <form
                   className={styles.form}
-                  onSubmit={async (e) => {
-                    e.preventDefault(); // zapobiegamy przeładowaniu strony
+                    onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
+                      e.preventDefault(); // zapobiegamy przeładowaniu strony
 
-                    const formData = new FormData(e.target);
+                      const formData = new FormData(e.currentTarget);
 
-                    const res = await fetch("/api/kontakt-glowny", {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
-                      body: JSON.stringify({
-                        name: formData.get("name"),
-                        email: formData.get("email"),
-                        phone: formData.get("phone"),
-                        message: formData.get("message"),
-                      }),
-                    });
+                      const res = await fetch("/api/kontakt-glowny", {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                          name: formData.get("name"),
+                          email: formData.get("email"),
+                          phone: formData.get("phone"),
+                          message: formData.get("message"),
+                        }),
+                      });
 
-                    const result = await res.json();
-                    if (result.ok) {
-                      alert("Wiadomość została wysłana!");
-                      e.target.reset(); // czyścimy formularz
-                    } else {
-                      alert("Wystąpił błąd. Spróbuj ponownie.");
-                    }
-                  }}
+                      const result = await res.json();
+                      if (result.ok) {
+                        alert("Wiadomość została wysłana!");
+                        e.currentTarget.reset(); // czyścimy formularz
+                      } else {
+                        alert("Wystąpił błąd. Spróbuj ponownie.");
+                      }
+                    }}
                 >
                   <input name="name" type="text" placeholder="Imię" required />
                   <input name="email" type="email" placeholder="Adres e-mail" required />
