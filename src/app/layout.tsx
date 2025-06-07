@@ -59,9 +59,7 @@ export default function RootLayout({
                 <p>kontakt@slowiaczek.pl</p>
                 <p>+48 883 081 448</p>
                 <div className="socials">
-                  <a href="#"><i className="fab fa-facebook-f"></i></a>
-                  <a href="#"><i className="fab fa-instagram"></i></a>
-                  <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                  <a href="https://facebook.pl/"><i className="fab fa-facebook-f"></i></a>
                 </div>
               </div>
             </div>
