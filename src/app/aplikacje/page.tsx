@@ -254,27 +254,28 @@ export default function Aplikacje() {
 
       <form
         className={styles.ctaForm}
-        onSubmit={async (e) => {
-          e.preventDefault();
-          const formData = new FormData(e.target);
-          const phone = formData.get("phone");
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const target = e.target as HTMLFormElement;
+            const formData = new FormData(target);
+            const phone = formData.get("phone");
 
-          const res = await fetch("/api/wycena", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ phone }),
-          });
+            const res = await fetch("/api/wycena", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ phone }),
+            });
 
-          const result = await res.json();
-          if (result.ok) {
-            alert("Wycena została wysłana!");
-            e.target.reset();
-          } else {
-            alert("Błąd przy wysyłce. Spróbuj ponownie.");
-          }
-        }}
+            const result = await res.json();
+            if (result.ok) {
+              alert("Wycena została wysłana!");
+              target.reset();
+            } else {
+              alert("Błąd przy wysyłce. Spróbuj ponownie.");
+            }
+          }}
       >
       <input
         name="phone"
