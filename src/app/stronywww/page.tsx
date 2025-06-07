@@ -19,6 +19,7 @@ import {
 import Link from 'next/link';
 import Faq from '../faq/Faq-strony-www'
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function StronaWWW() {
   <Head>
@@ -46,7 +47,7 @@ export default function StronaWWW() {
         <p>
           Tworzę strony internetowe dla firm – od prostych wizytówek po rozbudowane serwisy z dedykowanym panelem. Wszystko dopasowane do Twoich celów i branży.
         </p>
-        <img
+        <Image
           className={styles.heroImage}
           src="/images/nowoczesna-strona-www-na-laptopie-i-telefonie.webp"
           alt="Strona internetowa dla firmy – nowoczesna, responsywna realizacja na laptopie i telefonie"
@@ -121,7 +122,7 @@ export default function StronaWWW() {
 
       <div className={styles.projectGallery}>
         <div className={`${styles.projectCard} fadeInUp`}>
-          <img
+          <Image
             src="/images/realizacja-strony-www-firma-dachowa.webp"
             alt="Tania strona internetowa dla firmy dekarskiej – projekt witryny z ofertą usług dachowych"
             loading="lazy"
@@ -131,7 +132,7 @@ export default function StronaWWW() {
           </a>
         </div>
         <div className={`${styles.projectCard} fadeInUp`}>
-          <img
+          <Image
             src="/images/realizacja-strony-www-biuro-nieruchomosci.webp"
             alt="Strona internetowa dla biura nieruchomości – wyszukiwarka ofert dla klientów"
             loading="lazy"
@@ -141,7 +142,7 @@ export default function StronaWWW() {
           </a>
         </div>
         <div className={`${styles.projectCard} fadeInUp`}>
-          <img
+          <Image
             src="/images/realizacja-strony-www-pasieka-sklep.webp"
             alt="Strona internetowa dla pasieki – sprzedaż produktów naturalnych online"
             loading="lazy"
@@ -151,7 +152,7 @@ export default function StronaWWW() {
           </a>
         </div>
         <div className={`${styles.projectCard} fadeInUp`}>
-          <img
+          <Image
             src="/images/realizacja-strony-www-deweloper-luksusowe-apartamenty.webp"
             alt="Strona internetowa dla biura nieruchomości – nowoczesny projekt z systemem prezentacji ofert"
             loading="lazy"
@@ -259,7 +260,7 @@ export default function StronaWWW() {
               { src: "typescript", label: "TypeScript", alt: "Logo TypeScript – nadzbiór JavaScript z typowaniem statycznym" }
             ].map(({ src, label, alt }) => (
               <div key={src} className={styles.iconBox}>
-                <img
+                <Image
                   src={`/images/${src}.webp`}
                   alt={alt}
                   loading="lazy"

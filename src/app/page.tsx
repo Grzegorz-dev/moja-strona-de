@@ -22,6 +22,7 @@ import {
 import Faq from './faq/Faq'
 import Head from 'next/head';
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Home() {
   <Head>
@@ -53,30 +54,30 @@ export default function Home() {
             <p>
               Tworzę szybkie, skalowalne strony i aplikacje dla firm – od prostych wizytówek i sklepów internetowych po rozbudowane systemy webowe i mobilne.
             </p>
-            <a href="#benefitsSection" className={styles.arrowButton}>
+            <Link href="#benefitsSection" className={styles.arrowButton}>
               <span>Zobacz więcej</span>
               <div className={styles.arrowIconCircle}>
                 <FaArrowRight />
               </div>
-            </a>
+            </Link>
           </div>
           <div className={styles.heroImageWrapper}>
-            <img src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" loading="lazy" />
+            <Image src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" loading="lazy" />
             
             <div className={styles.overlayBoxOne}>
-              <img className={styles.overlayImageOne} src="/images/grafika-karta-elementu-interfejsu.webp" alt="Przykład karty interfejsu aplikacji dla firm – grafika z ikoną i opisem funkcji" width="408" height="239" loading="lazy" />
+              <Image className={styles.overlayImageOne} src="/images/grafika-karta-elementu-interfejsu.webp" alt="Przykład karty interfejsu aplikacji dla firm – grafika z ikoną i opisem funkcji" width="408" height="239" loading="lazy" />
             </div>
 
             <div className={styles.overlayBoxTwo}>
-              <img className={styles.overlayImageTwo} src="/images/grafika-statystyki-uzytkownika-aplikacji.webp" alt="Panel statystyk użytkownika w aplikacji dla firm – analiza danych i realizacja celów" width="404" height="245" loading="lazy" />
+              <Image className={styles.overlayImageTwo} src="/images/grafika-statystyki-uzytkownika-aplikacji.webp" alt="Panel statystyk użytkownika w aplikacji dla firm – analiza danych i realizacja celów" width="404" height="245" loading="lazy" />
             </div>
 
             <div className={styles.overlayBoxThree}>
-              <img className={styles.overlayImageThree} src="/images/grafika-integracja-zewnetrzna-api-chmura.webp" alt="Integracja aplikacji dla firm z zewnętrznymi systemami i chmurą – synchronizacja danych" width="404" height="398" loading="lazy" />
+              <Image className={styles.overlayImageThree} src="/images/grafika-integracja-zewnetrzna-api-chmura.webp" alt="Integracja aplikacji dla firm z zewnętrznymi systemami i chmurą – synchronizacja danych" width="404" height="398" loading="lazy" />
             </div>
 
             <div className={styles.overlayBoxFour}>
-              <img className={styles.overlayImageFour} src="/images/grafika-ocena-uzytkownikow-aplikacja.webp" alt="System ocen w aplikacji firmowej – pięć gwiazdek i wysoka ocena użytkowników" width="404" height="135" loading="lazy" />
+              <Image className={styles.overlayImageFour} src="/images/grafika-ocena-uzytkownikow-aplikacja.webp" alt="System ocen w aplikacji firmowej – pięć gwiazdek i wysoka ocena użytkowników" width="404" height="135" loading="lazy" />
             </div>
           </div>
         </div>
@@ -87,7 +88,7 @@ export default function Home() {
           <div className={styles.benefitsIntro}>
             <div className={styles.benefitsIntroLeft}>
               <a href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
-                <img src="/images/logo-grzegorz-slowiaczek-ciemne.webp" alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji" width="768" height="427" loading="lazy" />
+                <Image src="/images/logo-grzegorz-slowiaczek-ciemne.webp" alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji" width="768" height="427" loading="lazy" />
                 <span className={styles.logoText}>Grzegorz<br/>Słowiaczek</span>
               </a>
             </div>
@@ -192,7 +193,7 @@ export default function Home() {
           </div>
 
           <div className={styles.featuresImage}>
-            <img
+            <Image
               src="/images/grafika-aplikacja-mobilna-zarzadzanie-zadaniami.webp"
               alt="Widok aplikacji mobilnej dla firm – zarządzanie zadaniami, kalendarz i funkcje użytkownika na ekranie smartfona"
               width="525"
@@ -233,7 +234,7 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.coverageImage}>
-            <img
+            <Image
               src="/images/grafika-polska-zasieg-uslug-strony-aplikacje.webp"
               alt="Obsługa firm w całej Polsce – mapa kraju z zaznaczonymi lokalizacjami klientów"
               width="874"

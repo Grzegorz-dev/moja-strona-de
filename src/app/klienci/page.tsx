@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Head from 'next/head';
+import Link from "next/link";
 
 
 export default function Klienci() {
@@ -217,7 +218,7 @@ if (!isClient) return null;
                   <input type="checkbox" required />
                   <span>
                     Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}
-                    <a href="/polityka-prywatnosci" target="_blank">polityką prywatności</a>.
+                    <Link href="/polityka-prywatnosci" target="_blank">polityką prywatności</Link>.
                   </span>
                 </label>
                 <button type="submit">Wyślij zgłoszenie</button>

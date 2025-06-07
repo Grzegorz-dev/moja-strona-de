@@ -30,7 +30,7 @@ export default async function BlogPost({ params }) {
             alt="Autor wpisu"
             width={80}
             height={80}
-            className={styles.authorImg}
+            className={styles.authorImage}
           />
         </div>
         <div className={styles.authorText}>

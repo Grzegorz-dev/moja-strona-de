@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './kontakt.module.css';
+import Link from "next/link";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -98,7 +99,7 @@ export default function Kontakt() {
                     <input type="checkbox" required />
                     <span>
                       Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}
-                      <a href="/polityka-prywatnosci" target="_blank">polityką prywatności</a>.
+                      <Link href="/polityka-prywatnosci" target="_blank">polityką prywatności</Link>.
                     </span>
                   </label>
 

@@ -20,6 +20,7 @@ import {
 import Link from 'next/link';
 import Head from 'next/head';
 import Faq from '../faq/Faq-aplikacje'
+import Image from 'next/image';
 
 export default function Aplikacje() {
   <Head>
@@ -54,7 +55,7 @@ export default function Aplikacje() {
             <div className={styles.orbit3}></div>
 
             <div className={styles.centerPhone}>
-              <img
+              <Image
                 className={styles.phoneImage}
                 src="/images/interfejs-aplikacji-mobilnej-na-telefonach.webp"
                 alt="Interfejs aplikacji dla firm – widok mobilny i webowy na telefonach"
@@ -66,7 +67,7 @@ export default function Aplikacje() {
 
             <div className={styles.orbitAnimator1}>
               <div className={styles.orbitingObject1}>
-                <img
+                <Image
                   src="/images/google-play.webp"
                   alt="Google Play – publikacja aplikacji mobilnych dla firm"
                   width="512"
@@ -78,7 +79,7 @@ export default function Aplikacje() {
 
             <div className={styles.orbitAnimator2}>
               <div className={styles.orbitingObject2}>
-                <img
+                <Image
                   src="/images/app-store.webp"
                   alt="App Store – dystrybucja aplikacji na iPhone"
                   width="759"
@@ -90,7 +91,7 @@ export default function Aplikacje() {
 
             <div className={styles.orbitAnimator3}>
               <div className={styles.orbitingObject3}>
-                <img
+                <Image
                   src="/images/firebase.webp"
                   alt="Firebase – backend dla aplikacji webowych i mobilnych"
                   width="466"
@@ -102,7 +103,7 @@ export default function Aplikacje() {
 
             <div className={styles.orbitAnimator4}>
               <div className={styles.orbitingObject4}>
-                <img
+                <Image
                   src="/images/stripe.webp"
                   alt="Integracja płatności w aplikacjach dla firm – Stripe"
                   width="770"
@@ -118,8 +119,8 @@ export default function Aplikacje() {
         <div className={`${styles.appFeaturesBox} animacja-z-dolu`}>
           <div className={styles.intro}>
             <div className={styles.leftIntroColumn}>
-              <a href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
-                <img
+              <Link href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
+                <Image
                   src="/images/logo-grzegorz-slowiaczek-ciemne.webp"
                   alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji"
                   width="768"
@@ -130,7 +131,7 @@ export default function Aplikacje() {
                   Grzegorz<br />
                   Słowiaczek
                 </span>
-              </a>
+              </Link>
             </div>
             <div className={styles.rightIntroColumn}>
               <p>
@@ -198,7 +199,7 @@ export default function Aplikacje() {
           </div>
 
           <div className={`${styles.imageColumn} animacja-z-dolu`}>
-            <img
+            <Image
               src="/images/interfejs-aplikacji-mobilnej-na-telefonach.webp"
               alt="Przykładowy interfejs aplikacji dla firm – webowa i mobilna wersja"
               width="652"
@@ -238,7 +239,7 @@ export default function Aplikacje() {
               { src: "/images/netlify-logo.webp", alt: "Netlify – hosting dla aplikacji statycznych i JAMstack" },
             ].map(({ src, alt }, i) => (
               <div key={i} className={`${styles.integrationTile} animacja-z-dolu`}>
-                <img src={src} alt={alt} width="603" height="179" loading="lazy" />
+                <Image src={src} alt={alt} width="603" height="179" loading="lazy" />
               </div>
             ))}
           </div>

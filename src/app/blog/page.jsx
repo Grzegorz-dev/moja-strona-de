@@ -38,7 +38,7 @@ export default async function BlogPage() {
         {posts.map((post) => (
             <div className={styles.blogCard} key={post.slug}>
             {post.image && (
-                <img src={post.image} alt={post.title} className={styles.blogCardImage} />
+                <Image src={post.image} alt={post.title} className={styles.blogCardImage} />
             )}
             <div className={styles.blogCardContent}>
                 <h2>{post.title}</h2>

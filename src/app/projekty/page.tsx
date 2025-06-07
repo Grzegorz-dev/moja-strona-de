@@ -3,6 +3,8 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from "next/link";
 
 export default function Projekty() {
     <Head>
@@ -30,16 +32,16 @@ export default function Projekty() {
           <div className={styles.portfolioContent}>
             <h2>Projekty</h2>
             <p>Zobacz moje wybrane realizacje stron i aplikacji dla firm z różnych branż.</p>
-            <a className={styles.scrollArrow} aria-label="Przejdź do portfolio">
+            <Link className={styles.scrollArrow} aria-label="Przejdź do portfolio">
               ↓
-            </a>
+            </Link>
           </div>
           <div className={styles.ramka}></div>
         </section>
 
         <section className={styles.gallery}>
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="/images/portfolio/projekt-strony-pasieki-na-urzadzeniach.webp"
               alt="Responsywna strona internetowa dla pasieki – projekt sklepu online z miodem wyświetlony na laptopie, komputerze, tablecie i smartfonie"
               width="2085"
@@ -54,7 +56,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="/images/portfolio/realizacja-strony-biura-nieruchomosci-responsive.webp"
               alt="Strona internetowa dla biura nieruchomości – responsywny projekt z wyszukiwarką ofert na komputerze, laptopie, tablecie i smartfonie"
               width="2085"
@@ -69,7 +71,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="/images/portfolio/projekt-strony-pracownia-architektoniczna-responsive.webp"
               alt="Strona internetowa pracowni architektonicznej – nowoczesny, minimalistyczny design z wizualizacją projektów budynków na komputerze, laptopie, tablecie i smartfonie"
               width="2085"
@@ -84,7 +86,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="images/portfolio/projekt-strony-kosmetologia-responsive.webp"
               alt="Strona internetowa gabinetu kosmetycznego – elegancki design z wizerunkiem właścicielki, oferta zabiegów i formularz rezerwacji na laptopie, komputerze, tablecie i telefonie"
               width="2085"
@@ -99,7 +101,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="images/portfolio/projekt-strony-deweloper-luksusowe-nieruchomosci.webp"
               alt="Strona internetowa biura nieruchomości – wyszukiwarka ofert i lista mieszkań, widoczna na komputerze, laptopie, tablecie i smartfonie"
               width="2085"
@@ -114,7 +116,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="images/portfolio/projekt-strony-wynajem-dmuchancow-responsive.webp"
               alt="Strona internetowa firmy oferującej dmuchańce – kolorowy i responsywny projekt widoczny na komputerze, tablecie i telefonie"
               width="2085"
@@ -129,7 +131,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="images/portfolio/projekt-strony-nieruchomosci-atelier-responsive.webp"
               alt="Strona internetowa dla firmy z branży nieruchomości – elegancki, responsywny projekt z prezentacją wnętrz i atmosfery miejsca"
               width="2085"
@@ -144,7 +146,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="images/portfolio/projekt-strony-kancelaria-radcy-prawnego-responsive.webp"
               alt="Strona internetowa kancelarii radcy prawnego – profesjonalny i responsywny projekt dopasowany do komputerów, tabletów i smartfonów"
               width="2085"
@@ -159,7 +161,7 @@ export default function Projekty() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <img
+            <Image
               src="images/portfolio/projekt-strony-firma-budowlana-uslugi-dachowe-responsive.webp"
               alt="Strona internetowa dla firmy budowlanej i dekarskiej – responsywny projekt z ofertą usług remontowych i formularzem zamówień"
               width="2085"
