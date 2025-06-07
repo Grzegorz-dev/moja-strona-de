@@ -87,10 +87,10 @@ export default function Home() {
         <div className={styles.benefitsContainer}>
           <div className={styles.benefitsIntro}>
             <div className={styles.benefitsIntroLeft}>
-              <a href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
+              <Link href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
                 <Image src="/images/logo-grzegorz-slowiaczek-ciemne.webp" alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji" width="768" height="427" loading="lazy" />
                 <span className={styles.logoText}>Grzegorz<br/>Słowiaczek</span>
-              </a>
+              </Link>
             </div>
             <div className={styles.benefitsIntroRight}>
               <p>

@@ -5,6 +5,7 @@ import './blog/blog.module.css';
 import Menu from "./Menu";
 import AnimationWrapper from "./AnimationWrapper";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -30,7 +31,7 @@ export default function RootLayout({
             <div className="footer-container">
               <div className="footer-left">
                 <Link href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
-                  <img src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427" loading="lazy"/>
+                  <Image src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427" loading="lazy"/>
                 </Link>
                 <p>© {new Date().getFullYear()} Grzegorz Słowiaczek. Wszelkie prawa zastrzeżone.</p>
               </div>

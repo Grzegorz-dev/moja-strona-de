@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { fixPolishTypography } from '@/utils/fixSpacings';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function Menu() {
     <nav className={`menu ${scrolled ? 'scrolled' : ''}`}>
       <div className="menu-container">
         <Link href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
-          <img src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427"/>
+          <Image src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427"/>
           <span className="logo-text">
             Grzegorz<br />
             Słowiaczek
