@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { fixPolishTypography } from '@/utils/fixSpacings';
+import Link from 'next/link';
 
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,14 +34,14 @@ export default function Menu() {
 
         {/* 🔁 MENU LINKS na duże ekrany */}
         <ul className="menu-links">
-          <li><a href="/">Strona główna</a></li>
-          <li><a href="/stronywww">Strony WWW</a></li>
-          <li><a href="/aplikacje">Aplikacje</a></li>
-          <li><a href="/projekty">Projekty</a></li>
-          <li><a href="/klienci">Dla klientów</a></li>
-          <li><a href="/cennik">Cennik</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
+          <li><Link href="/">Strona główna</Link></li>
+          <li><Link href="/stronywww">Strony WWW</Link></li>
+          <li><Link href="/aplikacje">Aplikacje</Link></li>
+          <li><Link href="/projekty">Projekty</Link></li>
+          <li><Link href="/klienci">Dla klientów</Link></li>
+          <li><Link href="/cennik">Cennik</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/kontakt">Kontakt</Link></li>
         </ul>
 
         {/* 🔁 BURGER button tylko na mobile */}
@@ -57,14 +58,14 @@ export default function Menu() {
           &times;
         </button>
         <ul>
-          <li><a href="/">Strona główna</a></li>
-          <li><a href="/stronywww">Strony WWW</a></li>
-          <li><a href="/aplikacje">Aplikacje</a></li>
-          <li><a href="/projekty">Projekty</a></li>
-          <li><a href="/klienci">Dla klientów</a></li>
-          <li><a href="/cennik">Cennik</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
+          <li><Link href="/">Strona główna</Link></li>
+          <li><Link href="/stronywww">Strony WWW</Link></li>
+          <li><Link href="/aplikacje">Aplikacje</Link></li>
+          <li><Link href="/projekty">Projekty</Link></li>
+          <li><Link href="/klienci">Dla klientów</Link></li>
+          <li><Link href="/cennik">Cennik</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/kontakt">Kontakt</Link></li>
         </ul>
       </div>
 

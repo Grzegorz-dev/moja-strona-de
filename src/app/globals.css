@@ -19,6 +19,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -289,17 +293,17 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.footer a {
+.footer :is(a, [data-nextjs-link]) {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer a:hover {
+.footer :is(a:hover, [data-nextjs-link]:hover) {
   color: #ffffff;
 }
 
-.socials a {
+.socials :is(a, [data-nextjs-link]) {
   margin-right: 1rem;
   font-size: 1.2rem;
 }
@@ -310,13 +314,13 @@ body {
 }
 
 /*animacje*/
-.animacja-z-dolu {
+.fadeInUp {
   opacity: 0;
   transform: translateY(80px);
   transition: opacity 0.3s ease, transform 1.4s ease;
 }
 
-.animacja-z-dolu.aktywna {
+.fadeInUp.active {
   opacity: 1;
   transform: translateY(0);
 }

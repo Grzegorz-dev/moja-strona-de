@@ -3,24 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Ogólne */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  main{
+  .container{
     background: #373636;
     /*background: #434242;*/
     font-family: 'Manrope';
     box-sizing: border-box
   }
 
-  .baner {
-    padding: 0rem 2rem;
+  /* Baner */
+
+  .heroSection {
+    padding: 0 2rem;
     padding-bottom: 1rem;
   }
 
-  .baner-kolumny {
+  .heroContentWrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -29,23 +26,23 @@
     margin: 0 auto;
   }
 
-  .baner-lewo {
+  .heroText {
     flex: 1 1 47%;
     padding-right: 2rem;
-    gap: 15px;
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
 
-  .baner-lewo h1 {
+  .heroText h1 {
     font-size: 3.6rem;
     font-weight: 500;
     margin-bottom: 1rem;
     line-height: 60px;
     color: #fdfdfd;
   }
-  
-  .baner-lewo p {
+
+  .heroText p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     line-height: 1.6;
@@ -53,32 +50,30 @@
     color: #d5d5d5;
   }
 
-  .przycisk-strzalka {
+  .arrowButton {
     display: inline-flex;
     align-items: center;
     background-color: #cf0031;
     color: #fff;
     padding: 0.2rem 1.5rem;
     border-radius: 20px;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 1rem;
     text-decoration: none;
     transition: all 0.5s ease;
     gap: 0.3rem;
     align-self: start;
-    font-weight: 300;
   }
 
-  .przycisk-strzalka:hover {
+  .arrowButton:hover {
     box-shadow: 0 4px 40px #cf0031;
   }
 
-  .strzalka-kolo {
+  .arrowIconCircle {
     display: flex;
     align-items: center;
     justify-content: center;
     border-left: solid 1px #ffffff77;
-    border-radius: 0%;
     width: 52px;
     height: 52px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -87,7 +82,7 @@
     left: 17px;
   }
 
-  .baner-prawo {
+  .heroImageWrapper {
     flex: 1 1 50%;
     text-align: right;
     position: relative;
@@ -96,349 +91,287 @@
     display: block;
   }
 
-  .baner-prawo img {
-    max-width: 100%;
+  .heroImageWrapper img {
     height: auto;
     position: relative;
     top: 50px;
     margin-left: auto;
   }
 
-  .okienko-container-1 {
+  /* === Overlay Elements === */
+
+  .overlayBoxOne,
+  .overlayBoxTwo,
+  .overlayBoxThree,
+  .overlayBoxFour {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .overlayBoxOne {
     top: 50%;
     left: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    transform: translate(-50%, -50%);
   }
 
-  .okienko-1 {
-    position: absolute !important;
-    width: 180px;
-    max-width: 180px !important;
-    top: 10% !important;
-    right: 10%;
-    transform: translate(0%, 0%);
-    z-index: 10;
-    opacity: 0.95 !important;
-    animation: okienko-1 17s linear infinite;
-    transform-origin: top right;
-  }
-
-  @keyframes okienko-1 {
-    0% {
-      transform: scale(0);
-    }
-    10% {
-      transform: scale(0);
-    }
-    12% {
-      transform: scale(1);
-    }
-    21% {
-      transform: scale(1);
-    }
-    24% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(0);
-    }
-  }
-
-  .okienko-container-2 {
-    position: absolute;
+  .overlayBoxTwo {
     top: 20%;
     left: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    transform: translate(-50%, -50%);
   }
 
-  .okienko-2 {
-    position: absolute !important;
-    width: 180px;
-    max-width: 180px !important;
-    top: 44% !important;
-    right: 43%;
-    z-index: 10;
-    opacity: 1 !important;
-    transform: translate(85%, -45%);
-    opacity: 0.95 !important;
-    animation: okienko-2 17s linear infinite;
-    transform-origin: bottom right;
-  }
-
-    @keyframes okienko-2 {
-    0% {
-      transform: scale(0) translate(85%, 0%);
-    }
-    34% {
-      transform: scale(0) translate(85%, 0%);
-    }
-    37% {
-      transform: scale(1) translate(85%, 0%);
-    }
-    46% {
-      transform: scale(1) translate(85%, 0%);
-    }
-    49% {
-      transform: scale(0) translate(85%, 0%);
-    }
-    100% {
-      transform: scale(0) translate(85%, 0%);
-    }
-  }
-
-  .okienko-container-3 {
-    position: absolute;
+  .overlayBoxThree {
     top: 15%;
     left: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    transform: translate(-50%, -50%);
   }
 
-  .okienko-3 {
-    position: absolute !important;
-    width: 160px;
-    max-width: 160px !important;
-    top: 44% !important;
-    right: 43%;
-    z-index: 10;
-    opacity: 1 !important;
-    transform: translate(85%, -45%);
-    opacity: 0.95 !important;
-    animation: okienko-3 17s linear infinite;
-    transform-origin: bottom right;
-  }
-
-    @keyframes okienko-3 {
-    0% {
-      transform: scale(0) translate(0%, 0%);
-    }
-    59% {
-      transform: scale(0) translate(0%, 0%);
-    }
-    62% {
-      transform: scale(1) translate(0%, 0%);
-    }
-    71% {
-      transform: scale(1) translate(0%, 0%);
-    }
-    74% {
-      transform: scale(0) translate(0%, 0%);
-    }
-    100% {
-      transform: scale(0) translate(0%, 0%);
-    }
-  }
-
-
-  .okienko-container-4 {
-    position: absolute;
+  .overlayBoxFour {
     top: 65%;
     left: 85%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    transform: translate(-50%, -50%);
   }
 
-  .okienko-4 {
-    position: absolute !important;
-    width: 190px;
-    max-width: 190px !important;
-    top: 44% !important;
-    right: 43%;
+  /* === Overlay Images + Animations === */
+
+  .overlayImageOne {
+    position: absolute;
+    width: 180px;
+    max-width: 180px;
+    top: 10%;
+    right: 10%;
+    transform: translate(0, 0);
     z-index: 10;
-    opacity: 1 !important;
-    transform: translate(0%, 0%);
-    opacity: 0.95 !important;
-    animation: okienko-4 17s linear infinite;
+    opacity: 0.95;
+    animation: overlayOneAnim 17s linear infinite;
     transform-origin: top right;
   }
 
-    @keyframes okienko-4 {
-    0% {
-      transform: scale(0) translate(0%, 120%);
+  @keyframes overlayOneAnim {
+    0%, 10%, 24%, 100% {
+      transform: scale(0);
     }
-    84% {
-      transform: scale(0) translate(0%, 120%);
-    }
-    87% {
-      transform: scale(1) translate(0%, 120%);
-    }
-    96% {
-      transform: scale(1) translate(0%, 120%);
-    }
-    99% {
-      transform: scale(0) translate(0%, 120%);
-    }
-    100% {
-      transform: scale(0) translate(0%, 120%);
+    12%, 21% {
+      transform: scale(1);
     }
   }
 
+  .overlayImageTwo {
+    position: absolute;
+    width: 180px;
+    max-width: 180px;
+    top: 44%;
+    right: 43%;
+    z-index: 10;
+    opacity: 0.95;
+    transform: translate(85%, -45%);
+    animation: overlayTwoAnim 17s linear infinite;
+    transform-origin: bottom right;
+  }
 
-  /*reponsywność*/
-  /* LAPTOP (1025px–1366px) */
- @media (max-width: 1440px) {
-    .baner-lewo h1 {
+  @keyframes overlayTwoAnim {
+    0%, 34%, 49%, 100% {
+      transform: scale(0) translate(85%, 0%);
+    }
+    37%, 46% {
+      transform: scale(1) translate(85%, 0%);
+    }
+  }
+
+  .overlayImageThree {
+    position: absolute;
+    width: 160px;
+    max-width: 160px;
+    top: 44%;
+    right: 43%;
+    z-index: 10;
+    opacity: 0.95;
+    transform: translate(85%, -45%);
+    animation: overlayThreeAnim 17s linear infinite;
+    transform-origin: bottom right;
+  }
+
+  @keyframes overlayThreeAnim {
+    0%, 59%, 74%, 100% {
+      transform: scale(0) translate(0, 0);
+    }
+    62%, 71% {
+      transform: scale(1) translate(0, 0);
+    }
+  }
+
+  .overlayImageFour {
+    position: absolute;
+    width: 190px;
+    max-width: 190px;
+    top: 44%;
+    right: 43%;
+    z-index: 10;
+    opacity: 0.95;
+    transform: translate(0, 0);
+    animation: overlayFourAnim 17s linear infinite;
+    transform-origin: top right;
+  }
+
+  @keyframes overlayFourAnim {
+    0%, 84%, 99%, 100% {
+      transform: scale(0) translate(0, 120%);
+    }
+    87%, 96% {
+      transform: scale(1) translate(0, 120%);
+    }
+  }
+
+  /* ========== LAPTOP (max 1440px) ========== */
+  @media (max-width: 1440px) {
+    .heroText h1 {
       font-size: 3rem;
       line-height: 50px;
     }
 
-    .baner-lewo p {
+    .heroText p {
       font-size: 1rem;
     }
 
-    .przycisk-strzalka {
+    .arrowButton {
       font-size: 0.95rem;
     }
 
-    .strzalka-kolo {
+    .arrowIconCircle {
       width: 46px;
       height: 46px;
       left: 14px;
     }
 
-    .okienko-1,
-    .okienko-2,
-    .okienko-3,
-    .okienko-4 {
+    .overlayImageOne,
+    .overlayImageTwo,
+    .overlayImageThree,
+    .overlayImageFour {
       width: 150px;
-      max-width: 150px !important;
+      max-width: 150px;
     }
   }
 
-  /* TABLET (768px–1024px) */
+  /* ========== TABLET (max 1025px) ========== */
   @media (max-width: 1025px) {
-    .baner-kolumny {
+    .heroContentWrapper {
       flex-direction: column;
       padding-top: 130px;
       text-align: center;
     }
 
-    .baner-lewo {
+    .heroText {
       flex: 1 1 100%;
       padding-right: 0;
       align-items: center;
     }
 
-    .baner-lewo h1 {
+    .heroText h1 {
       font-size: 2.4rem;
       line-height: 45px;
     }
 
-    .baner-lewo p {
+    .heroText p {
       font-size: 1rem;
       max-width: 600px;
     }
 
-    .przycisk-strzalka {
+    .arrowButton {
       font-size: 0.9rem;
       padding: 0.4rem 1.4rem;
       justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-      display: none;
+      margin: 0 auto;
+      display: none; /* ukryte na tabletach */
     }
 
-    .strzalka-kolo {
+    .arrowIconCircle {
       width: 42px;
       height: 42px;
       left: 10px;
     }
 
-    .baner-prawo {
+    .heroImageWrapper {
       text-align: center;
       margin-top: -120px;
       margin-bottom: -80px;
     }
 
-    .baner-prawo img {
+    .heroImageWrapper img {
       top: 20px;
       max-width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
     }
 
-    .okienko-1,
-    .okienko-2,
-    .okienko-3,
-    .okienko-4 {
+    .overlayImageOne,
+    .overlayImageTwo,
+    .overlayImageThree,
+    .overlayImageFour {
       width: 120px;
-      max-width: 120px !important;
+      max-width: 120px;
     }
   }
 
-  /* TELEFON (do 767px) */
+  /* ========== MOBILE (max 767px) ========== */
   @media (max-width: 767px) {
-    .baner {
+    .heroSection {
       padding: 2rem 1rem;
     }
 
-    .baner-kolumny {
+    .heroContentWrapper {
       padding-top: 50px;
     }
 
-    .baner-lewo h1 {
+    .heroText h1 {
       font-size: 1.9rem;
       line-height: 38px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
-    .baner-lewo p {
+    .heroText p {
       font-size: 0.95rem;
     }
 
-    .przycisk-strzalka {
+    .arrowButton {
       font-size: 0.85rem;
       padding: 0.4rem 1rem;
     }
 
-    .strzalka-kolo {
+    .arrowIconCircle {
       width: 36px;
       height: 36px;
       left: 8px;
     }
 
-    .okienko-1,
-    .okienko-2,
-    .okienko-3,
-    .okienko-4 {
-      display: none; /* opcjonalnie: ukrywamy animacje na małych ekranach */
+    .overlayImageOne,
+    .overlayImageTwo,
+    .overlayImageThree,
+    .overlayImageFour {
+      display: none; /* ukrywanie animacji na telefonach */
     }
 
-    .baner-prawo img {
-      max-width: 80%;
-      top: 0;
-    }
-
-    .baner-prawo {
+    .heroImageWrapper {
       text-align: center;
       margin-top: -60px;
       margin-bottom: -90px;
     }
+
+    .heroImageWrapper img {
+      max-width: 80%;
+      top: 0;
+    }
   }
 
 
-  /*biała-sekcja*/
+  /*sekcja za zaletami pod banerem*/
 
 
-.segment-bialy {
+.benefitsSection {
   display: flex;
   justify-content: center;
-  margin: 6rem 0rem;
-  scroll-margin-top: 270px; 
+  margin: 6rem 0;
+  scroll-margin-top: 270px;
 }
 
-.segment-bialy-box {
+.benefitsContainer {
   background-color: #ffffff;
   max-width: 1200px;
   padding: 4.4rem;
@@ -446,21 +379,21 @@
   border-radius: 30px;
 }
 
-.segment-bialy-box .wstep{
+.benefitsIntro {
   display: flex;
   text-align: left;
   margin-bottom: 90px;
   align-items: center;
 }
 
-.lewa-kolumna-wstep{
+.benefitsIntroLeft {
   display: flex;
   align-items: center;
   padding-right: 3rem;
   padding-left: 1.5rem;
 }
 
-.lewa-kolumna-wstep a {
+.logoWrapper {
   font-weight: 900;
   font-size: 1.4rem;
   line-height: 25px;
@@ -471,12 +404,16 @@
   align-items: center;
 }
 
-.lewa-kolumna-wstep img {
+.logoWrapper img {
   width: 105px;
   min-width: 105px;
 }
 
-.prawa-kolumna-wstep{
+.logoText {
+  margin-left: 1rem;
+}
+
+.benefitsIntroRight {
   color: #313131;
   font-size: 25px;
   font-weight: 300;
@@ -487,19 +424,19 @@
   padding-right: 1rem;
 }
 
-.kafelki {
+.benefitsGrid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.kafelek {
+.benefitCard {
   flex: 1 1 160px;
   max-width: 130px;
   text-align: center;
 }
 
-.kafelek p{
+.benefitCard p {
   color: #313131;
   font-weight: 500;
   font-size: 16px;
@@ -507,7 +444,7 @@
   margin-top: 20px;
 }
 
-.ikona {
+.benefitIcon {
   font-size: 4.5rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
@@ -519,119 +456,119 @@
 }
 
 /*reponsywność*/
-  /* LAPTOP (1025px–1366px) */
- @media (max-width: 1440px) {
-    .segment-bialy-box {
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
+/* ========== LAPTOP (max 1440px) ========== */
+@media (max-width: 1440px) {
+  .benefitsContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* ========== TABLET (max 1025px) ========== */
+@media (max-width: 1025px) {
+  .benefitsSection {
+    margin: 4rem 1rem;
   }
 
-/* TABLET (768px–1024px) */
-  @media (max-width: 1025px) {
-    .segment-bialy {
-      margin: 4rem 1rem;
-    }
-
-    .segment-bialy-box {
-      padding: 3rem 2rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-
-    .segment-bialy-box .wstep {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .lewa-kolumna-wstep {
-      padding: 0;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-      text-align: left;
-    }
-
-    .lewa-kolumna-wstep a {
-      font-size: 1.3rem;
-    }
-
-    .prawa-kolumna-wstep {
-      font-size: 20px;
-      line-height: 30px;
-      border-left: none;
-      padding: 0px 5rem;
-    }
-
-    .kafelki{
-      row-gap: 3rem;
-    }
-
-    .kafelek {
-      flex: 1 1 240px;
-      max-width: 240px;
-    }
-
-    .ikona {
-      font-size: 4rem;
-      padding: 0.6rem;
-    }
-
-    .kafelek p {
-      font-size: 15px;
-    }
+  .benefitsContainer {
+    padding: 3rem 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-/* TELEFON (do 767px) */
-  @media (max-width: 767px) {
-    .segment-bialy-box {
-      padding: 2.5rem 1rem;
-    }
-
-    .lewa-kolumna-wstep img {
-      width: 90px;
-      min-width: 90px;
-    }
-
-    .lewa-kolumna-wstep a {
-      font-size: 1rem;
-      line-height: 20px;
-    }
-
-    .prawa-kolumna-wstep {
-      font-size: 17px;
-      line-height: 26px;
-      padding: 0px 2rem;
-    }
-
-    .kafelki {
-      flex-wrap: wrap;
-    }
-
-    .kafelek {
-      flex: 1 1 45%;
-      max-width: 45%;
-    }
-
-    .ikona {
-      font-size: 3.2rem;
-      padding: 0.5rem;
-    }
-
-    .kafelek p {
-      font-size: 14px;
-    }
+  .benefitsIntro {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
+  .benefitsIntroLeft {
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
 
-/*sekcja-uslugi*/
+  .logoWrapper {
+    font-size: 1.3rem;
+  }
 
-.sekcja-uslugi {
+  .benefitsIntroRight {
+    font-size: 20px;
+    line-height: 30px;
+    border-left: none;
+    padding: 0 5rem;
+  }
+
+  .benefitsGrid {
+    row-gap: 3rem;
+  }
+
+  .benefitCard {
+    flex: 1 1 240px;
+    max-width: 240px;
+  }
+
+  .benefitIcon {
+    font-size: 4rem;
+    padding: 0.6rem;
+  }
+
+  .benefitCard p {
+    font-size: 15px;
+  }
+}
+
+/* ========== MOBILE (max 767px) ========== */
+@media (max-width: 767px) {
+  .benefitsContainer {
+    padding: 2.5rem 1rem;
+  }
+
+  .logoWrapper img {
+    width: 90px;
+    min-width: 90px;
+  }
+
+  .logoWrapper {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .benefitsIntroRight {
+    font-size: 17px;
+    line-height: 26px;
+    padding: 0 2rem;
+  }
+
+  .benefitsGrid {
+    flex-wrap: wrap;
+  }
+
+  .benefitCard {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .benefitIcon {
+    font-size: 3.2rem;
+    padding: 0.5rem;
+  }
+
+  .benefitCard p {
+    font-size: 14px;
+  }
+}
+
+
+/*sekcja z usługami*/
+
+.servicesSection {
   padding: 6rem 2rem;
   background: #202020;
 }
 
-.uslugi-grid {
+.servicesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
@@ -639,7 +576,7 @@
   margin: 0 auto;
 }
 
-.kafelek-uslugi {
+.serviceCard {
   background: #373636;
   padding: 2rem;
   border-radius: 1rem;
@@ -647,134 +584,137 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.06);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s;
 }
-.kafelek-uslugi:hover {
+
+.serviceCard:hover {
   transform: translateY(-5px);
 }
-.kafelek-uslugi .ikona {
+
+.serviceIcon {
   font-size: 3.8rem;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 1rem;
   background-color: white;
   color: #cf0031;
+  padding: 0.7rem;
+  border-radius: 10px;
 }
 
-.kafelek-uslugi h3 {
+.serviceCard h3 {
   font-size: 1.4rem;
   margin: 0;
 }
 
-.kafelek-uslugi p {
+.serviceCard p {
   font-size: 0.95rem;
   line-height: 1.4;
   color: #a1a1a1;
 }
 
-/*responsywność*/
+/* ========== RESPONSIVE ========== */
 
-/* Laptopy (<= 1680px) */
+/* Laptop (<= 1440px) */
 @media (max-width: 1440px) {
-  .sekcja-uslugi {
+  .servicesSection {
     padding: 5rem 1.5rem;
   }
 
-  .uslugi-grid {
+  .servicesGrid {
     gap: 1.5rem;
   }
 
-  .kafelek-uslugi {
+  .serviceCard {
     padding: 1.5rem;
     gap: 0.8rem;
   }
 
-  .kafelek-uslugi .ikona {
+  .serviceIcon {
     font-size: 3.2rem;
     margin-bottom: 0.8rem;
   }
 
-  .kafelek-uslugi h3 {
+  .serviceCard h3 {
     font-size: 1.2rem;
   }
 
-  .kafelek-uslugi p {
+  .serviceCard p {
     font-size: 0.9rem;
     line-height: 1.4;
   }
 }
 
-/* TABLET (768px–1024px) */
+/* Tablet (<= 1025px) */
 @media (max-width: 1025px) {
-  .sekcja-uslugi {
+  .servicesSection {
     padding: 4rem 1rem;
   }
 
-  .uslugi-grid {
+  .servicesGrid {
     gap: 1.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
-  .kafelek-uslugi {
+  .serviceCard {
     padding: 1.5rem;
     gap: 0.75rem;
   }
 
-  .kafelek-uslugi .ikona {
+  .serviceIcon {
     font-size: 3rem;
     margin-bottom: 0.8rem;
   }
 
-  .kafelek-uslugi h3 {
+  .serviceCard h3 {
     font-size: 1.2rem;
   }
 
-  .kafelek-uslugi p {
+  .serviceCard p {
     font-size: 0.9rem;
   }
 }
 
-/* TELEFON (do 767px) */
+/* Mobile (<= 767px) */
 @media (max-width: 767px) {
-  .sekcja-uslugi {
+  .servicesSection {
     padding: 3rem 1rem;
   }
 
-  .uslugi-grid {
+  .servicesGrid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
 
-  .kafelek-uslugi {
+  .serviceCard {
     padding: 1.2rem;
   }
 
-  .kafelek-uslugi .ikona {
+  .serviceIcon {
     font-size: 2.5rem;
   }
 
-  .kafelek-uslugi h3 {
+  .serviceCard h3 {
     font-size: 1.1rem;
   }
 
-  .kafelek-uslugi p {
+  .serviceCard p {
     font-size: 0.85rem;
   }
 }
 
 
-/*funkcje-segment*/
+/*sekcja z funkcjami*/
 
-
-.funkcje-segment {
+.featuresSection {
   max-width: 1300px;
   margin: 5rem auto;
   padding: 0 2rem;
   text-align: center;
 }
 
-.funkcje-segment h2 {
+.featuresSection h2 {
   font-size: 2.3rem;
   color: #ffffff;
   font-weight: 700;
@@ -782,7 +722,7 @@
   margin-bottom: 1rem;
 }
 
-.funkcje-segment .lead {
+.leadText {
   color: #ccc;
   margin-bottom: 5rem;
   font-size: 21px;
@@ -792,7 +732,7 @@
   margin-right: auto;
 }
 
-.funkcje-grid {
+.featuresGrid {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -800,180 +740,190 @@
   gap: 3rem;
 }
 
-.funkcje-lewa, .funkcje-prawa {
+.featuresLeft,
+.featuresRight {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-.funkcja {
+.featureItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   text-align: left;
-  align-items: flex-start;
 }
 
-.funkcja .ikona {
+.featureIcon {
   font-size: 3rem;
   color: #ffffff;
   flex-shrink: 0;
   background: linear-gradient(197deg, rgb(133, 2, 32) 30%, rgb(207 0 49) 100%);
-  margin: 0px;
+  margin: 0;
+  padding: 0.7rem;
+  border-radius: 10px;
 }
 
-.funkcja p {
+.featureItem p {
   margin: 0;
   font-size: 17px;
   color: #ddd;
 }
 
-.funkcja b {
+.featureItem b {
   color: #fff;
 }
 
-.funkcje-obraz {
+.featuresImage {
   flex: 1 1 280px;
   text-align: center;
 }
 
-.funkcje-obraz img {
+.featuresImage img {
   max-width: 370px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.funkcja.odwrotnie {
+.reversed {
   flex-direction: row-reverse;
   text-align: right;
   align-items: flex-start;
 }
 
-/*reponsywność*/
+/* ========== RESPONSIVE ========== */
 
-/* Laptopy (<= 1680px) */
+/* Laptop (≤1440px) */
 @media (max-width: 1440px) {
-  .funkcje-grid {
+  .featuresGrid {
     gap: 1rem;
   }
 
-  .funkcje-segment {
+  .featuresSection {
     padding: 0 1.5rem;
   }
 
-  .funkcje-segment h2 {
+  .featuresSection h2 {
     font-size: 2rem;
   }
 
-  .funkcje-segment .lead {
+  .leadText {
     font-size: 19px;
     margin-bottom: 4rem;
   }
 
-  .funkcja .ikona {
+  .featureIcon {
     font-size: 2.6rem;
   }
 
-  .funkcja p {
+  .featureItem p {
     font-size: 16px;
   }
 
-  .funkcje-lewa,
-  .funkcje-prawa {
+  .featuresLeft,
+  .featuresRight {
     gap: 3rem;
   }
 
-  .funkcje-obraz img {
+  .featuresImage img {
     max-width: 300px;
   }
 }
 
-/* TABLET (768px–1024px) */
+/* Tablet (≤1024px) */
 @media (max-width: 1024px) {
-  .funkcje-grid {
-    flex-direction: column;
+  .featuresGrid {
     align-items: center;
     gap: 4rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .funkcje-lewa,
-  .funkcje-prawa {
+  .featuresLeft,
+  .featuresRight {
     width: 100%;
     gap: 2.5rem;
     align-items: center;
   }
 
-  .funkcja,
-  .funkcja.odwrotnie {
+  .featureItem,
+  .reversed {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
 
-  .funkcja .ikona {
-    font-size: 2.6rem;
+  .featureIcon {
+    font-size: 3.2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .funkcja p {
+  .featureItem p {
     font-size: 16px;
   }
 
-  .funkcje-obraz {
+  .featuresImage {
     order: 1;
   }
 
-  .funkcje-obraz img {
+  .featuresImage img {
     max-width: 280px;
   }
 
-  .funkcje-segment h2 {
+  .featuresSection h2 {
     font-size: 2rem;
   }
 
-  .funkcje-segment .lead {
+  .leadText {
     font-size: 18px;
     margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/* TELEFON (do 767px) */
+/* Mobile (≤767px) */
 @media (max-width: 767px) {
-  .funkcje-segment {
+  .featuresSection {
     padding: 0 1rem;
   }
 
-  .funkcje-segment h2 {
+  .featuresSection h2 {
     font-size: 1.7rem;
   }
 
-  .funkcje-segment .lead {
+  .leadText {
     font-size: 16px;
   }
 
-  .funkcja .ikona {
-    font-size: 2.3rem;
+  .featureIcon {
+    font-size: 3rem;
   }
 
-  .funkcja p {
+  .featureItem p {
     font-size: 15px;
   }
 
-  .funkcje-obraz img {
+  .featuresImage img {
     max-width: 240px;
   }
 }
 
-/*sekcja-mapa*/
 
-.sekcja-mapa {
+/*sekcja gdzie informuję, że działam w całej Polsce*/
+
+.coverageSection {
   padding: 1rem 2rem;
   padding-top: 7rem;
-  background: linear-gradient(187deg, rgb(32 32 32) 30% 30%, rgb(55 54 54) 100%);
+  background: linear-gradient(187deg, rgb(32 32 32) 30%, rgb(55 54 54) 100%);
 }
 
-.mapa-grid {
+.coverageGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -982,25 +932,25 @@
   margin: 0 auto;
 }
 
-.tekst-lewo{
+.coverageText {
   margin-top: -70px;
 }
 
-.tekst-lewo h2 {
+.coverageText h2 {
   font-size: 2rem;
   color: #ffffff;
   font-weight: 700;
   line-height: 40px;
 }
 
-.tekst-lewo p {
+.coverageText p {
   color: #ccc;
   margin-bottom: 1.6rem;
   font-size: 21px;
   font-weight: 100;
 }
 
-.grafika-prawo img {
+.coverageImage img {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
@@ -1008,80 +958,78 @@
   padding-right: 1rem;
 }
 
-.tekst-widget {
+.coverageHeading {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.minus{
+.iconLine {
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.tekst-widget .ikona-minus {
+.iconMinus {
   font-size: 2rem;
   color: #cf0031;
   flex-shrink: 0;
 }
 
+/* ========== RESPONSIVE ========== */
 
-/*responsywność*/
-
-/* Laptopy (<= 1680px) */
+/* Laptop (≤1440px) */
 @media (max-width: 1440px) {
-  .tekst-lewo h2 {
+  .coverageText h2 {
     font-size: 2rem;
     line-height: 36px;
   }
 
-  .tekst-lewo p {
+  .coverageText p {
     font-size: 18px;
     line-height: 30px;
   }
 
-  .tekst-widget .ikona-minus {
+  .iconMinus {
     font-size: 1.7rem;
   }
 
-  .grafika-prawo img {
+  .coverageImage img {
     max-width: 90%;
     padding: 0;
   }
 }
 
-/* TABLET I TELEFON (do 1024px) */
+/* Tablet + Mobile (≤1024px) */
 @media (max-width: 1024px) {
-  .mapa-grid {
+  .coverageGrid {
     grid-template-columns: 1fr;
     gap: 2rem;
-    text-align: center;
   }
 
-  .tekst-lewo {
+  .coverageText {
     margin-top: 0;
   }
 
-  .tekst-lewo h2 {
+  .coverageText h2 {
     font-size: 1.8rem;
     line-height: 32px;
   }
 
-  .tekst-lewo p {
+  .coverageText p {
     font-size: 17px;
     margin-bottom: 1.5rem;
   }
 
-  .tekst-widget {
+  .coverageHeading {
     justify-content: center;
   }
 
-  .tekst-widget .ikona-minus {
+  .iconMinus {
     font-size: 1.5rem;
   }
 
-  .grafika-prawo img {
+  .coverageImage img {
     max-width: 50%;
     padding: 0;
     margin-left: auto;
@@ -1089,36 +1037,34 @@
   }
 }
 
-/* TELEFON (do 767px) */
+/* Mobile (≤767px) */
 @media (max-width: 767px) {
-  .sekcja-mapa {
+  .coverageSection {
     padding: 4rem 1rem;
   }
 
-  .tekst-lewo h2 {
+  .coverageText h2 {
     font-size: 1.6rem;
     line-height: 30px;
   }
 
-  .tekst-lewo p {
+  .coverageText p {
     font-size: 15.5px;
   }
 
-  .tekst-widget .ikona-minus {
+  .iconMinus {
     font-size: 1.3rem;
   }
 
-  .grafika-prawo img {
+  .coverageImage img {
     border-radius: 0.75rem;
     max-width: 80%;
   }
 }
 
+/* call to action, zachęta do kontaktu*/
 
-
-/* zachęta */
-
-.zacheta-kontakt {
+.ctaSection {
   background: #373636;
   color: white;
   text-align: center;
@@ -1126,21 +1072,21 @@
   margin-top: 1rem;
 }
 
-.zacheta-kontakt h2 {
+.ctaSection h2 {
   font-size: 2.55rem;
   color: #ffffff;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
-.zacheta-kontakt p {
+.ctaSection p {
   color: #ccc;
   margin-bottom: 2rem;
   font-size: 21px;
   font-weight: 100;
 }
 
-.formularz {
+.ctaForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1149,7 +1095,7 @@
   margin-top: 4rem;
 }
 
-.formularz input {
+.ctaForm input {
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   border: none;
@@ -1160,7 +1106,7 @@
   color: black;
 }
 
-.formularz button {
+.ctaForm button {
   padding: 1.25rem 2.25rem;
   font-size: 1.2rem;
   border-radius: 0.5rem;
@@ -1171,117 +1117,118 @@
   transition: all 0.5s ease;
 }
 
-.formularz button:hover {
+.ctaForm button:hover {
   box-shadow: 0 4px 60px #cf0031;
 }
 
-.albo {
+.ctaAltAction {
   margin-top: 1rem;
 }
 
-.albo span {
+.ctaAltAction span {
   color: #9ca3af;
   margin-right: 0.5rem;
 }
 
-.btn-link {
+.ctaLinkButton {
   color: #cf0031;
   text-decoration: underline;
   font-weight: bold;
 }
 
+/* ========== RESPONSIVE ========== */
 
-  /* Laptopy (<= 1680px) */
-  @media (max-width: 1440px) {
-    .zacheta-kontakt h2 {
-      font-size: 2.2rem;
-    }
+/* Laptop (≤1440px) */
+@media (max-width: 1440px) {
+  .ctaSection h2 {
+    font-size: 2.2rem;
+  }
 
-    .zacheta-kontakt p {
-      font-size: 18px;
-    }
+  .ctaSection p {
+    font-size: 18px;
+  }
 
-    .formularz {
-      margin-top: 3.5rem;
-    }
+  .ctaForm {
+    margin-top: 3.5rem;
+  }
 
-    .formularz input {
-      padding: 0.95rem 1rem;
-      font-size: 23px;
-    }
+  .ctaForm input {
+    padding: 0.95rem 1rem;
+    font-size: 23px;
+  }
 
-    .formularz button {
-      padding: 1.2rem 2.15rem;
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
+  .ctaForm button {
+    padding: 1.2rem 2.15rem;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
 }
 
-  /* Tablet i telefon - zmniejszamy padding i ikony */
-  @media (max-width: 1025px) {
-    .zacheta-kontakt h2 {
-      font-size: 2.2rem;
-    }
-
-    .zacheta-kontakt p {
-      font-size: 18px;
-    }
-
-    .formularz {
-      margin-top: 3.5rem;
-    }
-
-    .formularz input {
-      padding: 0.95rem 1rem;
-      font-size: 20px;
-    }
-
-    .formularz button {
-      padding: 1.1rem 2.15rem;
-      font-size: 1.0rem;
-      margin-top: 10px;
-    }
+/* Tablet + Mobile (≤1025px) */
+@media (max-width: 1025px) {
+  .ctaSection h2 {
+    font-size: 2.2rem;
   }
-  
-  /* Telefon - optymalizacja siatki i ikon */
-  @media (max-width: 767px) {
 
-    .zacheta-kontakt h2 {
-      font-size: 1.9rem;
-    }
-
-    .zacheta-kontakt p {
-      font-size: 16px;
-      max-width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .zacheta-kontakt {
-      padding: 2.5rem 2rem;
-    }
-
-    .formularz {
-      gap: 0.75rem;
-      margin-top: 3rem;
-    }
-
-    .formularz input {
-      font-size: 18px;
-      padding: 0.95rem 0.9rem;
-      max-width: 300px;
-    }
-
-    .formularz button {
-      font-size: 1rem;
-      padding: 0.9rem 1.6rem;
-    }
-
-    .albo span {
-      font-size: 14px;
-    }
-
-    .btn-link {
-      font-size: 14px;
-    }
+  .ctaSection p {
+    font-size: 18px;
   }
+
+  .ctaForm {
+    margin-top: 3.5rem;
+  }
+
+  .ctaForm input {
+    padding: 0.95rem 1rem;
+    font-size: 20px;
+  }
+
+  .ctaForm button {
+    padding: 1.1rem 2.15rem;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .ctaSection {
+    padding: 2.5rem 2rem;
+  }
+
+  .ctaSection h2 {
+    font-size: 1.9rem;
+  }
+
+  .ctaSection p {
+    font-size: 16px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ctaForm {
+    gap: 0.75rem;
+    margin-top: 3rem;
+  }
+
+  .ctaForm input {
+    font-size: 18px;
+    padding: 0.95rem 0.9rem;
+    max-width: 300px;
+  }
+
+  .ctaForm button {
+    font-size: 1rem;
+    padding: 0.9rem 1.6rem;
+  }
+
+  .ctaAltAction span {
+    font-size: 14px;
+  }
+
+  .ctaLinkButton {
+    font-size: 14px;
+  }
+}
+

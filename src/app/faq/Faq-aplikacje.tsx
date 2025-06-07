@@ -31,7 +31,7 @@ export default function FaqAplikacje() {
     <section className="faq-section">
       <div className="faq-container animacja-z-dolu">
         <h2 className="faq-title">
-          <span>FAQ</span> Aplikacje webowe
+          <span style={{ color: "#2582f5" }}>FAQ</span> Aplikacje webowe
         </h2>
         <FaqList questions={questions} />
       </div>

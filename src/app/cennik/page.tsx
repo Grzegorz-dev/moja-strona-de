@@ -1,7 +1,8 @@
 'use client';
 
-import "./cennik.css";
+import styles from './cennik.module.css';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Cennik() {
     <Head>
@@ -23,23 +24,23 @@ export default function Cennik() {
       <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
     </Head>
     return (
-      <main>
-        <section className="baner">
-          <div className="baner-tresc">
+      <main className={styles.container}>
+        <section className={styles.banner}>
+          <div className={styles.content}>
             <h1>Cennik</h1>
             <p>Oferta dopasowana do Twoich możliwości i celów.</p>
           </div>
         </section>
 
-        <section className="pricing-section">
-          <div className="cennik-tytul">
+        <section className={styles.pricingSection}>
+          <div className={styles.pricingTitle}>
             <h2>Strony internetowe</h2>
           </div>
-          <h3 className="section-title">Nie każdy biznes potrzebuje rozbudowanego serwisu za kilka tysięcy złotych – i to jest OK.
+          <h3 className={styles.subtitle}>Nie każdy biznes potrzebuje rozbudowanego serwisu za kilka tysięcy złotych – i to jest OK.
             Dlatego oferuję różne warianty: od prostych stron typu One Page, przez rozbudowane serwisy, po ekonomiczne strony oparte na sprawdzonych szablonach.
             Dobierz opcję, która odpowiada Twojemu budżetowi i celom.
           </h3>
-          <div className="pricing-grid">
+          <div className={styles.pricingGrid}>
             {[
               {
                 title: "OnePage",
@@ -134,25 +135,25 @@ export default function Cennik() {
                 ],
               },
             ].map((plan, i) => (
-              <div className="pricing-card" key={i}>
-                <div className="card-header">
-                  <h3 className="cennik-tytuł">{plan.title}</h3>
-                  <p className="desc">{plan.desc}</p>
+              <div className={styles.pricingCard} key={i}>
+                <div className={styles.headerCard}>
+                  <h3 className={styles.pricingGridTitle}>{plan.title}</h3>
+                  <p className={styles.desc}>{plan.desc}</p>
                 </div>
-                <div className="price">
+                <div className={styles.price}>
                   {plan.price.startsWith("od") ? (
                     <>
-                      <span className="from">od</span>{" "}
+                      <span className={styles.from}>od</span>{" "}
                       {plan.price.replace("od", "").trim()}
                     </>
                   ) : (
                     plan.price
                   )}
                 </div>
-                <ul className="features">
+                <ul className={styles.features}>
                   {plan.features.map((f, j) => (
                     <li key={j}>
-                      <span className="check">✔</span>
+                      <span className={styles.check}>✔</span>
                       <span>{f}</span>
                     </li>
                   ))}
@@ -160,18 +161,20 @@ export default function Cennik() {
               </div>
             ))}
           </div>
-          <div className="contact-cta">
+          <div className={styles.contactCta}>
             <p>Podane ceny i pakiety mają charakter orientacyjny. Każdy projekt wyceniam indywidualnie na podstawie zakresu, potrzeb i budżetu klienta.
               Jeśli masz inny pomysł, mniejszy budżet lub chcesz stworzyć coś unikalnego - napisz, a wspólnie dobierzemy najlepsze rozwiązanie.</p>
-            <a href="/kontakt" className="contact-button">Skontaktuj się</a>
+            <Link href="/kontakt" className={styles.contactBtn}>Skontaktuj się</Link>
           </div>
 
-          <div className="cennik-tytul">
+
+          <div className={styles.pricingTitle}>
             <h2>Sklepy internetowe</h2>
           </div>
-          <h3 className="section-title">Sklep internetowy to w praktyce strona internetowe + sklep (funkcje sprzedażowe). Zawiera m.in. stronę główną, zakładki o firmie, kontakt, a także panel zarządzania produktami, koszyk, płatności i wiele więcej.
+          <h3 className={styles.subtitle}>Sklep internetowy to w praktyce strona internetowe + sklep (funkcje sprzedażowe). 
+              Zawiera m.in. stronę główną, zakładki o firmie, kontakt, a także panel zarządzania produktami, koszyk, płatności i wiele więcej.
           </h3>
-          <div className="pricing-grid">
+          <div className={styles.pricingGrid}>
             {[
               {
                 title: "Sklep Start",
@@ -274,25 +277,25 @@ export default function Cennik() {
                 ],
               },
             ].map((plan, i) => (
-              <div className="pricing-card" key={i}>
-                <div className="card-header">
-                  <h3 className="cennik-tytuł">{plan.title}</h3>
-                  <p className="desc">{plan.desc}</p>
+              <div className={styles.pricingCard} key={i}>
+                <div className={styles.headerCard}>
+                  <h3 className={styles.pricingTitle}>{plan.title}</h3>
+                  <p className={styles.desc}>{plan.desc}</p>
                 </div>
-                <div className="price">
+                <div className={styles.price}>
                   {plan.price.startsWith("od") ? (
                     <>
-                      <span className="from">od</span>{" "}
+                      <span className={styles.from}>od</span>{" "}
                       {plan.price.replace("od", "").trim()}
                     </>
                   ) : (
                     plan.price
                   )}
                 </div>
-                <ul className="features">
+                <ul className={styles.features}>
                   {plan.features.map((f, j) => (
                     <li key={j}>
-                      <span className="check">✔</span>
+                      <span className={styles.check}>✔</span>
                       <span>{f}</span>
                     </li>
                   ))}
@@ -300,23 +303,23 @@ export default function Cennik() {
               </div>
             ))}
           </div>
-          <div className="contact-cta">
+          <div className={styles.contactCta}>
             <p>Podane ceny i pakiety mają charakter orientacyjny. Każdy projekt wyceniam indywidualnie na podstawie zakresu, potrzeb i budżetu klienta.
               Jeśli masz inny pomysł, mniejszy budżet lub chcesz stworzyć coś unikalnego - napisz, a wspólnie dobierzemy najlepsze rozwiązanie.</p>
-            <a href="/kontakt" className="contact-button">Skontaktuj się</a>
+            <Link href="/kontakt" className={styles.contactBtn}>Skontaktuj się</Link>
           </div>
 
-          <div className="cennik-tytul">
+           <div className={styles.pricingTitle}>
             <h2>Aplikacje</h2>
           </div>
-          <h3 className="section-title">Tworzenie aplikacji wcale nie musi kosztować 100 tysięcy złotych ani trwać pół roku. Dostosowuję rozwiązania do Twoich 
+          <h3 className={styles.subtitle}>Tworzenie aplikacji wcale nie musi kosztować 100 tysięcy złotych ani trwać pół roku. Dostosowuję rozwiązania do Twoich 
             potrzeb i budżetu – wspólnie znajdziemy wersję, która spełni swoje zadanie i nie przekroczy założonych kosztów.
             Możesz zacząć od lekkiego MVP lub tańszej alternatywy dla aplikacji mobilnej czyli aplikacji webowej.
           </h3>
-          <div className="pricing-grid">
+          <div className={styles.pricingGrid}>
             {[
               {
-                title: "Aplikacja Webowa",
+                 title: "Aplikacja Webowa",
                 desc: "Panel dostępny z poziomu przeglądarki",
                 price: "od 4990 zł",
                 features: [
@@ -356,26 +359,27 @@ export default function Cennik() {
                   "Krótki czas realizacji i niższy budżet",
                 ],
               },
+          
             ].map((plan, i) => (
-              <div className="pricing-card" key={i}>
-                <div className="card-header">
-                  <h3 className="cennik-tytuł">{plan.title}</h3>
-                  <p className="desc">{plan.desc}</p>
+              <div className={styles.pricingCard} key={i}>
+                <div className={styles.headerCard}>
+                  <h3 className={styles.pricingTitle}>{plan.title}</h3>
+                  <p className={styles.desc}>{plan.desc}</p>
                 </div>
-                <div className="price">
+                <div className={styles.price}>
                   {plan.price.startsWith("od") ? (
                     <>
-                      <span className="from">od</span>{" "}
+                      <span className={styles.from}>od</span>{" "}
                       {plan.price.replace("od", "").trim()}
                     </>
                   ) : (
                     plan.price
                   )}
                 </div>
-                <ul className="features">
+                <ul className={styles.features}>
                   {plan.features.map((f, j) => (
                     <li key={j}>
-                      <span className="check">✔</span>
+                      <span className={styles.check}>✔</span>
                       <span>{f}</span>
                     </li>
                   ))}
@@ -383,10 +387,10 @@ export default function Cennik() {
               </div>
             ))}
           </div>
-          <div className="contact-cta">
-            <p>Ceny mają charakter orientacyjny. Każdą aplikację wyceniam indywidualnie na podstawie funkcji, technologii i skali projektu.
-              Jeśli nie wiesz, który wariant będzie dla Ciebie najlepszy, napisz do mnie – wspólnie coś wymyślimy.</p>
-            <a href="/kontakt" className="contact-button">Skontaktuj się</a>
+          <div className={styles.contactCta}>
+            <p>Podane ceny i pakiety mają charakter orientacyjny. Każdy projekt wyceniam indywidualnie na podstawie zakresu, potrzeb i budżetu klienta.
+              Jeśli masz inny pomysł, mniejszy budżet lub chcesz stworzyć coś unikalnego - napisz, a wspólnie dobierzemy najlepsze rozwiązanie.</p>
+            <Link href="/kontakt" className={styles.contactBtn}>Skontaktuj się</Link>
           </div>
         </section>
       </main>

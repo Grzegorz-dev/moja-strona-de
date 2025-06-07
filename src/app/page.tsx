@@ -1,6 +1,6 @@
 'use client';
 
-import "./home.css";
+import styles from './home.module.css';
 import {
   FaArrowRight,
   FaRocket, 
@@ -21,6 +21,7 @@ import {
 } from "react-icons/fa";
 import Faq from './faq/Faq'
 import Head from 'next/head';
+import Link from "next/link";
 
 export default function Home() {
   <Head>
@@ -44,224 +45,251 @@ export default function Home() {
     <meta name="twitter:creator" content="@twojTwitter" />
   </Head>
   return (
-    <main>
-      <section className="baner">
-        <div className="baner-kolumny">
-          <div className="baner-lewo">
+    <main className={styles.container}>
+      <section className={styles.heroSection}>
+        <div className={styles.heroContentWrapper}>
+          <div className={styles.heroText}>
             <h1>Aplikacje mobilne i strony internetowe</h1>
-            <p>Tworzę szybkie, skalowalne strony i aplikacje dla firm – od prostych wizytówek i sklepów internetowych po rozbudowane systemy webowe i mobilne.</p>
-            <a href="#segment-bialy" className="przycisk-strzalka">
+            <p>
+              Tworzę szybkie, skalowalne strony i aplikacje dla firm – od prostych wizytówek i sklepów internetowych po rozbudowane systemy webowe i mobilne.
+            </p>
+            <a href="#benefitsSection" className={styles.arrowButton}>
               <span>Zobacz więcej</span>
-              <div className="strzalka-kolo">
+              <div className={styles.arrowIconCircle}>
                 <FaArrowRight />
               </div>
             </a>
           </div>
-          <div className="baner-prawo">
+          <div className={styles.heroImageWrapper}>
             <img src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" loading="lazy" />
-            <div className="okienko-container-1">
-              <img className="okienko-1" src="/images/grafika-karta-elementu-interfejsu.webp" alt="Przykład karty interfejsu aplikacji dla firm – grafika z ikoną i opisem funkcji" width="408" height="239" loading="lazy"/>
+            
+            <div className={styles.overlayBoxOne}>
+              <img className={styles.overlayImageOne} src="/images/grafika-karta-elementu-interfejsu.webp" alt="Przykład karty interfejsu aplikacji dla firm – grafika z ikoną i opisem funkcji" width="408" height="239" loading="lazy" />
             </div>
-            <div className="okienko-container-2">
-              <img className="okienko-2" src="/images/grafika-statystyki-uzytkownika-aplikacji.webp" alt="Panel statystyk użytkownika w aplikacji dla firm – analiza danych i realizacja celów" width="404" height="245" loading="lazy"/>
+
+            <div className={styles.overlayBoxTwo}>
+              <img className={styles.overlayImageTwo} src="/images/grafika-statystyki-uzytkownika-aplikacji.webp" alt="Panel statystyk użytkownika w aplikacji dla firm – analiza danych i realizacja celów" width="404" height="245" loading="lazy" />
             </div>
-            <div className="okienko-container-3">
-              <img className="okienko-3" src="/images/grafika-integracja-zewnetrzna-api-chmura.webp" alt="Integracja aplikacji dla firm z zewnętrznymi systemami i chmurą – synchronizacja danych" width="404" height="398" loading="lazy"/>
+
+            <div className={styles.overlayBoxThree}>
+              <img className={styles.overlayImageThree} src="/images/grafika-integracja-zewnetrzna-api-chmura.webp" alt="Integracja aplikacji dla firm z zewnętrznymi systemami i chmurą – synchronizacja danych" width="404" height="398" loading="lazy" />
             </div>
-            <div className="okienko-container-4">
-              <img className="okienko-4" src="/images/grafika-ocena-uzytkownikow-aplikacja.webp" alt="System ocen w aplikacji firmowej – pięć gwiazdek i wysoka ocena użytkowników" width="404" height="135" loading="lazy"/>
+
+            <div className={styles.overlayBoxFour}>
+              <img className={styles.overlayImageFour} src="/images/grafika-ocena-uzytkownikow-aplikacja.webp" alt="System ocen w aplikacji firmowej – pięć gwiazdek i wysoka ocena użytkowników" width="404" height="135" loading="lazy" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="segment-bialy animacja-z-dolu" id="segment-bialy">
-        <div className="segment-bialy-box">
-          <div className="wstep">
-            <div className="lewa-kolumna-wstep">
-              <a href="/" className="logo-wrapper" aria-label="Strona główna – Grzegorz Słowiaczek">
-                <img src="/images/logo-grzegorz-slowiaczek-ciemne.webp" alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji" width="768" height="427" loading="lazy"/>
-                <span className="logo-text">
-                  Grzegorz<br/>
-                  Słowiaczek
-                </span>
+      <section className={`${styles.benefitsSection} fadeInUp`} id="benefitsSection">
+        <div className={styles.benefitsContainer}>
+          <div className={styles.benefitsIntro}>
+            <div className={styles.benefitsIntroLeft}>
+              <a href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
+                <img src="/images/logo-grzegorz-slowiaczek-ciemne.webp" alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji" width="768" height="427" loading="lazy" />
+                <span className={styles.logoText}>Grzegorz<br/>Słowiaczek</span>
               </a>
             </div>
-            <div className="prawa-kolumna-wstep">
+            <div className={styles.benefitsIntroRight}>
               <p>
                 Tworzę strony internetowe i aplikacje dla firm, które nie tylko dobrze wyglądają — ale są szybkie, intuicyjne i dopasowane do Twoich celów biznesowych.
               </p>
             </div>
           </div>
-          <div className="kafelki">
-            <div className="kafelek">
-              <FaRocket className="ikona" />
+
+          <div className={styles.benefitsGrid}>
+            <div className={styles.benefitCard}>
+              <FaRocket className={styles.benefitIcon} />
               <p>Szybkie ładowanie</p>
             </div>
-            <div className="kafelek">
-              <FaMobileAlt className="ikona" />
+            <div className={styles.benefitCard}>
+              <FaMobileAlt className={styles.benefitIcon} />
               <p>Dostosowanie do smartfonów</p>
             </div>
-            <div className="kafelek">
-              <FaUserShield className="ikona" />
+            <div className={styles.benefitCard}>
+              <FaUserShield className={styles.benefitIcon} />
               <p>Bezpieczeństwo danych</p>
             </div>
-            <div className="kafelek">
-              <FaCogs className="ikona" />
+            <div className={styles.benefitCard}>
+              <FaCogs className={styles.benefitIcon} />
               <p>Łatwa rozbudowa</p>
             </div>
-            <div className="kafelek">
-              <FaChartLine className="ikona" />
+            <div className={styles.benefitCard}>
+              <FaChartLine className={styles.benefitIcon} />
               <p>Skuteczność i wyniki</p>
             </div>
-            <div className="kafelek">
-              <FaChartLine className="ikona" />
+            <div className={styles.benefitCard}>
+              <FaChartLine className={styles.benefitIcon} />
               <p>Skuteczność i wyniki</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="sekcja-uslugi">
-        <div className="uslugi-grid animacja-z-dolu">
-          <a href="/stronywww" className="kafelek-uslugi">
-            <FaLaptopCode className="ikona" />
+
+      <section className={styles.servicesSection}>
+        <div className={`${styles.servicesGrid} fadeInUp`}>
+          <Link href="/stronywww" className={styles.serviceCard}>
+            <FaLaptopCode className={styles.serviceIcon} />
             <h3>Strony internetowe</h3>
             <p>Nowoczesne, responsywne strony idealnie dopasowane do Twojej branży.</p>
-          </a>
-          <a href="/stronywww" className="kafelek-uslugi">
-            <FaShoppingCart className="ikona" />
+          </Link>
+
+          <Link href="/stronywww" className={styles.serviceCard}>
+            <FaShoppingCart className={styles.serviceIcon} />
             <h3>Sklepy internetowe</h3>
             <p>Funkcjonalne sklepy z prostym panelem zarządzania i szybkim działaniem.</p>
-          </a>
-          <a href="/aplikacje" className="kafelek-uslugi">
-            <FaMobileAlt className="ikona" />
+          </Link>
+
+          <Link href="/stronywww" className={styles.serviceCard}>
+            <FaMobileAlt className={styles.serviceIcon} />
             <h3>Aplikacje mobilne</h3>
             <p>Tworzę nowoczesne aplikacje mobilne na Android i iOS.</p>
-          </a>
-          <a href="/kontakt" className="kafelek-uslugi">
-            <FaPaintBrush className="ikona" />
+          </Link>
+
+          <Link href="/stronywww" className={styles.serviceCard}>
+            <FaPaintBrush className={styles.serviceIcon} />
             <h3>Grafika</h3>
             <p>Logo, identyfikacja wizualna, banery i materiały reklamowe.</p>
-          </a>
-          <a href="/kontakt" className="kafelek-uslugi">
-            <FaSearch className="ikona" />
+          </Link>
+
+          <Link href="/stronywww" className={styles.serviceCard}>
+            <FaSearch className={styles.serviceIcon} />
             <h3>Pozycjonowanie</h3>
             <p>Skuteczne SEO — Twoja strona widoczna w Google.</p>
-          </a>
-          <a href="/kontakt" className="kafelek-uslugi">
-            <FaTools className="ikona" />
+          </Link>
+
+          <Link href="/stronywww" className={styles.serviceCard}>
+            <FaTools className={styles.serviceIcon} />
             <h3>Wsparcie techniczne</h3>
             <p>Stała opieka nad stroną, kopie zapasowe i aktualizacje.</p>
-          </a>
+          </Link>
         </div>
       </section>
 
-    <section className="funkcje-segment animacja-z-dolu">
-      <h2>Funkcje, które robią różnicę</h2>
-      <p className="lead">
-        Twoja aplikacja lub strona to coś więcej niż ładny wygląd. Dbam o techniczne detale, które realnie wpływają na wygodę, bezpieczeństwo i rozwój Twojego biznesu.
-      </p>
-      <div className="funkcje-grid">
-        <div className="funkcje-lewa">
-          <div className="funkcja odwrotnie">
-            <FaMobileAlt className="ikona" />
-            <p><b>Responsywny interfejs</b><br />Dostosowany do każdego urządzenia</p>
-          </div>
-          <div className="funkcja odwrotnie">
-            <FaRocket className="ikona" />
-            <p><b>Błyskawiczne ładowanie</b><br />Zoptymalizowane pod wydajność</p>
-          </div>
-          <div className="funkcja odwrotnie">
-            <FaLock className="ikona" />
-            <p><b>Bezpieczne logowanie</b><br />Aktualne standardy zabezpieczeń</p>
-          </div>
-        </div>
 
-        <div className="funkcje-obraz">
-          <img src="/images/grafika-aplikacja-mobilna-zarzadzanie-zadaniami.webp" alt="Widok aplikacji mobilnej dla firm – zarządzanie zadaniami, kalendarz i funkcje użytkownika na ekranie smartfona" width="525" height="879" loading="lazy"/>
-        </div>
+      <section className={`${styles.featuresSection} fadeInUp`}>
+        <h2>Funkcje, które robią różnicę</h2>
+        <p className={styles.leadText}>
+          Twoja aplikacja lub strona to coś więcej niż ładny wygląd. Dbam o techniczne detale, które realnie wpływają na wygodę, bezpieczeństwo i rozwój Twojego biznesu.
+        </p>
 
-        <div className="funkcje-prawa">
-          <div className="funkcja">
-            <FaSyncAlt className="ikona" />
-            <p><b>Integracje z systemami</b><br />Automatyczne połączenia z API</p>
-          </div>
-          <div className="funkcja">
-            <FaUsers className="ikona" />
-            <p><b>Zarządzanie użytkownikami</b><br />Role, konta, uprawnienia</p>
-          </div>
-          <div className="funkcja">
-            <FaChartBar className="ikona" />
-            <p><b>Statystyki i analizy</b><br />Wgląd w dane i skuteczność</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section className="sekcja-mapa animacja-z-dolu">
-      <div className="mapa-grid">
-        <div className="tekst-lewo">
-          <div className="tekst-widget">
-            <div className="minus">
-              <FaMinus className="ikona-minus" />
+        <div className={styles.featuresGrid}>
+          <div className={styles.featuresLeft}>
+            <div className={`${styles.featureItem} ${styles.reversed}`}>
+              <FaMobileAlt className={styles.featureIcon} />
+              <p><b>Responsywny interfejs</b><br />Dostosowany do każdego urządzenia</p>
             </div>
+            <div className={`${styles.featureItem} ${styles.reversed}`}>
+              <FaRocket className={styles.featureIcon} />
+              <p><b>Błyskawiczne ładowanie</b><br />Zoptymalizowane pod wydajność</p>
+            </div>
+            <div className={`${styles.featureItem} ${styles.reversed}`}>
+              <FaLock className={styles.featureIcon} />
+              <p><b>Bezpieczne logowanie</b><br />Aktualne standardy zabezpieczeń</p>
+            </div>
+          </div>
+
+          <div className={styles.featuresImage}>
+            <img
+              src="/images/grafika-aplikacja-mobilna-zarzadzanie-zadaniami.webp"
+              alt="Widok aplikacji mobilnej dla firm – zarządzanie zadaniami, kalendarz i funkcje użytkownika na ekranie smartfona"
+              width="525"
+              height="879"
+              loading="lazy"
+            />
+          </div>
+
+          <div className={styles.featuresRight}>
+            <div className={styles.featureItem}>
+              <FaSyncAlt className={styles.featureIcon} />
+              <p><b>Integracje z systemami</b><br />Automatyczne połączenia z API</p>
+            </div>
+            <div className={styles.featureItem}>
+              <FaUsers className={styles.featureIcon} />
+              <p><b>Zarządzanie użytkownikami</b><br />Role, konta, uprawnienia</p>
+            </div>
+            <div className={styles.featureItem}>
+              <FaChartBar className={styles.featureIcon} />
+              <p><b>Statystyki i analizy</b><br />Wgląd w dane i skuteczność</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          
+      <section className={styles.coverageSection}>
+        <div className={`${styles.coverageGrid} fadeInUp`}>
+          <div className={styles.coverageText}>
+            <div className={styles.coverageHeading}>
+              <div className={styles.iconLine}>
+                <FaMinus className={styles.iconMinus} />
+              </div>
               <h2>Strony internetowe i aplikacje dla firm na terenie całej Polski</h2>
             </div>
-          <p>
-            Realizuję projekty z zakresu <strong>tworzenia stron internetowych</strong> i <strong>aplikacji mobilnych</strong> dla firm z całej Polski – bez względu na lokalizację. Dzięki sprawdzonemu procesowi pracy zdalnej i dobrej komunikacji zapewniam <strong>pełną obsługę online</strong> – od wyceny po wdrożenie.
-          </p>
+            <p>
+              Realizuję projekty z zakresu <strong>tworzenia stron internetowych</strong> i <strong>aplikacji mobilnych</strong> dla firm z całej Polski – bez względu na lokalizację. Dzięki sprawdzonemu procesowi pracy zdalnej i dobrej komunikacji zapewniam <strong>pełną obsługę online</strong> – od wyceny po wdrożenie.
+            </p>
+          </div>
+          <div className={styles.coverageImage}>
+            <img
+              src="/images/grafika-polska-zasieg-uslug-strony-aplikacje.webp"
+              alt="Obsługa firm w całej Polsce – mapa kraju z zaznaczonymi lokalizacjami klientów"
+              width="874"
+              height="900"
+              loading="lazy"
+            />
+          </div>
         </div>
-        <div className="grafika-prawo">
-          <img src="/images/grafika-polska-zasieg-uslug-strony-aplikacje.webp" alt="Obsługa firm w całej Polsce – mapa kraju z zaznaczonymi lokalizacjami klientów" width="874" height="900" loading="lazy"/>
+      </section>
+
+      <section className={`${styles.ctaSection} fadeInUp`}>
+        <h2>Masz pytania? Porozmawiajmy!</h2>
+        <p>Wpisz swój numer telefonu – oddzwonię i odpowiem na wszystkie pytania.</p>
+
+        <form
+          className={styles.ctaForm}
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const phone = formData.get("phone");
+
+            const res = await fetch("/api/wycena", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ phone }),
+            });
+
+            const result = await res.json();
+            if (result.ok) {
+              alert("Wycena została wysłana!");
+              e.target.reset();
+            } else {
+              alert("Błąd przy wysyłce. Spróbuj ponownie.");
+            }
+          }}
+        >
+          <input
+            name="phone"
+            type="tel"
+            placeholder="Twój numer telefonu"
+            required
+          />
+          <button type="submit">Darmowa wycena</button>
+        </form>
+
+        <div className={styles.ctaAltAction}>
+          <span>lub</span>
+          <Link href="/kontakt" className={styles.ctaLinkButton}>
+            Przejdź do kontaktu
+          </Link>
         </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section className="zacheta-kontakt animacja-z-dolu">
-      <h2>Masz pytania? Porozmawiajmy!</h2>
-      <p>Wpisz swój numer telefonu – oddzwonię i odpowiem na wszystkie pytania.</p>
-
-      <form
-        className="formularz"
-        onSubmit={async (e) => {
-          e.preventDefault();
-
-          const formData = new FormData(e.target);
-          const phone = formData.get("phone");
-
-          const res = await fetch("/api/wycena", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ phone }),
-          });
-
-          const result = await res.json();
-          if (result.ok) {
-            alert("Wycena została wysłana!");
-            e.target.reset();
-          } else {
-            alert("Błąd przy wysyłce. Spróbuj ponownie.");
-          }
-        }}
-      >
-        <input name="phone" type="tel" placeholder="Twój numer telefonu" required />
-        <button type="submit">Darmowa wycena</button>
-      </form>
-
-
-      <div className="albo">
-        <span>lub</span>
-        <a href="/kontakt" className="btn-link">Przejdź do kontaktu</a>
-      </div>
-    </section>
-
-
-    <Faq />
-
+      <Faq />
     
     </main>
   );

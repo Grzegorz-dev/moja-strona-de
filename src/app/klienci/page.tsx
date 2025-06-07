@@ -1,6 +1,6 @@
 'use client';
 
-import "./klienci.css";
+import styles from './klienci.module.css';
 import {
   FaHeadset,
   FaWrench,
@@ -28,6 +28,7 @@ export default function Klienci() {
       <meta name="twitter:description" content="Zgłoś problem techniczny, zamów aktualizację lub uruchom miesięczną opiekę nad stroną internetową." />
       <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
   </Head>
+
   const [typ, setTyp] = useState<"subskrypcja" | "jednorazowa">("subskrypcja");
 
   useEffect(() => {
@@ -84,152 +85,148 @@ export default function Klienci() {
     }
   };
 
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+
+    const res = await fetch("/api/kontakt", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        message: formData.get("message"),
+      }),
+    });
+
+    const result = await res.json();
+
+    if (result.ok) {
+      alert("Wiadomość została wysłana!");
+      e.currentTarget.reset();
+    } else {
+      alert("Wystąpił błąd. Spróbuj ponownie.");
+    }
+  };
+
 if (!isClient) return null;
   return (
-    <main>
-      <section className="baner">
-        <div className="baner-tresc">
+    <main className={styles.container}>
+      <section className={styles.banner}>
+        <div className={styles.content}>
           <h1>Wsparcie dla Twojej strony</h1>
           <p>Zgłoś problem techniczny, zleć aktualizację lub aktywuj miesięczną opiekę nad stroną.</p>
         </div>
       </section>
 
-      <section className="typy-pomocy">
-        <div className="typy-pomocy-grid">
+      <section className={styles.supportTypes}>
+        <div className={styles.supportTypesGrid}>
           <button
             onClick={() => setTyp("subskrypcja")}
-            className={`przycisk-pomocy ${typ === "subskrypcja" ? "aktywny" : ""}`}
+            className={`${styles.supportButton} ${typ === "subskrypcja" ? styles.active : ""}`}
           >
-            <FaHeadset className="ikona-btn" />
-            <div className="tekst-przycisku">
-              <span className="tytul">STAŁA POMOC</span>
-              <span className="podtytul">Opieka nad stroną</span>
+            <FaHeadset className={styles.iconBtn} />
+            <div className={styles.buttonText}>
+              <span className={styles.title}>STAŁA POMOC</span>
+              <span className={styles.subtitle}>Opieka nad stroną</span>
             </div>
           </button>
           <button
             onClick={() => setTyp("jednorazowa")}
-            className={`przycisk-pomocy ${typ === "jednorazowa" ? "aktywny" : ""}`}
+            className={`${styles.supportButton} ${typ === "jednorazowa" ? styles.active : ""}`}
           >
-            <FaWrench className="ikona-btn" />
-              <div className="tekst-przycisku">
-                <span className="tytul">JEDNORAZOWA POMOC</span>
-                <span className="podtytul">Szybka interwencja techniczna</span>
+            <FaWrench className={styles.iconBtn} />
+            <div className={styles.buttonText}>
+              <span className={styles.title}>JEDNORAZOWA POMOC</span>
+              <span className={styles.subtitle}>Szybka interwencja techniczna</span>
             </div>
           </button>
         </div>
 
         {typ === "subskrypcja" ? (
-          <div className="sekcja-pomoc kolumny-pomoc">
-            <div className="pakiet">
-              <div>
-                <h3>Pomoc techniczna <span>Standard</span></h3>
-                <p className="cena">49zł <span>/ miesięcznie</span></p>
-                <ul>
-                  <li><span className="check">✔</span> Regularne aktualizacje</li>
-                  <li><span className="check">✔</span> Bezpłatna pomoc techniczna</li>
-                  <li><span className="check">✔</span> Optymalizacja prędkości ładowania</li>
-                  <li><span className="check">✔</span> Zabezpieczenie strony www</li>
-                  <li><span className="check">✔</span> Monitoring bezpieczeństwa 24/7</li>
-                  <li><span className="check">✔</span> Kopia plików: co 30 dni</li>
-                  <li><span className="check">✔</span> Raport raz w miesiącu</li>
-                  <li><span className="check">✔</span> Niewielkie modyfikacje treści i wyglądu</li>
-                  <li><span className="check">✔</span> Stały kontakt</li>
-                </ul>
-              </div>
+          <div className={`${styles.supportSection} ${styles.columns}`}>
+            {/* Standard package */}
+            <div className={styles.package}>
+              <h3>Pomoc techniczna <span>Standard</span></h3>
+              <p className={styles.price}>49zł <span>/ miesięcznie</span></p>
+              <ul>
+                <li><span className={styles.check}>✔</span> Regularne aktualizacje</li>
+                <li><span className={styles.check}>✔</span> Bezpłatna pomoc techniczna</li>
+                <li><span className={styles.check}>✔</span> Optymalizacja prędkości ładowania</li>
+                <li><span className={styles.check}>✔</span> Zabezpieczenie strony www</li>
+                <li><span className={styles.check}>✔</span> Monitoring bezpieczeństwa 24/7</li>
+                <li><span className={styles.check}>✔</span> Kopia plików: co 30 dni</li>
+                <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
+                <li><span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu</li>
+                <li><span className={styles.check}>✔</span> Stały kontakt</li>
+              </ul>
               <button onClick={() => handleSubscribe("price_1RWDolFlXiRA14LCpgfIFXQu")}>Wybierz Standard</button>
             </div>
 
-            <div className="pakiet">
-              <div>
-                <h3>Pomoc techniczna <span>Premium</span></h3>
-                <p className="cena">79zł <span>/ miesięcznie</span></p>
-                <ul>
-                  <li><span className="check">✔</span> Priorytetowa obsługa zgłoszeń</li>
-                  <li><span className="check">✔</span> Regularne aktualizacje</li>
-                  <li><span className="check">✔</span> Bezpłatna pomoc techniczna</li>
-                  <li><span className="check">✔</span> Optymalizacja prędkości ładowania</li>
-                  <li><span className="check">✔</span> Zabezpieczenie strony www</li>
-                  <li><span className="check">✔</span> Monitoring bezpieczeństwa 24/7</li>
-                  <li><span className="check">✔</span> Kopia plików: co 30 dni</li>
-                  <li><span className="check">✔</span> Kopia bazy danych: co 7 dni</li>
-                  <li><span className="check">✔</span> Raport raz w miesiącu</li>
-                  <li><span className="check">✔</span> Niewielkie modyfikacje treści i wyglądu</li>
-                  <li><span className="check">✔</span> Stały kontakt</li>
-                </ul>
-              </div>
+            {/* Premium package */}
+            <div className={styles.package}>
+              <h3>Pomoc techniczna <span>Premium</span></h3>
+              <p className={styles.price}>79zł <span>/ miesięcznie</span></p>
+              <ul>
+                <li><span className={styles.check}>✔</span> Priorytetowa obsługa zgłoszeń</li>
+                <li><span className={styles.check}>✔</span> Regularne aktualizacje</li>
+                <li><span className={styles.check}>✔</span> Bezpłatna pomoc techniczna</li>
+                <li><span className={styles.check}>✔</span> Optymalizacja prędkości ładowania</li>
+                <li><span className={styles.check}>✔</span> Zabezpieczenie strony www</li>
+                <li><span className={styles.check}>✔</span> Monitoring bezpieczeństwa 24/7</li>
+                <li><span className={styles.check}>✔</span> Kopia plików: co 30 dni</li>
+                <li><span className={styles.check}>✔</span> Kopia bazy danych: co 7 dni</li>
+                <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
+                <li><span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu</li>
+                <li><span className={styles.check}>✔</span> Stały kontakt</li>
+              </ul>
               <button onClick={() => handleSubscribe("price_1RWDp2FlXiRA14LCqfTA0JgJ")}>Wybierz Premium</button>
             </div>
           </div>
         ) : (
-          <div className="sekcja-pomoc kolumny-pomoc">
-            <div className="pakiet">
-              <div>
-                <h3>Jednorazowa pomoc <span>techniczna</span></h3>
-                <p className="cena"><span>od </span>89zł <span>/ cena do ustalenia</span></p>
-                <ul>
-                  <li><span className="check">✔</span> Naprawa strony (np. błędy)</li>
-                  <li><span className="check">✔</span> Wdrożenie certyfikatu SSL</li>
-                  <li><span className="check">✔</span> Zmiany na istniejącej stronie</li>
-                  <li><span className="check">✔</span> Czyszczenie i optymalizacja strony</li>
-                  <li><span className="check">✔</span> Przyspieszenie ładowania strony</li>
-                  <li><span className="check">✔</span> Przeniesienie strony na inny hosting</li>
-                  <li><span className="check">✔</span> Inne</li>
-                </ul>
-              </div>
+          <div className={`${styles.supportSection} ${styles.columns}`}>
+            <div className={styles.package}>
+              <h3>Jednorazowa pomoc <span>techniczna</span></h3>
+              <p className={styles.price}><span>od </span>89zł <span>/ cena do ustalenia</span></p>
+              <ul>
+                <li><span className={styles.check}>✔</span> Naprawa strony (np. błędy)</li>
+                <li><span className={styles.check}>✔</span> Wdrożenie certyfikatu SSL</li>
+                <li><span className={styles.check}>✔</span> Zmiany na istniejącej stronie</li>
+                <li><span className={styles.check}>✔</span> Czyszczenie i optymalizacja strony</li>
+                <li><span className={styles.check}>✔</span> Przyspieszenie ładowania strony</li>
+                <li><span className={styles.check}>✔</span> Przeniesienie strony na inny hosting</li>
+                <li><span className={styles.check}>✔</span> Inne</li>
+              </ul>
             </div>
-            <div className="pakiet">
+
+            <div className={styles.package}>
               <p>
                 Cena jednorazowej pomocy technicznej zależy od rodzaju zgłoszenia. Opisz, z czym masz problem, a ja odezwę się jak najszybciej z wyceną.
                 Możesz również zadzwonić bezpośrednio na numer <strong>883 081 448</strong>.
               </p>
-                <form
-                  className="formularz"
-                  onSubmit={async (e) => {
-                    e.preventDefault(); // zapobiegamy przeładowaniu strony
-
-                    const formData = new FormData(e.target);
-
-                    const res = await fetch("/api/kontakt", {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
-                      body: JSON.stringify({
-                        name: formData.get("name"),
-                        email: formData.get("email"),
-                        phone: formData.get("phone"),
-                        message: formData.get("message"),
-                      }),
-                    });
-
-                    const result = await res.json();
-                    if (result.ok) {
-                      alert("Wiadomość została wysłana!");
-                      e.target.reset(); // czyścimy formularz
-                    } else {
-                      alert("Wystąpił błąd. Spróbuj ponownie.");
-                    }
-                  }}
-                >
-                  <input name="name" type="text" placeholder="Imię i nazwisko" required />
-                  <input name="email" type="email" placeholder="Adres e-mail" required />
-                  <input name="phone" type="tel" placeholder="Numer telefonu" required />
-                  <textarea name="message" placeholder="Opisz swój problem" required />
-
-                  <label className="checkbox-zgoda">
-                    <input type="checkbox" required />
-                    <span>
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}
-                      <a href="/polityka-prywatnosci" target="_blank">polityką prywatności</a>.
-                    </span>
-                  </label>
-
-                  <button type="submit">Wyślij zgłoszenie</button>
-                </form>
+              <form className={styles.form} onSubmit={handleFormSubmit}>
+                <input name="name" type="text" placeholder="Imię i nazwisko" required />
+                <input name="email" type="email" placeholder="Adres e-mail" required />
+                <input name="phone" type="tel" placeholder="Numer telefonu" required />
+                <textarea name="message" placeholder="Opisz swój problem" required />
+                <label className={styles.checkboxConsent}>
+                  <input type="checkbox" required />
+                  <span>
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}
+                    <a href="/polityka-prywatnosci" target="_blank">polityką prywatności</a>.
+                  </span>
+                </label>
+                <button type="submit">Wyślij zgłoszenie</button>
+              </form>
             </div>
           </div>
         )}
       </section>
+
     </main>
   );
 }

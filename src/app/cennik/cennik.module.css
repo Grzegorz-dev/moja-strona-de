@@ -5,98 +5,98 @@
 
 /* Ogólne */
 
-main{
-  background: #373636;
-  /*background: #434242;*/
-  font-family: 'Manrope';
-  box-sizing: border-box
-}
-
-.baner{
-  height: 500px;
-  background: #2f2f2f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.baner-tresc {
-  color: white;
-  max-width: 1100px;
-}
-
-.baner-tresc h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 45px;
-  font-family: 'Inter';
-  margin-bottom: 1rem;
-}
-
-.baner-tresc p {
-  color: #d5d5d5;
-  max-width: 1100px;
-  margin: 0 auto 0rem auto;
-  font-size: 28px;
-  font-weight: 100;
-  line-height: 35px;
-}
-
-
-/* Laptopy (<= 1680px) */
-@media (max-width: 1440px) {
-  .baner{
-    height: 450px;
+  .container{
+    background: #373636;
+    /*background: #434242;*/
+    font-family: 'Manrope';
+    box-sizing: border-box
   }
 
-  .baner-tresc h1 {
-    font-size: 2.4rem;
+  .banner {
+    height: 500px;
+    background: #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden;
   }
 
-  .baner-tresc p {
-    font-size: 22px;
-  }
-}
-  
-/* Tablet (<= 1023px) */
-@media (max-width: 1025px) {
-  .baner{
-    height: 420px;
+  .content {
+    color: white;
+    max-width: 1100px;
+    padding-top: 30px;
   }
 
-  .baner-tresc h1 {
-    font-size: 2.4rem;
-    line-height: 40px;
+  .content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 45px;
+    font-family: 'Inter';
+    margin-bottom: 1rem;
   }
 
-  .baner-tresc p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
-
-/* Smartfony (<= 767px) */
-@media (max-width: 767px) {
-  .baner{
-    height: 350px;
+  .content p {
+    color: #d5d5d5;
+    max-width: 1100px;
+    margin: 0 auto 0rem auto;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 35px;
   }
 
-  .baner-tresc h1 {
-    font-size: 2.2rem;
-    line-height: 36px;
+  /* Laptops (<= 1680px) */
+  @media (max-width: 1440px) {
+    .banner {
+      height: 450px;
+    }
+
+    .content h1 {
+      font-size: 2.4rem;
+    }
+
+    .content p {
+      font-size: 22px;
+    }
   }
 
-  .baner-tresc p {
-    font-size: 16px;
-    line-height: 28px;
-  }
-}
+  /* Tablets (<= 1025px) */
+  @media (max-width: 1025px) {
+    .banner {
+      height: 420px;
+    }
 
-.pricing-section {
+    .content h1 {
+      font-size: 2.4rem;
+      line-height: 40px;
+    }
+
+    .content p {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  /* Smartphones (<= 767px) */
+  @media (max-width: 767px) {
+    .banner {
+      height: 350px;
+    }
+
+    .content h1 {
+      font-size: 2.2rem;
+      line-height: 36px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+.pricingSection {
   padding: 2rem;
   text-align: center;
   max-width: 1300px;
@@ -105,7 +105,7 @@ main{
   margin-top: 2rem;
 }
 
-.section-title {
+.subtitle {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -116,13 +116,13 @@ main{
   font-weight: 500;
 }
 
-.pricing-grid {
+.pricingGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
-.pricing-card {
+.pricingCard {
   background: white;
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -130,14 +130,14 @@ main{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.pricing-card h3 {
+.pricingCard h3 {
   font-size: 1.5rem;
   font-weight: 900;
   margin-bottom: 0.6rem;
   line-height: 27px;
 }
 
-.pricing-card .desc {
+.pricingCard .desc {
   font-size: 1rem;
   margin-bottom: 1rem;
   color: #757575;
@@ -145,7 +145,7 @@ main{
   line-height: 20px;
 }
 
-.pricing-card .price {
+.pricingCard .price {
   font-size: 2.3rem;
   font-weight: bold;
   color: #cf0031;
@@ -182,13 +182,13 @@ main{
   font-size: 1.1rem;
 }
 
-.contact-cta {
+.contactCta {
   margin-top: 2rem;
   margin-bottom: 6rem;
   text-align: center;
 }
 
-.contact-cta p {
+.contactCta p {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -199,7 +199,7 @@ main{
   font-weight: 500;
 }
 
-.contact-button {
+.contactBtn {
   padding: 1.2rem 2.2rem;
   font-size: 1.1rem;
   border-radius: 0.5rem;
@@ -211,17 +211,21 @@ main{
   margin-top: 2rem;
 }
 
-.contact-button:hover {
+.contactBtn:hover {
   box-shadow: 0 4px 60px #cf0031;
 }
 
-.cennik-tytul{
-  color: white;
+.pricingTitle{
+  color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 2.1rem;
 }
 
-.card-header {
+.pricingGridTitle{
+  color: rgb(36, 36, 36);
+}
+
+.headerCard {
   min-height: 90px;
   display: flex;
   flex-direction: column;
@@ -238,32 +242,32 @@ main{
 
 /* Tablet (<= 1023px) */
 @media (max-width: 1025px) {
-  .pricing-section {
+  .pricingSection {
     padding: 2rem 1.5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .cennik-tytul {
+  .pricingTitle {
     font-size: 1.8rem;
   }
 
-  .section-title {
+  .subtitle {
     font-size: 14px;
     margin-bottom: 2rem;
   }
 
-  .pricing-card h3 {
+  .pricingCard h3 {
     font-size: 1.3rem;
   }
 
-  .pricing-card .desc {
+  .pricingCard .desc {
     font-size: 0.95rem;
     line-height: 1.5rem;
   }
 
-  .pricing-card .price {
+  .pricingCard .price {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -272,11 +276,11 @@ main{
     font-size: 0.85rem;
   }
 
-  .contact-cta p {
+  .contactCta p {
     font-size: 14px;
   }
 
-  .contact-button {
+  .contactBtn {
     font-size: 1rem;
     padding: 1rem 2rem;
   }
@@ -284,32 +288,32 @@ main{
 
 /* Smartfony (<= 767px) */
 @media (max-width: 767px) {
-  .pricing-section {
+  .pricingSection {
     padding: 2rem 1.5rem;
     max-width: 440px;
   }
 
-  .card-header {
+  .headerCard {
     margin-bottom: 0rem;
   }
 
-  .cennik-tytul {
+  .pricingTitle {
     font-size: 1.9rem;
   }
 
-  .section-title {
+  .subtitle {
     font-size: 13.5px;
   }
 
-  .pricing-card h3 {
+  .pricingCard h3 {
     font-size: 1.7rem;
   }
 
-  .pricing-card .desc {
+  .pricingCard .desc {
     font-size: 1rem;
   }
 
-  .pricing-card .price {
+  .pricingCard .price {
     font-size: 2.5rem;
     margin-top: 0rem;
     margin-bottom: 2.6rem;
@@ -323,11 +327,11 @@ main{
     font-size: 0.95rem;
   }
 
-  .contact-cta p {
+  .contactCta p {
     font-size: 13.5px;
   }
 
-  .contact-button {
+  .contactBtn {
     font-size: 0.95rem;
     padding: 0.9rem 1.8rem;
   }

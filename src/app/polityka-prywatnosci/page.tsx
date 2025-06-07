@@ -86,15 +86,15 @@ export default function PolitykaPrywatnosci() {
         </ul>
 
         <h3>3. Zarządzanie cookies</h3>
-        <p>Możesz samodzielnie zarządzać plikami cookies:
+        <p>Możesz samodzielnie zarządzać plikami cookies:</p>
           <ul>
             <li>zmieniając ustawienia w przeglądarce,</li>
             <li>lub klikając „Odrzuć ciasteczka” przy pierwszym wejściu na stronę.</li>
           </ul>
-          Brak zmiany ustawień oznacza zgodę na ich użycie.</p>
+        <p>Brak zmiany ustawień oznacza zgodę na ich użycie.</p>
 
         <h2>Kontakt</h2>
-        <p>W sprawach związanych z ochroną prywatności możesz napisać na:<br />
+        <p>W sprawach związanych z ochroną prywatności możesz napisać na:<br/>
         <strong>kontakt@slowiaczek.pl</strong></p>
       </section>
     </main>

@@ -1,6 +1,6 @@
 'use client';
 
-import "./kontakt.css";
+import styles from './kontakt.module.css';
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -27,28 +27,28 @@ export default function Kontakt() {
       <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
     </Head>
     return (
-      <main>
-        <section className="baner">
-          <div className="baner-tresc">
+      <main className={styles.container}>
+        <section className={styles.banner}>
+          <div className={styles.content}>
             <h1>Zapraszam do kontaktu</h1>
             <p>Masz pytania, pomysł na projekt albo potrzebujesz wyceny? Wypełnij formularz lub napisz bezpośrednio — odpowiem najszybciej jak to możliwe.</p>
           </div>
         </section>
 
-        <section className="sekcja-pomoc kolumny-pomoc">
-            <div className="kontakt">
+        <section className={`${styles.supportSection} ${styles.supportColumns}`}>
+            <div className={styles.contactBlock}>
               <div>
                 <h3>Dane <span>kontaktowe</span></h3>
                 <p>Preferujesz bezpośredni kontakt? Zadzwoń lub napisz — jestem dostępny od poniedziałku do piątku w godzinach 9:00–17:00.</p>
                 <ul>
                   <li>
-                    <span className="ikona-kontakt">
+                    <span className={styles.contactIcon}>
                       <FaPhoneAlt />
                     </span>
                     +48 888 888 555
                   </li>
                   <li>
-                    <span className="ikona-kontakt">
+                    <span className={styles.contactIcon}>
                       <FaEnvelope />
                     </span>
                     kontakt@slowiaczek.pl
@@ -56,12 +56,12 @@ export default function Kontakt() {
                 </ul>
               </div>
             </div>
-            <div className="kontakt">
+            <div className={styles.contactBlock}>
               <h3>Formularz <span>kontaktowy</span></h3>
               <p>Zostaw swoje dane i krótki opis sprawy — odezwę się, by omówić szczegóły i zaproponować najlepsze rozwiązanie.</p>
               <p></p>
                 <form
-                  className="formularz"
+                  className={styles.form}
                   onSubmit={async (e) => {
                     e.preventDefault(); // zapobiegamy przeładowaniu strony
 
@@ -94,7 +94,7 @@ export default function Kontakt() {
                   <input name="phone" type="tel" placeholder="Numer telefonu" required />
                   <textarea name="message" placeholder="Wiadomość" required />
 
-                  <label className="checkbox-zgoda">
+                  <label className={styles.checkboxConsent}>
                     <input type="checkbox" required />
                     <span>
                       Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}

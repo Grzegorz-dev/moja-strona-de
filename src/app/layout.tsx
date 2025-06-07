@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import './blog/blog.css';
+import './blog/blog.module.css';
 import Menu from "./Menu";
-import AnimationWrapper from "./AnimationWrapper"; // ⬅️ dodane
+import AnimationWrapper from "./AnimationWrapper";
+import Link from 'next/link';
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -36,14 +37,14 @@ export default function RootLayout({
 
               <div className="footer-center">
                 <ul>
-                  <li><a href="/">Strona główna</a></li>
-                  <li><a href="/stronywww">Strony WWW</a></li>
-                  <li><a href="/aplikacje">Aplikacje</a></li>
-                  <li><a href="/projekty">Projekty</a></li>
-                  <li><a href="/klienci">Dla klientów</a></li>
-                  <li><a href="/cennik">Cennik</a></li>
-                  <li><a href="/blog">Blog</a></li>
-                  <li><a href="/kontakt">Kontakt</a></li>
+                  <li><Link href="/">Strona główna</Link></li>
+                  <li><Link href="/stronywww">Strony WWW</Link></li>
+                  <li><Link href="/aplikacje">Aplikacje</Link></li>
+                  <li><Link href="/projekty">Projekty</Link></li>
+                  <li><Link href="/klienci">Dla klientów</Link></li>
+                  <li><Link href="/cennik">Cennik</Link></li>
+                  <li><Link href="/blog">Blog</Link></li>
+                  <li><Link href="/kontakt">Kontakt</Link></li>
                 </ul>
               </div>
 

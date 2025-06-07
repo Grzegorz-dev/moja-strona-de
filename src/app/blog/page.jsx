@@ -1,6 +1,6 @@
 import { getAllPosts } from "../../../lib/posts";
 import Link from "next/link";
-import "./blog.css";
+import styles from './blog.module.css';
 import Head from 'next/head';
 
 export default async function BlogPage() {
@@ -26,24 +26,24 @@ export default async function BlogPage() {
   const posts = getAllPosts(); // działa bez getStaticProps w App Routerze
 
   return (
-    <main>
-      <section className="baner-blog">
-        <div className="baner-tresc">
+    <main className={styles.container}>
+      <section className={styles.banner}>
+        <div className={styles.content}>
           <h1>Blog</h1>
           <p>Wskazówki, inspiracje i porady dla właścicieli stron, firm i twórców treści.</p>
         </div>
       </section>
 
-      <section className="blog-grid">
+      <section className={styles.blogGrid}>
         {posts.map((post) => (
-            <div className="blog-card" key={post.slug}>
+            <div className={styles.blogCard} key={post.slug}>
             {post.image && (
-                <img src={post.image} alt={post.title} className="blog-card-image" />
+                <img src={post.image} alt={post.title} className={styles.blogCardImage} />
             )}
-            <div className="blog-card-content">
+            <div className={styles.blogCardContent}>
                 <h2>{post.title}</h2>
                 <p>{post.description}</p>
-                <Link href={`/blog/${post.slug}`} className="read-more">
+                <Link href={`/blog/${post.slug}`} className={styles.readMore}>
                 Czytaj więcej →
                 </Link>
             </div>
