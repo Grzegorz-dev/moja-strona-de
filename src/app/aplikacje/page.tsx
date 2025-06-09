@@ -19,7 +19,7 @@ import {
 import Link from 'next/link';
 import Faq from '../faq/Faq-aplikacje'
 import Image from 'next/image';
-import CtaForm from "../CtaForm";
+import CtaForm from "../CtaFormBlue";
 
 export const metadata = {
   title: "Aplikacje dla firm – webowe i mobilne | Grzegorz Słowiaczek",
