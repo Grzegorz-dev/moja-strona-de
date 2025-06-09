@@ -22,10 +22,17 @@ export default function CtaForm() {
       body: JSON.stringify({ phone }),
     });
 
-    const result = await res.json();
+    let result = null;
+
+    try {
+      result = await res.json();
+    } catch (err) {
+      console.error("Nieprawidłowy JSON:", err);
+    }
+
     setSubmitting(false);
 
-    if (result.ok) {
+    if (res.ok && result?.ok) {
       alert("Wycena została wysłana!");
       target.reset();
     } else {
