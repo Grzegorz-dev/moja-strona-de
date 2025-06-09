@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./KontaktForm.module.css"; // zakładam że CSS zostanie ew. przeklejony
+import styles from "./kontakt.module.css";
 import Link from "next/link";
 
 
