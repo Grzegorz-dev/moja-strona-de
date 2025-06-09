@@ -292,9 +292,6 @@ export default function StronaWWW() {
         <CtaForm />
 
         <div className={styles.ctaAltAction}>
-          <label htmlFor="zgoda">
-            Wyrażam zgodę na <a href="/polityka-prywatnosci" target="_blank">przetwarzanie danych osobowych</a>
-          </label>
           <span>lub</span>
           <Link href="/kontakt" className={styles.ctaLinkButton}>
             Przejdź do kontaktu

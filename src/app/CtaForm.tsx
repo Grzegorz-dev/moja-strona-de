@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from './home.module.css';
+import Link from 'next/link';
 
 export default function CtaForm() {
   const [submitting, setSubmitting] = useState(false);
@@ -46,6 +47,13 @@ export default function CtaForm() {
         placeholder="Twój numer telefonu"
         required
       />
+      <div className={styles.checkbox}>
+        <input type="checkbox" id="zgoda" required />
+          <label htmlFor="zgoda">
+            Wyrażam zgodę na <Link href="/polityka-prywatnosci" target="_blank">przetwarzanie danych osobowych</Link>
+          </label>
+        </div>
+
       <button type="submit" disabled={submitting}>
         {submitting ? "Wysyłanie..." : "Darmowa wycena"}
       </button>
