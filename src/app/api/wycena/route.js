@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req: Request) {
+export async function POST(req) {
   try {
     const body = await req.json();
     const { phone } = body;
@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.zoho.eu", // lub inny SMTP (np. smtp.gmail.com)
+      host: "smtp.zoho.eu",
       port: 465,
       secure: true,
       auth: {
