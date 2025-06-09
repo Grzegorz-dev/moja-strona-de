@@ -1145,6 +1145,11 @@
   font-size: 15px;
 }
 
+.checkbox input{
+  width: auto;
+  margin-right: 0.5rem;
+}
+
 /* ========== RESPONSIVE ========== */
 
 /* Laptop (≤1440px) */
