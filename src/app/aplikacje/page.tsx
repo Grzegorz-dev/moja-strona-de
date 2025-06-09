@@ -1,4 +1,3 @@
-'use client';
 
 import styles from './aplikacje.module.css';
 import {

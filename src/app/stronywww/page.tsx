@@ -1,4 +1,3 @@
-'use client';
 
 import styles from './stronaWww.module.css';
 import {

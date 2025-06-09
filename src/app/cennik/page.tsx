@@ -1,4 +1,3 @@
-'use client';
 
 import styles from './cennik.module.css';
 import Link from 'next/link';
