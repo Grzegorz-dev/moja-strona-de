@@ -57,6 +57,20 @@ export const metadata = {
 };
 
 export default function Home() {
+
+  const handleScroll = () => {
+    const section = document.getElementById('benefitsSection');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'Enter') {
+      handleScroll();
+    }
+  };
+
   return (
     <main className={styles.container}>
       <section className={styles.heroSection}>
@@ -66,12 +80,18 @@ export default function Home() {
             <p>
               Tworzę szybkie, skalowalne strony i aplikacje dla firm – od prostych wizytówek i sklepów internetowych po rozbudowane systemy webowe i mobilne.
             </p>
-            <Link href="#benefitsSection" className={styles.arrowButton}>
+            <div
+              onClick={handleScroll}
+              onKeyDown={handleKeyDown}
+              className={styles.arrowButton}
+              role="button"
+              tabIndex={0}
+            >
               <span>Zobacz więcej</span>
               <div className={styles.arrowIconCircle}>
                 <FaArrowRight />
               </div>
-            </Link>
+            </div>
           </div>
           <div className={styles.heroImageWrapper}>
             <Image src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" loading="lazy" />
