@@ -5,15 +5,8 @@ export async function POST(req) {
     const body = await req.json();
     const { phone } = body;
 
-    if (!phone) {
-      return new Response(JSON.stringify({ ok: false, error: "Brak numeru telefonu" }), {
-        status: 400,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
     const transporter = nodemailer.createTransport({
-      host: "smtp.zoho.eu", // lub Twój SMTP
+      host: "smtp.zoho.eu",
       port: 465,
       secure: true,
       auth: {
@@ -34,12 +27,12 @@ export async function POST(req) {
       headers: { "Content-Type": "application/json" },
     });
   } catch (err) {
-    console.error("Błąd wysyłki:", err);
-
-    return new Response(JSON.stringify({ ok: false, error: "Błąd serwera" }), {
+    console.error("Błąd:", err);
+    return new Response(JSON.stringify({ ok: false }), {
       status: 500,
       headers: { "Content-Type": "application/json" },
     });
   }
 }
+
 
