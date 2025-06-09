@@ -21,6 +21,7 @@ import {
 import Faq from './faq/Faq'
 import Link from "next/link";
 import Image from 'next/image';
+import CtaForm from "./CtaForm"; 
 
 
 export const metadata = {
@@ -259,39 +260,7 @@ export default function Home() {
         <h2>Masz pytania? Porozmawiajmy!</h2>
         <p>Wpisz swój numer telefonu – oddzwonię i odpowiem na wszystkie pytania.</p>
 
-        <form
-          className={styles.ctaForm}
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const target = e.target as HTMLFormElement;
-              const formData = new FormData(target);
-              const phone = formData.get("phone");
-
-              const res = await fetch("/api/wycena", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ phone }),
-              });
-
-              const result = await res.json();
-              if (result.ok) {
-                alert("Wycena została wysłana!");
-                target.reset();
-              } else {
-                alert("Błąd przy wysyłce. Spróbuj ponownie.");
-              }
-            }}
-        >
-          <input
-            name="phone"
-            type="tel"
-            placeholder="Twój numer telefonu"
-            required
-          />
-          <button type="submit">Darmowa wycena</button>
-        </form>
+        <CtaForm />
 
         <div className={styles.ctaAltAction}>
           <span>lub</span>
