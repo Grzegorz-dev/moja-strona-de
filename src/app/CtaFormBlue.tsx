@@ -16,16 +16,21 @@ export default function CtaForm() {
 
     const res = await fetch("/api/wycena", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ phone }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone })
     });
 
-    const result = await res.json();
+    let result = null;
+
+    try {
+      result = await res.json();
+    } catch (err) {
+      console.error("Nieprawidłowy JSON:", err);
+    }
+
     setSubmitting(false);
 
-    if (result.ok) {
+    if (res.ok && result?.ok) {
       alert("Wycena została wysłana!");
       target.reset();
     } else {
@@ -47,5 +52,3 @@ export default function CtaForm() {
     </form>
   );
 }
-
-

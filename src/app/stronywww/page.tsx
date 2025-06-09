@@ -285,7 +285,6 @@ export default function StronaWWW() {
     </section>
 
 
-
       <section className={`${styles.ctaSection} fadeInUp`}>
         <h2>Masz pytania? Porozmawiajmy!</h2>
         <p>Wpisz swój numer telefonu – oddzwonię i odpowiem na wszystkie pytania.</p>

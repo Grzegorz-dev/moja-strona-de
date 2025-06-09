@@ -1,11 +1,16 @@
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req) {
+export async function POST(req: Request) {
   const body = await req.json();
   const { name, email, phone, message } = body;
 
+  if (!name || !email || !phone || !message) {
+    return NextResponse.json({ ok: false, error: "Brak wymaganych pól" }, { status: 400 });
+  }
+
   const transporter = nodemailer.createTransport({
-    host: "smtp.zoho.eu", // lub Twój SMTP
+    host: "mail.slowiaczek.pl",
     port: 465,
     secure: true,
     auth: {
@@ -27,10 +32,11 @@ export async function POST(req) {
       `,
     });
 
-    return new Response(JSON.stringify({ ok: true }));
+    return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("Błąd wysyłki z kontaktu:", err);
-    return new Response(JSON.stringify({ ok: false }), { status: 500 });
+    console.error("❌ Błąd wysyłki z kontaktu:", err);
+    return NextResponse.json({ ok: false, error: "Błąd serwera" }, { status: 500 });
   }
 }
+
 
