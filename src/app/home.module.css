@@ -1136,6 +1136,15 @@
   font-weight: bold;
 }
 
+.checkbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox label{
+  font-size: 15px;
+}
+
 /* ========== RESPONSIVE ========== */
 
 /* Laptop (≤1440px) */
