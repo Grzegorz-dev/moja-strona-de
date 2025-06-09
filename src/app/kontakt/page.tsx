@@ -1,10 +1,10 @@
 
 import styles from './kontakt.module.css';
-import Link from "next/link";
 import {
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
+import KontaktForm from "./KontaktForm";
 
 export const metadata = {
   title: "Kontakt – Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
@@ -69,51 +69,7 @@ export default function Kontakt() {
             <div className={styles.contactBlock}>
               <h3>Formularz <span>kontaktowy</span></h3>
               <p>Zostaw swoje dane i krótki opis sprawy — odezwę się, by omówić szczegóły i zaproponować najlepsze rozwiązanie.</p>
-              <p></p>
-                <form
-                  className={styles.form}
-                    onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
-                      e.preventDefault(); // zapobiegamy przeładowaniu strony
-
-                      const formData = new FormData(e.currentTarget);
-
-                      const res = await fetch("/api/kontakt-glowny", {
-                        method: "POST",
-                        headers: {
-                          "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                          name: formData.get("name"),
-                          email: formData.get("email"),
-                          phone: formData.get("phone"),
-                          message: formData.get("message"),
-                        }),
-                      });
-
-                      const result = await res.json();
-                      if (result.ok) {
-                        alert("Wiadomość została wysłana!");
-                        e.currentTarget.reset(); // czyścimy formularz
-                      } else {
-                        alert("Wystąpił błąd. Spróbuj ponownie.");
-                      }
-                    }}
-                >
-                  <input name="name" type="text" placeholder="Imię" required />
-                  <input name="email" type="email" placeholder="Adres e-mail" required />
-                  <input name="phone" type="tel" placeholder="Numer telefonu" required />
-                  <textarea name="message" placeholder="Wiadomość" required />
-
-                  <label className={styles.checkboxConsent}>
-                    <input type="checkbox" required />
-                    <span>
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}
-                      <Link href="/polityka-prywatnosci" target="_blank">polityką prywatności</Link>.
-                    </span>
-                  </label>
-
-                  <button type="submit">Wyślij zgłoszenie</button>
-                </form>
+              <KontaktForm />
             </div>
           </section>
       </main>
