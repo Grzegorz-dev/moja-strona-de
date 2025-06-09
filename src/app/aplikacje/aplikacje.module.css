@@ -1083,6 +1083,7 @@
   background: #2582f5;
   cursor: pointer;
   transition: all 0.5s ease;
+  margin-top: 20px;
 }
 
 .ctaForm button:hover {
@@ -1103,6 +1104,21 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+.checkbox{
+  display: flex;
+}
+
+.checkbox label{
+  font-size: 15px;
+  color: #ccc;
+}
+
+.checkbox input{
+  width: auto;
+  margin-right: 0.5rem;
+}
+
 
 /* ========== RESPONSIVE ========== */
 
@@ -1128,7 +1144,7 @@
   .ctaForm button {
     padding: 1.2rem 2.15rem;
     font-size: 1.1rem;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 

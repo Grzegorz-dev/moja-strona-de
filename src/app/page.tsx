@@ -16,7 +16,8 @@ import {
   FaUsers,
   FaSyncAlt,
   FaLock,
-  FaMinus
+  FaMinus,
+  FaHeadset
 } from "react-icons/fa";
 import Faq from './faq/Faq'
 import Link from "next/link";
@@ -132,8 +133,8 @@ export default function Home() {
               <p>Skuteczność i wyniki</p>
             </div>
             <div className={styles.benefitCard}>
-              <FaChartLine className={styles.benefitIcon} />
-              <p>Skuteczność i wyniki</p>
+              <FaHeadset className={styles.benefitIcon} />
+              <p>Stała opieka i wsparcie</p>
             </div>
           </div>
         </div>
