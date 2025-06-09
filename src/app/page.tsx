@@ -1,7 +1,6 @@
 
 import styles from './home.module.css';
 import {
-  FaArrowRight,
   FaRocket, 
   FaMobileAlt, 
   FaUserShield,
