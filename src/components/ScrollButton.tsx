@@ -1,7 +1,7 @@
 "use client";
 
 import { FaArrowRight } from 'react-icons/fa';
-import styles from '@/home.module.css';
+import styles from '@/app/home.module.css';
 
 export default function ScrollButton() {
   const handleScroll = () => {
