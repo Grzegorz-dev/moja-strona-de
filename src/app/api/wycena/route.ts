@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import * as nodemailer from "nodemailer";
 
-export async function POST(req) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { phone } = body;
@@ -11,7 +11,7 @@ export async function POST(req) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.zoho.eu",
+      host: "smtp.zoho.eu", // lub inny SMTP (np. smtp.gmail.com)
       port: 465,
       secure: true,
       auth: {
@@ -33,4 +33,3 @@ export async function POST(req) {
     return NextResponse.json({ ok: false, error: "Błąd serwera" }, { status: 500 });
   }
 }
-
