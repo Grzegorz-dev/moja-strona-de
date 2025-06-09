@@ -32,7 +32,7 @@ export default function CtaForm() {
     setSubmitting(false);
 
     if (res.ok && result?.ok) {
-      alert("Wycena została wysłana!");
+      alert("Dziękuję! Oddzwonię do Ciebie wkrótce.");
       target.reset();
     } else {
       alert("Błąd przy wysyłce. Spróbuj ponownie.");
