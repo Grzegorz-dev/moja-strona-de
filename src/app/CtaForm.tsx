@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import styles from './home.module.css';
 
 export default function CtaForm() {
   const [submitting, setSubmitting] = useState(false);
@@ -33,7 +34,7 @@ export default function CtaForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.ctaForm} onSubmit={handleSubmit}>
       <input
         name="phone"
         type="tel"
