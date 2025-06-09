@@ -18,29 +18,39 @@ import {
   FaAdjust
 } from "react-icons/fa";
 import Link from 'next/link';
-import Head from 'next/head';
 import Faq from '../faq/Faq-aplikacje'
 import Image from 'next/image';
 
+export const metadata = {
+  title: "Aplikacje dla firm – webowe i mobilne | Grzegorz Słowiaczek",
+  description:
+    "Projektuję aplikacje dla firm – webowe i mobilne. Szybkie, bezpieczne i skalowalne rozwiązania dopasowane do potrzeb Twojego biznesu.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Aplikacje mobilne i webowe dla firm | Grzegorz Słowiaczek",
+    description:
+      "Tworzę aplikacje na Androida, iOS i przeglądarki – dopasowane do użytkowników i procesów Twojej firmy.",
+    url: "https://slowiaczek.pl/aplikacje",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Aplikacje dla firm – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aplikacje mobilne i webowe dla firm | Grzegorz Słowiaczek",
+    description:
+      "Intuicyjne i skalowalne aplikacje mobilne i webowe – stwórz rozwiązanie dopasowane do Twoich potrzeb biznesowych.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
 export default function Aplikacje() {
-  <Head>
-    <title>Aplikacje dla firm – webowe i mobilne | Grzegorz Słowiaczek</title>
-    <meta name="description" content="Projektuję aplikacje dla firm – webowe i mobilne. Szybkie, bezpieczne i skalowalne rozwiązania dopasowane do potrzeb Twojego biznesu." />
-    <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charSet="UTF-8" />
-
-    <meta property="og:title" content="Aplikacje mobilne i webowe dla firm | Grzegorz Słowiaczek" />
-    <meta property="og:description" content="Tworzę aplikacje na Androida, iOS i przeglądarki – dopasowane do użytkowników i procesów Twojej firmy." />
-    <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-    <meta property="og:url" content="https://slowiaczek.pl/aplikacje" />
-    <meta property="og:type" content="website" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Aplikacje mobilne i webowe dla firm | Grzegorz Słowiaczek" />
-    <meta name="twitter:description" content="Intuicyjne i skalowalne aplikacje mobilne i webowe – stwórz rozwiązanie dopasowane do Twoich potrzeb biznesowych." />
-    <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-  </Head>
     return (
       <main className={styles.container}>
         <section className={`${styles.appBannerSection} animacja-z-dolu`}>

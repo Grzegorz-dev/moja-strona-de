@@ -20,31 +20,42 @@ import {
   FaMinus
 } from "react-icons/fa";
 import Faq from './faq/Faq'
-import Head from 'next/head';
 import Link from "next/link";
 import Image from 'next/image';
 
+
+export const metadata = {
+  title: "Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
+  description:
+    "Tworzę nowoczesne strony internetowe i aplikacje dla firm – mobilne, webowe, szybkie i dostosowane do Twoich celów biznesowych.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
+    description:
+      "Tworzę nowoczesne strony i aplikacje internetowe – szybkie, mobilne, dopasowane do Twoich celów biznesowych.",
+    url: "https://slowiaczek.pl/",
+    siteName: "Grzegorz Słowiaczek – strony i aplikacje dla firm",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Grzegorz Słowiaczek – strony internetowe i aplikacje dla firm",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Strony i aplikacje dla firm | Grzegorz Słowiaczek",
+    description:
+      "Nowoczesne rozwiązania webowe i mobilne dla Twojego biznesu. Od prostych stron po rozbudowane systemy.",
+    creator: "@twojTwitter",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
 export default function Home() {
-  <Head>
-    <title>Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek</title>
-    <meta name="description" content="Tworzę nowoczesne strony internetowe i aplikacje dla firm – mobilne, webowe, szybkie i dostosowane do Twoich celów biznesowych."/>
-    <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charSet="UTF-8" />
-
-    <meta property="og:title" content="Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek" />
-    <meta property="og:description" content="Tworzę nowoczesne strony i aplikacje internetowe – szybkie, mobilne, dopasowane do Twoich celów biznesowych." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://slowiaczek.pl/" />
-    <meta property="og:image" content="https://slowiaczek.pl/images/og-image-home.webp" />
-    <meta property="og:site_name" content="Grzegorz Słowiaczek – strony i aplikacje dla firm" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Strony i aplikacje dla firm | Grzegorz Słowiaczek" />
-    <meta name="twitter:description" content="Nowoczesne rozwiązania webowe i mobilne dla Twojego biznesu. Od prostych stron po rozbudowane systemy." />
-    <meta name="twitter:image" content="https://slowiaczek.pl/images/og-image-home.webp" />
-    <meta name="twitter:creator" content="@twojTwitter" />
-  </Head>
   return (
     <main className={styles.container}>
       <section className={styles.heroSection}>

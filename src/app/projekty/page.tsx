@@ -2,29 +2,40 @@ import styles from './projekty.module.css';
 import {
   FaArrowRight,
 } from "react-icons/fa";
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from "next/link";
 
+
+export const metadata = {
+  title: "Projekty stron internetowych i aplikacji – Grzegorz Słowiaczek",
+  description:
+    "Zobacz wybrane realizacje stron internetowych i aplikacji mobilnych. Nowoczesne projekty dopasowane do różnych branż i urządzeń – portfolio Grzegorza Słowiaczka.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Projekty stron i aplikacji – Grzegorz Słowiaczek",
+    description:
+      "Zobacz moje realizacje stron internetowych i aplikacji – nowoczesne, responsywne i dopasowane do potrzeb różnych branż.",
+    url: "https://slowiaczek.pl/projekty",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Projekty – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projekty stron internetowych i aplikacji – Grzegorz Słowiaczek",
+    description:
+      "Przegląd realizacji: strony internetowe i aplikacje dostosowane do branży, celów i urządzeń.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
 export default function Projekty() {
-    <Head>
-      <title>Projekty stron internetowych i aplikacji – Grzegorz Słowiaczek</title>
-      <meta name="description" content="Zobacz wybrane realizacje stron internetowych i aplikacji mobilnych. Nowoczesne projekty dopasowane do różnych branż i urządzeń – portfolio Grzegorza Słowiaczka."/>
-      <meta name="robots" content="index,follow" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta charSet="UTF-8" />
-
-      <meta property="og:title" content="Projekty stron i aplikacji – Grzegorz Słowiaczek" />
-      <meta property="og:description" content="Zobacz moje realizacje stron internetowych i aplikacji – nowoczesne, responsywne i dopasowane do potrzeb różnych branż." />
-      <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://slowiaczek.pl/projekty" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Projekty stron internetowych i aplikacji – Grzegorz Słowiaczek" />
-      <meta name="twitter:description" content="Przegląd realizacji: strony internetowe i aplikacje dostosowane do branży, celów i urządzeń." />
-      <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-    </Head>
     return (
       <main className={styles.container}>
 

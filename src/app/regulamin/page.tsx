@@ -1,25 +1,35 @@
 import "./regulamin.css";
-import Head from 'next/head';
+
+export const metadata = {
+  title: "Regulamin świadczenia usług | Grzegorz Słowiaczek",
+  description:
+    "Zapoznaj się z regulaminem świadczenia usług w zakresie tworzenia stron internetowych i aplikacji. Jasne zasady współpracy, odpowiedzialności i płatności.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Regulamin świadczenia usług | Grzegorz Słowiaczek",
+    description:
+      "Sprawdź warunki współpracy, realizacji projektów oraz zasady płatności. Regulamin świadczenia usług tworzenia stron WWW i aplikacji.",
+    url: "https://slowiaczek.pl/regulamin",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Regulamin – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Regulamin świadczenia usług | Grzegorz Słowiaczek",
+    description:
+      "Dowiedz się, na jakich zasadach świadczone są usługi tworzenia stron i aplikacji. Transparentne warunki współpracy.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
 
 export default function Regulamin() {
-  <Head>
-    <title>Regulamin świadczenia usług | Grzegorz Słowiaczek</title>
-    <meta name="description" content="Zapoznaj się z regulaminem świadczenia usług w zakresie tworzenia stron internetowych i aplikacji. Jasne zasady współpracy, odpowiedzialności i płatności." />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charSet="UTF-8" />
-
-    <meta property="og:title" content="Regulamin świadczenia usług | Grzegorz Słowiaczek" />
-    <meta property="og:description" content="Sprawdź warunki współpracy, realizacji projektów oraz zasady płatności. Regulamin świadczenia usług tworzenia stron WWW i aplikacji." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://slowiaczek.pl/regulamin" />
-    <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Regulamin świadczenia usług | Grzegorz Słowiaczek" />
-    <meta name="twitter:description" content="Dowiedz się, na jakich zasadach świadczone są usługi tworzenia stron i aplikacji. Transparentne warunki współpracy." />
-    <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-  </Head>
   return (
     <main>
       <section className="regulamin">

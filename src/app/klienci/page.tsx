@@ -6,29 +6,40 @@ import {
   FaWrench,
 } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import Head from 'next/head';
 import Link from "next/link";
 
 
+export const metadata = {
+  title: "Wsparcie techniczne i opieka nad stroną internetową – Grzegorz Słowiaczek",
+  description:
+    "Zgłoś problem techniczny, zleć aktualizację lub aktywuj miesięczną opiekę nad swoją stroną internetową. Szybka i profesjonalna pomoc techniczna dla Twojej firmy.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Pomoc techniczna i opieka nad stroną – Grzegorz Słowiaczek",
+    description:
+      "Stała opieka nad stroną internetową, szybka pomoc techniczna i aktualizacje. Dbam o Twoją witrynę po wdrożeniu.",
+    url: "https://slowiaczek.pl/klienci",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp", // poprawiona ścieżka
+        width: 726,
+        height: 353,
+        alt: "Wsparcie techniczne – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wsparcie techniczne i aktualizacje strony – Grzegorz Słowiaczek",
+    description:
+      "Zgłoś problem techniczny, zamów aktualizację lub uruchom miesięczną opiekę nad stroną internetową.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
+
 export default function Klienci() {
-  <Head>
-      <title>Wsparcie techniczne i opieka nad stroną internetową – Grzegorz Słowiaczek</title>
-      <meta name="description" content="Zgłoś problem techniczny, zleć aktualizację lub aktywuj miesięczną opiekę nad swoją stroną internetową. Szybka i profesjonalna pomoc techniczna dla Twojej firmy."/>
-      <meta name="robots" content="index,follow" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta charSet="UTF-8" />
-
-      <meta property="og:title" content="Pomoc techniczna i opieka nad stroną – Grzegorz Słowiaczek" />
-      <meta property="og:description" content="Stała opieka nad stroną internetową, szybka pomoc techniczna i aktualizacje. Dbam o Twoją witrynę po wdrożeniu." />
-      <meta property="og:image" content="https://slowiaczek.pl/logo-fb.webp" />
-      <meta property="og:url" content="https://slowiaczek.pl/klienci" />
-      <meta property="og:type" content="website" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Wsparcie techniczne i aktualizacje strony – Grzegorz Słowiaczek" />
-      <meta name="twitter:description" content="Zgłoś problem techniczny, zamów aktualizację lub uruchom miesięczną opiekę nad stroną internetową." />
-      <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-  </Head>
 
   const [typ, setTyp] = useState<"subskrypcja" | "jednorazowa">("subskrypcja");
 

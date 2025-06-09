@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import styles from '../blog.module.css';
 import Image from "next/image";
 
+
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({

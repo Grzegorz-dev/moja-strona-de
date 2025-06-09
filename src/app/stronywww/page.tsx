@@ -18,28 +18,39 @@ import {
 } from "react-icons/fa";
 import Link from 'next/link';
 import Faq from '../faq/Faq-strony-www'
-import Head from 'next/head';
 import Image from 'next/image';
 
+
+export const metadata = {
+  title: "Strony internetowe dla firm – nowoczesne i tanie | Grzegorz Słowiaczek",
+  description:
+    "Projektuję strony internetowe dla firm – wizytówki, sklepy i serwisy. Tanie, szybkie i dopasowane do Twoich celów biznesowych.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Strony internetowe dla firm | Nowoczesne i tanie",
+    description:
+      "Wizytówki, sklepy, serwisy – zaprojektowane z myślą o Twoim biznesie. Sprawdź realizacje.",
+    url: "https://slowiaczek.pl/stronywww",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Strony internetowe dla firm – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Strony internetowe dla firm | Grzegorz Słowiaczek",
+    description:
+      "Responsywne, szybkie i dopasowane strony internetowe dla firm z różnych branż.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
 export default function StronaWWW() {
-  <Head>
-    <title>Strony internetowe dla firm – nowoczesne i tanie | Grzegorz Słowiaczek</title>
-    <meta name="description" content="Projektuję strony internetowe dla firm – wizytówki, sklepy i serwisy. Tanie, szybkie i dopasowane do Twoich celów biznesowych."/>
-    <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charSet="UTF-8" />
-
-    <meta property="og:title" content="Strony internetowe dla firm | Nowoczesne i tanie" />
-    <meta property="og:description" content="Wizytówki, sklepy, serwisy – zaprojektowane z myślą o Twoim biznesie. Sprawdź realizacje." />
-    <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-    <meta property="og:url" content="https://slowiaczek.pl/stronywww" />
-    <meta property="og:type" content="website" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Strony internetowe dla firm | Grzegorz Słowiaczek" />
-    <meta name="twitter:description" content="Responsywne, szybkie i dopasowane strony internetowe dla firm z różnych branż." />
-    <meta name="twitter:image" content="https://slowiaczek/images/logo-fb.webp" />
-  </Head>
   return (
     <main className={styles.container}>
       <section className={styles.websitesHeroSection}>

@@ -10,10 +10,6 @@ import Image from 'next/image';
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Moja strona",
-  description: "Projekt",
-};
 
 export default function RootLayout({
   children,

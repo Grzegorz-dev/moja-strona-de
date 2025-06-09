@@ -6,27 +6,37 @@ import {
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
-import Head from 'next/head';
+
+export const metadata = {
+  title: "Kontakt – Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
+  description:
+    "Skontaktuj się ze mną – zapytaj o stronę internetową, aplikację lub wsparcie techniczne. Odpowiadam szybko i konkretnie. Wypełnij formularz lub napisz bezpośrednio.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Skontaktuj się – Grzegorz Słowiaczek",
+    description:
+      "Masz pytanie o stronę WWW lub aplikację? Wypełnij formularz kontaktowy lub napisz bezpośrednio. Oferuję sprawną komunikację i szybkie odpowiedzi.",
+    url: "https://slowiaczek.pl/kontakt",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Kontakt – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kontakt – Grzegorz Słowiaczek | Strony i aplikacje dla firm",
+    description:
+      "Chcesz stronę internetową lub aplikację? Skontaktuj się ze mną – szybko odpowiadam.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
 
 export default function Kontakt() {
-    <Head>
-      <title>Kontakt – Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek</title>
-      <meta name="description" content="Skontaktuj się ze mną – zapytaj o stronę internetową, aplikację lub wsparcie techniczne. Odpowiadam szybko i konkretnie. Wypełnij formularz lub napisz bezpośrednio."/>
-      <meta name="robots" content="index,follow" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta charSet="UTF-8" />
-
-      <meta property="og:title" content="Skontaktuj się – Grzegorz Słowiaczek" />
-      <meta property="og:description" content="Masz pytanie o stronę WWW lub aplikację? Wypełnij formularz kontaktowy lub napisz bezpośrednio. Oferuję sprawną komunikację i szybkie odpowiedzi." />
-      <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-      <meta property="og:url" content="https://slowiaczek.pl/kontakt" />
-      <meta property="og:type" content="website" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Kontakt – Grzegorz Słowiaczek | Strony i aplikacje dla firm" />
-      <meta name="twitter:description" content="Chcesz stronę internetową lub aplikację? Skontaktuj się ze mną – szybko odpowiadam." />
-      <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-    </Head>
     return (
       <main className={styles.container}>
         <section className={styles.banner}>

@@ -1,25 +1,36 @@
 import "./politykaprywatnosci.css";
-import Head from 'next/head';
+
+export const metadata = {
+  title: "Polityka prywatności | Grzegorz Słowiaczek",
+  description:
+    "Zapoznaj się z polityką prywatności dotyczącą przetwarzania danych na stronie internetowej Grzegorza Słowiaczka. Dowiedz się, jakie dane są zbierane i w jakim celu.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Polityka prywatności | Grzegorz Słowiaczek",
+    description:
+      "Zasady przetwarzania danych osobowych, plików cookies i ochrony prywatności użytkowników na stronie Grzegorza Słowiaczka.",
+    url: "https://slowiaczek.pl/polityka-prywatnosci",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Polityka prywatności – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Polityka prywatności | Grzegorz Słowiaczek",
+    description:
+      "Sprawdź, jak dbamy o Twoją prywatność. Przejrzysta polityka ochrony danych osobowych i cookies.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
 
 export default function PolitykaPrywatnosci() {
-  <Head>
-    <title>Polityka prywatności | Grzegorz Słowiaczek</title>
-    <meta name="description" content="Zapoznaj się z polityką prywatności dotyczącą przetwarzania danych na stronie internetowej Grzegorza Słowiaczka. Dowiedz się, jakie dane są zbierane i w jakim celu." />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charSet="UTF-8" />
-
-    <meta property="og:title" content="Polityka prywatności | Grzegorz Słowiaczek" />
-    <meta property="og:description" content="Zasady przetwarzania danych osobowych, plików cookies i ochrony prywatności użytkowników na stronie Grzegorza Słowiaczka." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://slowiaczek.pl/polityka-prywatnosci" />
-    <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Polityka prywatności | Grzegorz Słowiaczek" />
-    <meta name="twitter:description" content="Sprawdź, jak dbamy o Twoją prywatność. Przejrzysta polityka ochrony danych osobowych i cookies." />
-    <meta name="twitter:image" content="https://slowiaczek/images/logo-fb.webp" />
-  </Head>
   return (
     <main>
       <section className="polityka">

@@ -1,28 +1,42 @@
 'use client';
 
 import styles from './cennik.module.css';
-import Head from 'next/head';
 import Link from 'next/link';
 
+
+export const metadata = {
+  title:
+    "Cennik tworzenia stron i aplikacji – strony OnePage, MultiPage, sklepy, aplikacje | Grzegorz Słowiaczek",
+  description:
+    "Poznaj ceny tworzenia stron internetowych i aplikacji. Wybierz opcję dopasowaną do Twoich potrzeb: OnePage, MultiPage, szablony, projekty indywidualne i więcej.",
+  robots: "index,follow",
+  openGraph: {
+    title: "Cennik tworzenia stron i aplikacji – Grzegorz Słowiaczek",
+    description:
+      "Sprawdź ceny tworzenia nowoczesnych stron internetowych i aplikacji – od prostych wizytówek po projekty indywidualne.",
+    url: "https://slowiaczek.pl/cennik",
+    type: "website",
+    images: [
+      {
+        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        width: 726,
+        height: 353,
+        alt: "Cennik – Grzegorz Słowiaczek",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cennik stron internetowych i aplikacji – Grzegorz Słowiaczek",
+    description:
+      "Zobacz pełną ofertę cenową – strony OnePage, MultiPage, szablonowe oraz indywidualne projekty.",
+    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+  },
+};
+
+
 export default function Cennik() {
-    <Head>
-      <title>Cennik tworzenia stron i aplikacji – strony OnePage, MultiPage, sklepy, aplikacje | Grzegorz Słowiaczek</title>
-      <meta name="description" content="Poznaj ceny tworzenia stron internetowych i aplikacji. Wybierz opcję dopasowaną do Twoich potrzeb: OnePage, MultiPage, szablony, projekty indywidualne i więcej."/>
-      <meta name="robots" content="index,follow" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta charSet="UTF-8" />
 
-      <meta property="og:title" content="Cennik tworzenia stron i aplikacji – Grzegorz Słowiaczek" />
-      <meta property="og:description" content="Sprawdź ceny tworzenia nowoczesnych stron internetowych i aplikacji – od prostych wizytówek po projekty indywidualne." />
-      <meta property="og:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-      <meta property="og:url" content="https://slowiaczek.pl/cennik" />
-      <meta property="og:type" content="website" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Cennik stron internetowych i aplikacji – Grzegorz Słowiaczek" />
-      <meta name="twitter:description" content="Zobacz pełną ofertę cenową – strony OnePage, MultiPage, szablonowe oraz indywidualne projekty." />
-      <meta name="twitter:image" content="https://slowiaczek.pl/images/logo-fb.webp" />
-    </Head>
     return (
       <main className={styles.container}>
         <section className={styles.banner}>
