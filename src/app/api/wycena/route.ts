@@ -1,13 +1,14 @@
-export async function POST(req: Request) {
+import { NextRequest } from "next/server";
+
+export async function POST(req: NextRequest) {
   const body = await req.json();
-  console.log("Dane z formularza:", body);
+  const { phone } = body;
+
+  console.log("Numer z formularza:", phone);
 
   return new Response(JSON.stringify({ ok: true }), {
     status: 200,
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: { "Content-Type": "application/json" },
   });
 }
-
 

@@ -16,10 +16,8 @@ export default function CtaForm() {
 
     const res = await fetch("/api/wycena", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ phone }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone })
     });
 
     let result = null;
