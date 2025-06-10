@@ -913,7 +913,7 @@
 }
 
 .integrationTile img {
-  height: 70px;
+  max-height: 70px;
   width: auto;
   transition: filter 0.6s ease;
   margin: 0 auto;
@@ -943,7 +943,6 @@
   }
 
   .integrationTile img {
-    height: 65px;
   }
 }
 
@@ -981,7 +980,6 @@
   }
 
   .integrationTile img {
-    height: 65px;
   }
 
   .minus {
@@ -1024,7 +1022,6 @@
   }
 
   .integrationTile img {
-    height: 45px;
   }
 
   .integrationGrid p {
