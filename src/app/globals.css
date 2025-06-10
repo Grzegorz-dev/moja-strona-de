@@ -256,7 +256,10 @@ body {
 /* Smartfony (<= 767px) */
 @media (max-width: 767px) {
   .menu {
-    padding: 2.5rem 0.5rem;
+    padding: 2rem 0.5rem;
+  }
+  .menu.scrolled {
+    padding: 1.5rem 0rem;
   }
   .logo .logo-text{
     display: none;

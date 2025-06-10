@@ -52,7 +52,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.5rem;
-    /* animation: phoneScale 25s linear infinite; */
+    animation: phoneScale 25s linear infinite;
   }
 
   @keyframes phoneScale {
