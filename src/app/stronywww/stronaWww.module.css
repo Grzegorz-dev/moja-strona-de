@@ -121,7 +121,7 @@
     }
 
     .websitesHeroSection h1 {
-      font-size: 2.2rem;
+      font-size: 1.7rem;
       line-height: 36px;
       margin-top: 2rem;
     }
@@ -229,7 +229,7 @@
   /* Telefony */
   @media (max-width: 767px) {
     .includedFeaturesSection {
-      margin: auto 1.5rem;
+      margin: auto 1rem;
       padding: 40px 20px;
     }
 
@@ -249,7 +249,7 @@
     }
 
     .includedFeaturesSection h2 {
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       line-height: 35px;
       margin-bottom: 1rem;
     }
