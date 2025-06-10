@@ -296,7 +296,7 @@
 /*  TELEFONY max 767px */
 @media (max-width: 767px) {
   .supportColumns {
-    width: 95%;
+    width: 93%;
   }
 
   .supportColumn p{
