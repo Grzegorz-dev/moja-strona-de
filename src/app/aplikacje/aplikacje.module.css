@@ -363,8 +363,9 @@
   @media (max-width: 767px) {
     .appBannerSection {
       padding: 4rem 1rem;
-      height: 85vh;
+      height: 80vh;
       margin: 0 auto 0rem;
+      margin-top: 10px;
     }
 
     .appBannerSection h1 {
@@ -373,7 +374,7 @@
     }
 
     .appBannerSection p {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 28px;
       padding: 0 1rem;
     }
