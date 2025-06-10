@@ -367,7 +367,7 @@
     }
 
     .appBannerSection h1 {
-      font-size: 2.1rem;
+      font-size: 1.7rem;
       line-height: 36px;
     }
 
@@ -543,7 +543,7 @@
   /* Tablet i telefon */
   @media (max-width: 1025px) {
     .appFeaturesSection {
-      padding: 0 2.5rem;
+      padding: 0 0rem;
     }
 
     .appFeaturesBox {
@@ -587,7 +587,7 @@
   /* Smartfony (<= 767px) */
   @media (max-width: 767px) {
     .appFeaturesSection {
-      padding: 0 2.5rem;
+      padding: 0 0rem;
     }
 
     .featuresGrid {
@@ -810,6 +810,9 @@
   }
 
   @media (max-width: 767px) {
+    .appTypesGrid {
+      padding: 4rem 1.5rem;
+    }
     .tekstGraphicGrid {
       padding: 4rem 1.8rem;
     }
