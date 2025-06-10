@@ -330,6 +330,7 @@
   @media (max-width: 767px) {
     .heroSection {
       padding: 2rem 1rem;
+      min-height: 90vh;
     }
 
     .heroContentWrapper {
@@ -474,10 +475,7 @@
 /*reponsywność*/
 /* ========== LAPTOP (max 1440px) ========== */
 @media (max-width: 1440px) {
-  .benefitsContainer {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+
 }
 
 /* ========== TABLET (max 1025px) ========== */
@@ -488,8 +486,6 @@
 
   .benefitsContainer {
     padding: 3rem 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .benefitsIntro {
@@ -538,7 +534,7 @@
 /* ========== MOBILE (max 767px) ========== */
 @media (max-width: 767px) {
   .benefitsContainer {
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .logoWrapper img {
@@ -554,7 +550,7 @@
   .benefitsIntroRight {
     font-size: 17px;
     line-height: 26px;
-    padding: 0 2rem;
+    padding: 0 0.5rem;
   }
 
   .benefitsGrid {
@@ -669,8 +665,6 @@
 
   .servicesGrid {
     gap: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .serviceCard {
@@ -1055,6 +1049,11 @@
 
 /* Mobile (≤767px) */
 @media (max-width: 767px) {
+  .coverageGrid{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .coverageSection {
     padding: 4rem 1rem;
   }
@@ -1160,6 +1159,9 @@
 .checkbox label{
   font-size: 15px;
   color: #ccc;
+  text-align: left;
+  line-height: 20px;
+  margin-left: 5px;
 }
 
 .checkbox input{
@@ -1233,7 +1235,6 @@
 
   .ctaSection p {
     font-size: 16px;
-    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
