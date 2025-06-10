@@ -257,6 +257,9 @@ body {
   .menu {
     padding: 2.5rem 0rem;
   }
+  .logo .logo-text{
+    display: none;
+  }
 }
 
 /*stopka*/
