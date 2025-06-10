@@ -14,7 +14,9 @@
 
   .heroSection {
     padding: 0 2rem;
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .heroContentWrapper {
@@ -23,7 +25,8 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1210px;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 3vh;
   }
 
   .heroText {
@@ -114,7 +117,7 @@
 
   .overlayBoxOne {
     top: 50%;
-    left: 35%;
+    left: 20%;
   }
 
   .overlayBoxTwo {
@@ -225,7 +228,7 @@
   /* ========== LAPTOP (max 1440px) ========== */
   @media (max-width: 1440px) {
     .heroText h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       line-height: 50px;
     }
 
@@ -247,8 +250,20 @@
     .overlayImageTwo,
     .overlayImageThree,
     .overlayImageFour {
-      width: 150px;
-      max-width: 150px;
+      width: 130px;
+      max-width: 130px;
+    }
+
+    .heroSection {
+      min-height: 100vh;
+    }
+
+    .heroContentWrapper {
+      margin-top: -15vh;
+    }
+
+    .heroImageWrapper {
+      max-width: 600px;
     }
   }
 
@@ -523,7 +538,7 @@
 /* ========== MOBILE (max 767px) ========== */
 @media (max-width: 767px) {
   .benefitsContainer {
-    padding: 2.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .logoWrapper img {

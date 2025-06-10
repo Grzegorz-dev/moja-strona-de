@@ -255,7 +255,7 @@ body {
 /* Smartfony (<= 767px) */
 @media (max-width: 767px) {
   .menu {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 0rem;
   }
 }
 
