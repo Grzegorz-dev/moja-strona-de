@@ -825,6 +825,10 @@
 
 /* Mobile (≤767px) */
 @media (max-width: 767px) {
+  .rightColumn {
+    gap: 0.2rem;
+  }
+
   .techContent {
     flex-direction: column;
   }
