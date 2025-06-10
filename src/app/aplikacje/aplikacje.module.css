@@ -543,7 +543,7 @@
   /* Tablet i telefon */
   @media (max-width: 1025px) {
     .appFeaturesSection {
-      padding: 0 0rem;
+      padding: 0 1.5rem;
     }
 
     .appFeaturesBox {
