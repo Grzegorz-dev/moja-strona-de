@@ -244,6 +244,9 @@ body {
   .menu {
     padding: 3.2rem 1rem;
   }
+    .menu.scrolled {
+    padding: 2.0rem 1rem;
+  }
 }
   
 /* Tablet (<= 1023px) */
@@ -251,12 +254,15 @@ body {
   .menu {
     padding: 3.1rem 1rem;
   }
+  .menu.scrolled {
+    padding: 2.0rem 1rem;
+  }
 }
 
 /* Smartfony (<= 767px) */
 @media (max-width: 767px) {
   .menu {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0rem;
   }
   .menu.scrolled {
     padding: 1.5rem 0rem;
