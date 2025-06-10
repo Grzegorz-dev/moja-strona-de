@@ -75,7 +75,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://nieruchomosciszypula.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -90,7 +90,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://kmonoline.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -105,7 +105,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://tabubeauty.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -120,7 +120,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://penthouse-nieruchomosci.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -135,7 +135,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://imperium-dmuchancow.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -150,7 +150,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://atelier-nieruchomosci.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -165,7 +165,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://radcaprawny-szypula.pl/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
@@ -180,7 +180,7 @@ export default function Projekty() {
               loading="lazy"
             />
             <div className={styles.gallerytext}>
-              <a href="https://odjazdowapasieka.pl/" target="_blank" rel="noopener noreferrer">
+              <a href="https://exdach.com/" target="_blank" rel="noopener noreferrer">
                 <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
               </a>
             </div>
