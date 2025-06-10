@@ -275,7 +275,7 @@
 
   .supportColumns {
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1rem;
     max-width: 700px;
   }
 
@@ -296,7 +296,11 @@
 /*  TELEFONY max 767px */
 @media (max-width: 767px) {
   .supportColumns {
-    width: 90%;
+    width: 95%;
+  }
+
+  .supportColumn p{
+    font-size: 15px;
   }
 
   .tytul {
@@ -313,7 +317,7 @@
   }
 
   .contactBlock li {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
 
   .form input,
@@ -329,5 +333,10 @@
     font-size: 0.85rem;
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .kontakt_contactIcon__JVxDw {
+    width: 36px;
+    height: 36px;
   }
 }

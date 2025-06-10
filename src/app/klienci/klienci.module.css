@@ -340,8 +340,7 @@
     margin: 0rem 1rem;
   }
   .supportTypesGrid button{
-    min-width: 100%;
-    margin: 0rem 1rem;
+    min-width: 90%;
   }
 
   .supportButton .title {
