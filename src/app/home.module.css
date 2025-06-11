@@ -100,6 +100,22 @@
     position: relative;
     top: 50px;
     margin-left: auto;
+    animation: phoneScale 17s linear infinite;
+  }
+
+  @keyframes phoneScale {
+    0%, 1% {
+      transform: scale(0);
+    }
+    3% {
+      transform: scale(1);
+    }
+    98% {
+      transform: scale(1);
+    }
+    99%, 100% {
+      transform: scale(0);
+    }
   }
 
   /* === Overlay Elements === */

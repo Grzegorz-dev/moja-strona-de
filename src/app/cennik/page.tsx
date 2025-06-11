@@ -292,7 +292,7 @@ export default function Cennik() {
             ].map((plan, i) => (
               <div className={styles.pricingCard} key={i}>
                 <div className={styles.headerCard}>
-                  <h3 className={styles.pricingTitle}>{plan.title}</h3>
+                  <h3 className={styles.pricingGridTitle}>{plan.title}</h3>
                   <p className={styles.desc}>{plan.desc}</p>
                 </div>
                 <div className={styles.price}>
@@ -376,7 +376,7 @@ export default function Cennik() {
             ].map((plan, i) => (
               <div className={styles.pricingCard} key={i}>
                 <div className={styles.headerCard}>
-                  <h3 className={styles.pricingTitle}>{plan.title}</h3>
+                  <h3 className={styles.pricingGridTitle}>{plan.title}</h3>
                   <p className={styles.desc}>{plan.desc}</p>
                 </div>
                 <div className={styles.price}>
