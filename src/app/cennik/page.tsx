@@ -192,7 +192,7 @@ export default function Cennik() {
               {
                 title: "Sklep Start",
                 desc: "Sklep internetowy + strona wizytówkowa",
-                price: "od 2000 zł",
+                price: "od 1900 zł",
                 features: [
                   "Podstrony: 1",
                   "Integracja z bramkami płatności online",
@@ -216,7 +216,7 @@ export default function Cennik() {
               {
                 title: "Sklep Standard",
                 desc: "Sklep internetowy + strona Multipage",
-                price: "od 2400 zł",
+                price: "od 2500 zł",
                 features: [
                   "Od 5 podstron",
                   "Integracja z bramkami płatności online",
