@@ -93,17 +93,10 @@
     width: 100%;
     max-width: 800px;
     display: block;
-  }
-
-  .heroImageWrapper img {
-    height: auto;
-    position: relative;
-    top: 50px;
-    margin-left: auto;
     animation: phoneScale 17s linear infinite;
   }
 
-  @keyframes phoneScale {
+    @keyframes phoneScale {
     0%, 1% {
       transform: scale(0);
     }
@@ -116,6 +109,13 @@
     99%, 100% {
       transform: scale(0);
     }
+  }
+
+  .heroImageWrapper img {
+    height: auto;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
   }
 
   /* === Overlay Elements === */
