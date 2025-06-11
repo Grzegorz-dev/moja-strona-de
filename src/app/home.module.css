@@ -103,11 +103,8 @@
     3% {
       transform: scale(1);
     }
-    98% {
+    100% {
       transform: scale(1);
-    }
-    99%, 100% {
-      transform: scale(0);
     }
   }
 
