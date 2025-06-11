@@ -93,7 +93,7 @@
     width: 100%;
     max-width: 800px;
     display: block;
-    animation: phoneScale 17s linear infinite;
+    animation: phoneScale 17s linear forwards;
   }
 
     @keyframes phoneScale {
