@@ -58,7 +58,7 @@ export default function Cennik() {
               {
                 title: "OnePage",
                 desc: "Strona Wizytówka",
-                price: "od 990 zł",
+                price: "od 1100 zł",
                 features: [
                   "Podstrony: 1",
                   "Indywidualny projekt graficzny",
@@ -80,7 +80,7 @@ export default function Cennik() {
               {
                 title: "MultiPage",
                 desc: "Rozbudowana strona dla firmy",
-                price: "od 1890 zł",
+                price: "od 1900 zł",
                 features: [
                   "Od 5 podstron",
                   "Indywidualny projekt graficzny",
@@ -103,7 +103,7 @@ export default function Cennik() {
               {
                 title: "Szablon",
                 desc: "Rozbudowana strona w dobrej cenie",
-                price: "od 1090 zł",
+                price: "od 1200 zł",
                 features: [
                   "Od 5 podstron",
                   "Wybrany szablon WordPress",
@@ -192,7 +192,7 @@ export default function Cennik() {
               {
                 title: "Sklep Start",
                 desc: "Sklep internetowy + strona wizytówkowa",
-                price: "od 1990 zł",
+                price: "od 2000 zł",
                 features: [
                   "Podstrony: 1",
                   "Integracja z bramkami płatności online",
@@ -216,7 +216,7 @@ export default function Cennik() {
               {
                 title: "Sklep Standard",
                 desc: "Sklep internetowy + strona Multipage",
-                price: "od 2490 zł",
+                price: "od 2400 zł",
                 features: [
                   "Od 5 podstron",
                   "Integracja z bramkami płatności online",
@@ -241,7 +241,7 @@ export default function Cennik() {
               {
                 title: "Sklep Szablon",
                 desc: "Sklep internetowy + strona Szablon",
-                price: "od 2090 zł",
+                price: "od 2000 zł",
                 features: [
                   "Od 5 podstron",
                   "Integracja z bramkami płatności online",
@@ -266,7 +266,7 @@ export default function Cennik() {
               {
                 title: "Sklep Custom",
                 desc: "Indywidualny projekt sklepu",
-                price: "od 3900 zł",
+                price: "od 3500 zł",
                 features: [
                   "Indywidualny projekt graficzny",
                   "Integracja z bramkami płatności online",
@@ -334,7 +334,7 @@ export default function Cennik() {
               {
                  title: "Aplikacja Webowa",
                 desc: "Panel dostępny z poziomu przeglądarki",
-                price: "od 4990 zł",
+                price: "od 4900 zł",
                 features: [
                   "Panel administracyjny (CMS)",
                   "Indywidualny projekt graficzny",
@@ -362,7 +362,7 @@ export default function Cennik() {
               {
                 title: "MVP",
                 desc: "Skrojone na miarę minimum, by jak najszybciej wejść na rynek",
-                price: "od 3000 zł",
+                price: "od 3500 zł",
                 features: [
                   "Kluczowe funkcjonalności aplikacji",
                   "Prosty design skupiony na działaniu",
