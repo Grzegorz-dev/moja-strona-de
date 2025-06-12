@@ -194,12 +194,15 @@
   flex-shrink: 0;
 }
 
+.authorPhoto img{
+  border-radius: 50%;
+}
+
 .authorImg {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border-radius: 50%;
 }
 
 .authorText h1 {

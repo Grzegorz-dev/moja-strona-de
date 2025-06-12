@@ -140,10 +140,10 @@ export default function KlienciClient() {
                   <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
                   <ToggleSection title="Szczegóły">
                     <ul>
-                      <li>Edycja tekstów (np. godziny otwarcia, numer telefonu)</li>
-                      <li>Podmiana max. 3 grafik/zdjęć miesięcznie</li>
-                      <li>Drobne korekty wyglądu (kolory, marginesy itp.)</li>
-                      <li>Maks. 30 minut pracy miesięcznie</li>
+                      <li>- Edycja tekstów</li>
+                      <li>- Podmiana max. 3 zdjęć miesięcznie</li>
+                      <li>- Drobne korekty wyglądu (kolory, marginesy itp.)</li>
+                      <li>- Maks. 30 minut pracy miesięcznie</li>
                     </ul>
                   </ToggleSection>
                 </li>
@@ -170,10 +170,10 @@ export default function KlienciClient() {
                   <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
                   <ToggleSection title="Szczegóły">
                     <ul>
-                      <li>Edycja tekstów (np. godziny otwarcia, numer telefonu)</li>
-                      <li>Podmiana max. 3 grafik/zdjęć miesięcznie</li>
-                      <li>Drobne korekty wyglądu (kolory, marginesy itp.)</li>
-                      <li>Maks. 30 minut pracy miesięcznie</li>
+                      <li>- Edycja tekstów</li>
+                      <li>- Podmiana max. 3 zdjęć miesięcznie</li>
+                      <li>- Drobne korekty wyglądu (kolory, marginesy itp.)</li>
+                      <li>- Maks. 60 minut pracy miesięcznie</li>
                     </ul>
                   </ToggleSection>
                 </li>
