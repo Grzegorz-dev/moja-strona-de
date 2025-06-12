@@ -126,7 +126,7 @@ export default function KlienciClient() {
           <div className={`${styles.supportSection} ${styles.columns}`}>
             {/* Standard package */}
             <div className={styles.package}>
-              <h3>Pomoc techniczna <span>Standard</span></h3>
+              <h3>Opieka nad stroną <span>Standard</span></h3>
               <p className={styles.price}>39zł <span>/ miesięcznie</span></p>
               <ul>
                 <li><span className={styles.check}>✔</span> Regularne aktualizacje</li>
@@ -138,7 +138,7 @@ export default function KlienciClient() {
                 <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
                 <li>
                   <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
-                  <ToggleSection title="Szczegóły">
+                  <ToggleSection title="Pokaż szczegóły">
                     <ul>
                       <li>- Edycja tekstów</li>
                       <li>- Podmiana max. 3 zdjęć miesięcznie</li>
@@ -154,7 +154,7 @@ export default function KlienciClient() {
 
             {/* Premium package */}
             <div className={styles.package}>
-              <h3>Pomoc techniczna <span>Premium</span></h3>
+              <h3>Opieka nad stroną <span>Premium</span></h3>
               <p className={styles.price}>79zł <span>/ miesięcznie</span></p>
               <ul>
                 <li><span className={styles.check}>✔</span> Priorytetowa obsługa zgłoszeń</li>
@@ -168,7 +168,7 @@ export default function KlienciClient() {
                 <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
                 <li>
                   <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
-                  <ToggleSection title="Szczegóły">
+                  <ToggleSection title="Pokaż szczegóły">
                     <ul>
                       <li>- Edycja tekstów</li>
                       <li>- Podmiana max. 3 zdjęć miesięcznie</li>
