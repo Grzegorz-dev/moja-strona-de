@@ -168,7 +168,7 @@ export default function Home() {
             <p>Skuteczne SEO — Twoja strona widoczna w Google.</p>
           </Link>
 
-          <Link href="/stronywww" className={styles.serviceCard}>
+          <Link href="/klienci" className={styles.serviceCard}>
             <FaTools className={styles.serviceIcon} />
             <h3>Wsparcie techniczne</h3>
             <p>Stała opieka nad stroną, kopie zapasowe i aktualizacje.</p>
