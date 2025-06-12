@@ -126,7 +126,7 @@ export default function KlienciClient() {
             {/* Standard package */}
             <div className={styles.package}>
               <h3>Pomoc techniczna <span>Standard</span></h3>
-              <p className={styles.price}>49zł <span>/ miesięcznie</span></p>
+              <p className={styles.price}>39zł <span>/ miesięcznie</span></p>
               <ul>
                 <li><span className={styles.check}>✔</span> Regularne aktualizacje</li>
                 <li><span className={styles.check}>✔</span> Bezpłatna pomoc techniczna</li>
@@ -135,10 +135,23 @@ export default function KlienciClient() {
                 <li><span className={styles.check}>✔</span> Monitoring bezpieczeństwa 24/7</li>
                 <li><span className={styles.check}>✔</span> Kopia plików: co 30 dni</li>
                 <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
-                <li><span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu</li>
+                <li>
+                  <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
+                  <details className={styles.details}>
+                    <summary className={styles.summary}>Szczegóły</summary>
+                    <ul className={styles.sublist}>
+                      <li>Zmianny w tekście</li>
+                      <li>Podmiana maks. 3 zdjęć miesięcznie</li>
+                      <li>Ukrycie jednej sekcji (np. cennik, opinie)</li>
+                      <li>Aktualizacja danych kontaktowych lub linków</li>
+                      <li>Drobne zmiany w stylu (kolor, marginesy itp.)</li>
+                      <li>Maks. 60 minut pracy miesięcznie</li>
+                    </ul>
+                  </details>
+                </li>
                 <li><span className={styles.check}>✔</span> Stały kontakt</li>
               </ul>
-              <button onClick={() => handleSubscribe("price_1RWDolFlXiRA14LCpgfIFXQu")}>Wybierz Standard</button>
+              <button onClick={() => handleSubscribe("price_1RZ6lpFlXiRA14LC1kCRkVgM")}>Wybierz Standard</button>
             </div>
 
             {/* Premium package */}
@@ -155,7 +168,20 @@ export default function KlienciClient() {
                 <li><span className={styles.check}>✔</span> Kopia plików: co 30 dni</li>
                 <li><span className={styles.check}>✔</span> Kopia bazy danych: co 7 dni</li>
                 <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
-                <li><span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu</li>
+                <li>
+                  <span className={styles.check}>✔</span> Modyfikacje treści i wyglądu
+                  <details className={styles.details}>
+                    <summary className={styles.summary}>Szczegóły</summary>
+                    <ul className={styles.sublist}>
+                      <li>Zmianny w tekście</li>
+                      <li>Podmiana maks. 3 zdjęć miesięcznie</li>
+                      <li>Ukrycie jednej sekcji (np. cennik, opinie)</li>
+                      <li>Aktualizacja danych kontaktowych lub linków</li>
+                      <li>Drobne zmiany w stylu (kolor, marginesy itp.)</li>
+                      <li>Maks. 60 minut pracy miesięcznie</li>
+                    </ul>
+                  </details>
+                </li>
                 <li><span className={styles.check}>✔</span> Stały kontakt</li>
               </ul>
               <button onClick={() => handleSubscribe("price_1RWDp2FlXiRA14LCqfTA0JgJ")}>Wybierz Premium</button>

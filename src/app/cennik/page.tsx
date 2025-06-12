@@ -82,7 +82,7 @@ export default function Cennik() {
                 desc: "Rozbudowana strona dla firmy",
                 price: "od 1900 zł",
                 features: [
-                  "Od 5 podstron",
+                  "Indywidualna liczba podstron (w zależności od potrzeb)",
                   "Indywidualny projekt graficzny",
                   "Wersja mobilna",
                   "Optymalizacja SEO",
@@ -105,7 +105,7 @@ export default function Cennik() {
                 desc: "Rozbudowana strona w dobrej cenie",
                 price: "od 1200 zł",
                 features: [
-                  "Od 5 podstron",
+                  "Indywidualna liczba podstron (w zależności od potrzeb)",
                   "Wybrany szablon WordPress",
                   "Wersja mobilna",
                   "Optymalizacja SEO",
@@ -128,6 +128,7 @@ export default function Cennik() {
                 desc: "Indywidualna wycena",
                 price: "od 3000 zł",
                 features: [
+                  "Indywidualna liczba podstron (w zależności od potrzeb)",
                   "Indywidualny projekt graficzny",
                   "Dedykowane unikalne funkcje",
                   "Możliwość integracji z zewnętrznymi systemami (API)",
@@ -218,7 +219,7 @@ export default function Cennik() {
                 desc: "Sklep internetowy + strona Multipage",
                 price: "od 2500 zł",
                 features: [
-                  "Od 5 podstron",
+                  "Indywidualna liczba podstron (w zależności od potrzeb)",
                   "Integracja z bramkami płatności online",
                   "Konfiguracja sklepu",
                   "Indywidualny projekt graficzny",
@@ -243,7 +244,7 @@ export default function Cennik() {
                 desc: "Sklep internetowy + strona Szablon",
                 price: "od 2000 zł",
                 features: [
-                  "Od 5 podstron",
+                  "Indywidualna liczba podstron (w zależności od potrzeb)",
                   "Integracja z bramkami płatności online",
                   "Konfiguracja sklepu",
                   "Wybrany szablon Wordpress",
@@ -268,6 +269,7 @@ export default function Cennik() {
                 desc: "Indywidualny projekt sklepu",
                 price: "od 3500 zł",
                 features: [
+                  "Indywidualna liczba podstron (w zależności od potrzeb)",
                   "Indywidualny projekt graficzny",
                   "Integracja z bramkami płatności online",
                   "Konfiguracja sklepu",
