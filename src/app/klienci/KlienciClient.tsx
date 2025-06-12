@@ -179,7 +179,7 @@ export default function KlienciClient() {
                 </li>
                 <li><span className={styles.check}>✔</span> Stały kontakt</li>
               </ul>
-              <button onClick={() => handleSubscribe("price_1RWDp2FlXiRA14LCqfTA0JgJ")}>Wybierz Premium</button>
+              <button onClick={() => handleSubscribe("price_1RZ7JMFlXiRA14LCj4DLkbDS")}>Wybierz Premium</button>
             </div>
           </div>
         ) : (
