@@ -102,9 +102,10 @@ Poza samym wykonaniem strony musisz doliczyć roczne koszty utrzymania:
 <b>Kto wykonuje stronę?</b>
 
 <br>
-<ul>
-<li>Cena zależy też od tego, kto tworzy Twoją stronę:</li>
 
+Cena zależy też od tego, kto tworzy Twoją stronę:
+
+<ul>
 <li>freelancerzy zwykle oferują niższe ceny,</li>
 
 <li>agencje interaktywne mają wyższe stawki, ale też większe zespoły i szerszy zakres usług,</li>
