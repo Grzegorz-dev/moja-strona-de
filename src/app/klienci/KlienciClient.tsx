@@ -1,5 +1,6 @@
 "use client";
 
+import ToggleSection from "@/components/ToggleSection";
 import styles from './klienci.module.css';
 import {
   FaHeadset,
@@ -137,17 +138,14 @@ export default function KlienciClient() {
                 <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
                 <li>
                   <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
-                  <details className={styles.details}>
-                    <summary className={styles.summary}>Szczegóły</summary>
-                    <ul className={styles.sublist}>
-                      <li>Zmianny w tekście</li>
-                      <li>Podmiana maks. 3 zdjęć miesięcznie</li>
-                      <li>Ukrycie jednej sekcji (np. cennik, opinie)</li>
-                      <li>Aktualizacja danych kontaktowych lub linków</li>
-                      <li>Drobne zmiany w stylu (kolor, marginesy itp.)</li>
-                      <li>Maks. 60 minut pracy miesięcznie</li>
+                  <ToggleSection title="Szczegóły">
+                    <ul>
+                      <li>Edycja tekstów (np. godziny otwarcia, numer telefonu)</li>
+                      <li>Podmiana max. 3 grafik/zdjęć miesięcznie</li>
+                      <li>Drobne korekty wyglądu (kolory, marginesy itp.)</li>
+                      <li>Maks. 30 minut pracy miesięcznie</li>
                     </ul>
-                  </details>
+                  </ToggleSection>
                 </li>
                 <li><span className={styles.check}>✔</span> Stały kontakt</li>
               </ul>
@@ -169,18 +167,15 @@ export default function KlienciClient() {
                 <li><span className={styles.check}>✔</span> Kopia bazy danych: co 7 dni</li>
                 <li><span className={styles.check}>✔</span> Raport raz w miesiącu</li>
                 <li>
-                  <span className={styles.check}>✔</span> Modyfikacje treści i wyglądu
-                  <details className={styles.details}>
-                    <summary className={styles.summary}>Szczegóły</summary>
-                    <ul className={styles.sublist}>
-                      <li>Zmianny w tekście</li>
-                      <li>Podmiana maks. 3 zdjęć miesięcznie</li>
-                      <li>Ukrycie jednej sekcji (np. cennik, opinie)</li>
-                      <li>Aktualizacja danych kontaktowych lub linków</li>
-                      <li>Drobne zmiany w stylu (kolor, marginesy itp.)</li>
-                      <li>Maks. 60 minut pracy miesięcznie</li>
+                  <span className={styles.check}>✔</span> Niewielkie modyfikacje treści i wyglądu
+                  <ToggleSection title="Szczegóły">
+                    <ul>
+                      <li>Edycja tekstów (np. godziny otwarcia, numer telefonu)</li>
+                      <li>Podmiana max. 3 grafik/zdjęć miesięcznie</li>
+                      <li>Drobne korekty wyglądu (kolory, marginesy itp.)</li>
+                      <li>Maks. 30 minut pracy miesięcznie</li>
                     </ul>
-                  </details>
+                  </ToggleSection>
                 </li>
                 <li><span className={styles.check}>✔</span> Stały kontakt</li>
               </ul>
