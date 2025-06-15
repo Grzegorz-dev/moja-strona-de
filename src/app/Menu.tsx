@@ -46,7 +46,7 @@ export default function Menu() {
         </ul>
 
         {/* 🔁 BURGER button tylko na mobile */}
-        <button className="burger" onClick={() => setMenuOpen(prev => !prev)}>
+        <button className="burger" aria-label="Otwórz menu" onClick={() => setMenuOpen(prev => !prev)}>
           <span className="bar" />
           <span className="bar" />
           <span className="bar" />
