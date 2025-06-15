@@ -69,7 +69,7 @@ export default function Home() {
             <ScrollButton />
           </div>
           <div className={styles.heroImageWrapper}>
-            <Image src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" loading="lazy" priority fetchPriority="high"/>
+            <Image src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" priority fetchPriority="high"/>
             
             <div className={styles.overlayBoxOne}>
               <Image className={styles.overlayImageOne} src="/images/grafika-karta-elementu-interfejsu.webp" alt="Przykład karty interfejsu aplikacji dla firm – grafika z ikoną i opisem funkcji" width="408" height="239" loading="lazy" />
