@@ -69,9 +69,11 @@ Jeżeli natomiast chcesz, by użytkownicy mogli **logować się, korzystać z pa
 
 Nie wiesz, co będzie najlepsze dla Twojej firmy?  
 Skontaktuj się ze mną – chętnie doradzę i przygotuję bezpłatną wycenę.
+
 <br>
 
 👉 [Przejdź do kontaktu](/kontakt)
+
 <br>
 
 
