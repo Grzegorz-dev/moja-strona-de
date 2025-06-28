@@ -9,6 +9,8 @@ customClass: "blog-projekt-4"
 
 ## Strona internetowa czy aplikacja webowa? Co wybrać dla swojej firmy?
 
+<br>
+
 Wiele firm, planując rozwój swojej obecności w internecie, zastanawia się: co będzie lepsze – **strona internetowa** czy **aplikacja webowa**? W tym artykule wyjaśniam, czym różnią się te rozwiązania oraz kiedy warto zdecydować się na każde z nich.
 
 <br>
