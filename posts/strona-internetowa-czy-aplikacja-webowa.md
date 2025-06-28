@@ -2,7 +2,7 @@
 title: "Strona internetowa czy aplikacja webowa? Co wybrać dla swojej firmy?"
 description: "Strona internetowa czy aplikacja webowa? Wyjaśniam różnice i doradzam, które rozwiązanie będzie lepsze dla..."
 date: "2025-06-28"
-image: "/images/blog/strona-vs-aplikacja.webp"
+image: "/images/blog/strona-internetowa-czy-aplikacja-webowa.webp"
 authorImage: "/images/blog/logo-blog.webp"
 customClass: "blog-projekt-4"
 ---
