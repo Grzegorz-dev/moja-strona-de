@@ -5,32 +5,39 @@ import FaqList from '@/components/faq/FaqList'; // upewnij się, że ta ścieżk
 
 const questions = [
   {
-    question: 'Ile kosztuje stworzenie strony internetowej lub aplikacji?',
-    answer: 'Ceny zaczynają się już od 990 zł za prostą stronę OnePage. Ostateczny koszt zależy od zakresu projektu – prosta strona internetowa dla firmy może kosztować od kilkuset złotych, natomiast rozbudowane aplikacje dla firm wyceniam indywidualnie. Wycena jest bezpłatna – wystarczy się ze mną skontaktować.',
+    question: 'Wie viel kostet eine Website oder App?',
+    answer:
+      'Die Preise beginnen bereits ab 400€ für eine einfache OnePage-Seite. Die endgültigen Kosten hängen vom Umfang des Projekts ab – eine einfache Firmenwebsite kann ein paar Hundert Złoty kosten, während komplexe Unternehmensanwendungen individuell kalkuliert werden. Das Angebot ist kostenlos – einfach Kontakt aufnehmen.',
   },
   {
-    question: 'Czy oferujesz wsparcie techniczne po wdrożeniu?',
-    answer: 'Tak. Oferuję opiekę techniczną, aktualizacje oraz pomoc przy rozbudowie strony lub aplikacji. Zawsze możesz liczyć na moje wsparcie po zakończeniu projektu.',
+    question: 'Bietest du technischen Support nach dem Launch an?',
+    answer:
+      'Ja. Ich biete technischen Support, Updates und Hilfe bei der Weiterentwicklung Ihrer Website oder App. Auch nach Projektabschluss können Sie auf meine Unterstützung zählen.',
   },
   {
-    question: 'Czy mogę zlecić tylko poprawki na już istniejącej stronie?',
-    answer: 'Tak. Pomagam również przy optymalizacji, aktualizacji i modernizacji już działających stron internetowych – także jeśli zostały stworzone przez kogoś innego.',
+    question: 'Kann ich nur Änderungen an einer bestehenden Website beauftragen?',
+    answer:
+      'Ja. Ich unterstütze auch bei der Optimierung, Aktualisierung und Modernisierung bestehender Websites – auch wenn sie von jemand anderem erstellt wurden.',
   },
   {
-    question: 'Czy zajmujesz się też sklepami internetowymi?',
-    answer: 'Tak, tworzę także funkcjonalne sklepy online, najczęściej oparte o system CMS. To dobra opcja, jeśli Twoja firma chce rozpocząć sprzedaż produktów przez internet.',
+    question: 'Erstellst du auch Onlineshops?',
+    answer:
+      'Ja, ich entwickle auch funktionale Onlineshops – meistens auf Basis eines CMS. Eine gute Wahl, wenn Ihr Unternehmen den Online-Verkauf starten möchte.',
   },
   {
-    question: 'Czy mogę zamówić też grafikę lub logo?',
-    answer: 'Tak – mogę zaprojektować logo, identyfikację wizualną oraz elementy graficzne do stron i aplikacji. Wszystko w jednym stylu, spójnym z Twoją marką.',
+    question: 'Kann ich auch ein Logo oder Grafikdesign beauftragen?',
+    answer:
+      'Ja – ich entwerfe Logos, visuelle Identitäten und grafische Elemente für Websites und Apps. Alles im einheitlichen Stil, passend zu Ihrer Marke.',
   },
   {
-    question: 'Czy strony są dostosowane do urządzeń mobilnych?',
-    answer: 'Tak, wszystkie strony internetowe są responsywne (RWD) – poprawnie działają na telefonach, tabletach i komputerach. To dziś absolutny standard.',
+    question: 'Sind die Websites mobilfreundlich?',
+    answer:
+      'Ja, alle Websites sind responsiv (RWD) – sie funktionieren auf Smartphones, Tablets und Desktop-Geräten. Das ist heutzutage absoluter Standard.',
   },
   {
-    question: 'Jak wygląda proces realizacji?',
-    answer: 'Proces podzielony jest na kilka etapów: analiza potrzeb, projekt graficzny, kodowanie, testy i wdrożenie. Stawiam na jasną komunikację i elastyczne podejście – niezależnie czy tworzę tanie strony internetowe, czy dedykowane aplikacje webowe.',
+    question: 'Wie läuft der Projektablauf ab?',
+    answer:
+      'Das Projekt ist in mehrere Phasen unterteilt: Bedarfsanalyse, Design, Programmierung, Tests und Veröffentlichung. Ich setze auf klare Kommunikation und ein flexibles Vorgehen – unabhängig davon, ob es sich um günstige Websites oder maßgeschneiderte Webanwendungen handelt.',
   },
 ];
 
@@ -39,7 +46,7 @@ export default function Faq() {
     <section className="faq-section">
       <div className="faq-container animacja-z-dolu">
         <h2 className="faq-title">
-          <span>FAQ</span> Najczęściej zadawane pytania
+          <span>FAQ</span> Häufig gestellte Fragen
         </h2>
 
         <FaqList questions={questions} />
@@ -47,4 +54,5 @@ export default function Faq() {
     </section>
   );
 }
+
 

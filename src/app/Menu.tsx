@@ -25,23 +25,22 @@ export default function Menu() {
   return (
     <nav className={`menu ${scrolled ? 'scrolled' : ''}`}>
       <div className="menu-container">
-        <Link href="/" className="logo" aria-label="Strona główna – Grzegorz Słowiaczek">
-          <Image src="/images/logo-grzegorz-slowiaczek.webp" alt="Grzegorz Słowiaczek – logo twórcy stron i aplikacji" width="768" height="427"/>
+        <Link href="/" className="logo" aria-label="Startseite – Gregor Sloweck">
+          <Image src="/images/logo-grzegorz-slowiaczek.webp" alt="Gregor Sloweck - Logo des Erstellers von Webseiten und Apps" width="768" height="427"/>
           <span className="logo-text">
-            Grzegorz<br />
-            Słowiaczek
+            Gregor<br />
+            Sloweck
           </span>
         </Link>
 
         {/* 🔁 MENU LINKS na duże ekrany */}
         <ul className="menu-links">
-          <li><Link href="/">Strona główna</Link></li>
-          <li><Link href="/stronywww">Strony WWW</Link></li>
-          <li><Link href="/aplikacje">Aplikacje</Link></li>
-          <li><Link href="/projekty">Projekty</Link></li>
-          <li><Link href="/klienci">Dla klientów</Link></li>
-          <li><Link href="/cennik">Cennik</Link></li>
-          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/">Startseite</Link></li>
+          <li><Link href="/webseiten">Webseiten</Link></li>
+          <li><Link href="/apps">Apps</Link></li>
+          <li><Link href="/projekte">Projekte</Link></li>
+          <li><Link href="/kunden">Für Kunden</Link></li>
+          <li><Link href="/preise">Preise</Link></li>
           <li><Link href="/kontakt">Kontakt</Link></li>
         </ul>
 
@@ -59,13 +58,12 @@ export default function Menu() {
           &times;
         </button>
         <ul>
-          <li><Link href="/">Strona główna</Link></li>
-          <li><Link href="/stronywww">Strony WWW</Link></li>
-          <li><Link href="/aplikacje">Aplikacje</Link></li>
-          <li><Link href="/projekty">Projekty</Link></li>
-          <li><Link href="/klienci">Dla klientów</Link></li>
-          <li><Link href="/cennik">Cennik</Link></li>
-          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/">Startseite</Link></li>
+          <li><Link href="/webseiten">Webseiten</Link></li>
+          <li><Link href="/apps">Apps</Link></li>
+          <li><Link href="/projekte">Projekte</Link></li>
+          <li><Link href="/kunden">Für Kunden</Link></li>
+          <li><Link href="/preise">Preise</Link></li>
           <li><Link href="/kontakt">Kontakt</Link></li>
         </ul>
       </div>

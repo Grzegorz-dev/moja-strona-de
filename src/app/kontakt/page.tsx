@@ -2,19 +2,19 @@
 import styles from './kontakt.module.css';
 import {
   FaEnvelope,
-  FaPhoneAlt,
+  FaFacebookF,
 } from "react-icons/fa";
 import KontaktForm from "./KontaktForm";
 
 export const metadata = {
-  title: "Kontakt – Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
+  title: "Kontakt – Webseiten und Apps für Unternehmen | Grzegorz Słowiaczek",
   description:
-    "Skontaktuj się ze mną – zapytaj o stronę internetową, aplikację lub wsparcie techniczne. Odpowiadam szybko i konkretnie. Wypełnij formularz lub napisz bezpośrednio.",
+    "Nimm Kontakt mit mir auf – frag nach einer Website, App oder technischer Unterstützung. Ich antworte schnell und direkt. Fülle das Formular aus oder schreibe mir direkt.",
   robots: "index,follow",
   openGraph: {
-    title: "Skontaktuj się – Grzegorz Słowiaczek",
+    title: "Kontakt aufnehmen – Grzegorz Słowiaczek",
     description:
-      "Masz pytanie o stronę WWW lub aplikację? Wypełnij formularz kontaktowy lub napisz bezpośrednio. Oferuję sprawną komunikację i szybkie odpowiedzi.",
+      "Du hast eine Frage zu einer Website oder App? Fülle das Kontaktformular aus oder schreibe mir direkt. Ich biete schnelle Antworten und klare Kommunikation.",
     url: "https://slowiaczek.pl/kontakt",
     type: "website",
     images: [
@@ -28,50 +28,65 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kontakt – Grzegorz Słowiaczek | Strony i aplikacje dla firm",
+    title: "Kontakt – Grzegorz Słowiaczek | Webseiten und Apps für Unternehmen",
     description:
-      "Chcesz stronę internetową lub aplikację? Skontaktuj się ze mną – szybko odpowiadam.",
+      "Du brauchst eine Website oder App? Kontaktiere mich – ich antworte schnell.",
     images: ["https://slowiaczek.pl/images/logo-fb.webp"],
   },
 };
 
 export default function Kontakt() {
-    return (
-      <main className={styles.container}>
-        <section className={styles.banner}>
-          <div className={styles.content}>
-            <h1>Zapraszam do kontaktu</h1>
-            <p>Masz pytania, pomysł na projekt albo potrzebujesz wyceny? Wypełnij formularz lub napisz bezpośrednio — odpowiem najszybciej jak to możliwe.</p>
-          </div>
-        </section>
+  return (
+    <main className={styles.container}>
+      <section className={styles.banner}>
+        <div className={styles.content}>
+          <h1>Ich freue mich auf deine Nachricht</h1>
+          <p>
+            Du hast Fragen, eine Projektidee oder brauchst ein Angebot?
+            Fülle das Formular aus oder schreibe mir direkt – ich melde mich so schnell wie möglich.
+          </p>
+        </div>
+      </section>
 
-        <section className={`${styles.supportSection} ${styles.supportColumns}`}>
-            <div className={styles.contactBlock}>
-              <div>
-                <h3>Dane <span>kontaktowe</span></h3>
-                <p>Preferujesz bezpośredni kontakt? Zadzwoń lub napisz — jestem dostępny od poniedziałku do piątku w godzinach 9:00–17:00.</p>
-                <ul>
-                  <li>
-                    <span className={styles.contactIcon}>
-                      <FaPhoneAlt />
-                    </span>
-                    +48 888 888 555
-                  </li>
-                  <li>
-                    <span className={styles.contactIcon}>
-                      <FaEnvelope />
-                    </span>
-                    kontakt@slowiaczek.pl
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className={styles.contactBlock}>
-              <h3>Formularz <span>kontaktowy</span></h3>
-              <p>Zostaw swoje dane i krótki opis sprawy — odezwę się, by omówić szczegóły i zaproponować najlepsze rozwiązanie.</p>
-              <KontaktForm />
-            </div>
-          </section>
-      </main>
-    );
-  }
+      <section className={`${styles.supportSection} ${styles.supportColumns}`}>
+        <div className={styles.contactBlock}>
+          <div>
+            <h3><span>Kontakt </span>daten</h3>
+            <p>
+              Du bevorzugst den direkten Kontakt? Ruf mich an oder schreib mir –
+              ich bin von Montag bis Freitag zwischen 9:00 und 17:00 Uhr erreichbar.
+            </p>
+            <ul>
+              <li>
+                <span className={styles.contactIcon}>
+                  <FaFacebookF />
+                </span>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Schreibe mir auf Facebook
+                </a>
+              </li>
+              <li>
+                <span className={styles.contactIcon}>
+                  <FaEnvelope />
+                </span>
+                kontakt@slowiaczek.pl
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.contactBlock}>
+          <h3><span>Kontakt </span>formular</h3>
+          <p>
+            Hinterlasse deine Kontaktdaten und eine kurze Beschreibung –
+            ich melde mich, um die Details zu besprechen und die passende Lösung vorzuschlagen.
+          </p>
+          <KontaktForm />
+        </div>
+      </section>
+    </main>
+  );
+}

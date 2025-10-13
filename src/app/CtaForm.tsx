@@ -13,12 +13,12 @@ export default function CtaForm() {
 
     const target = e.currentTarget;
     const formData = new FormData(target);
-    const phone = formData.get("phone");
+    const email = formData.get("email");
 
     const res = await fetch("/api/wycena", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ phone })
+      body: JSON.stringify({ email })
     });
 
     let result = null;
@@ -26,39 +26,40 @@ export default function CtaForm() {
     try {
       result = await res.json();
     } catch (err) {
-      console.error("Nieprawidłowy JSON:", err);
+      console.error("Ungültiges JSON:", err);
     }
 
     setSubmitting(false);
 
     if (res.ok && result?.ok) {
-      alert("Dziękuję! Oddzwonię do Ciebie wkrótce.");
+      alert("Vielen Dank! Ich melde mich in Kürze bei Ihnen.");
       target.reset();
     } else {
-      alert("Błąd przy wysyłce. Spróbuj ponownie.");
+      alert("Fehler beim Senden. Bitte versuchen Sie es erneut.");
     }
   };
 
   return (
     <form className={styles.ctaForm} onSubmit={handleSubmit}>
       <input
-        name="phone"
-        type="tel"
-        placeholder="Twój numer telefonu"
+        name="email"
+        type="email"
+        placeholder="Ihre E-Mail-Adresse"
         required
       />
       <div className={styles.checkbox}>
-        <input type="checkbox" id="zgoda" required />
-          <label htmlFor="zgoda">
-            Wyrażam zgodę na <Link href="/polityka-prywatnosci" target="_blank">przetwarzanie danych osobowych</Link>
-          </label>
-        </div>
+        <input type="checkbox" id="einwilligung" required />
+        <label htmlFor="einwilligung">
+          Ich stimme der <Link href="/polityka-prywatnosci" target="_blank">Datenverarbeitung</Link> zu
+        </label>
+      </div>
 
       <button type="submit" disabled={submitting}>
-        {submitting ? "Wysyłanie..." : "Darmowa wycena"}
+        {submitting ? "Wird gesendet..." : "Kostenlose Anfrage"}
       </button>
     </form>
   );
 }
+
 
 

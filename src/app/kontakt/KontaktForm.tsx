@@ -29,30 +29,30 @@ export default function KontaktForm() {
     setLoading(false);
 
     if (result.ok) {
-      alert("Wiadomość została wysłana!");
+      alert("Nachricht wurde gesendet!");
       e.currentTarget.reset();
     } else {
-      alert("Wystąpił błąd. Spróbuj ponownie.");
+      alert("Ein Fehler ist aufgetreten. Bitte versuche es erneut.");
     }
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <input name="name" type="text" placeholder="Imię" required />
-      <input name="email" type="email" placeholder="Adres e-mail" required />
-      <input name="phone" type="tel" placeholder="Numer telefonu" required />
-      <textarea name="message" placeholder="Wiadomość" required />
+      <input name="name" type="text" placeholder="Name" required />
+      <input name="email" type="email" placeholder="E-Mail-Adresse" required />
+      <input name="phone" type="tel" placeholder="Telefonnummer" required />
+      <textarea name="message" placeholder="Nachricht" required />
 
       <label className={styles.checkboxConsent}>
         <input type="checkbox" required />
         <span>
-          Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z{" "}
-          <Link href="/polityka-prywatnosci" target="_blank">polityką prywatności</Link>.
+          Ich erkläre mich mit der Verarbeitung meiner personenbezogenen Daten gemäß der{" "}
+          <Link href="/polityka-prywatnosci" target="_blank">Datenschutzerklärung</Link> einverstanden.
         </span>
       </label>
 
       <button type="submit" disabled={loading}>
-        {loading ? "Wysyłanie..." : "Wyślij zgłoszenie"}
+        {loading ? "Senden..." : "Nachricht senden"}
       </button>
     </form>
   );

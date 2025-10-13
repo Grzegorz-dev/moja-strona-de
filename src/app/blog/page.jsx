@@ -5,14 +5,14 @@ import Image from 'next/image';
 
 
 export const metadata = {
-  title: "Blog – Porady o stronach internetowych, aplikacjach i marketingu | Grzegorz Słowiaczek",
+  title: "Blog – Tipps zu Websites, Apps und Online-Marketing | Grzegorz Słowiaczek",
   description:
-    "Czytaj praktyczne porady i inspiracje dotyczące stron internetowych, aplikacji mobilnych, marketingu online i SEO. Pomagam właścicielom firm lepiej wykorzystać technologie.",
+    "Praktische Tipps und Inspirationen rund um Websites, mobile Apps, Online-Marketing und SEO. Ich helfe Unternehmern, Technologien effektiver zu nutzen.",
   robots: "index,follow",
   openGraph: {
-    title: "Blog – Wskazówki i porady o stronach i aplikacjach | Grzegorz Słowiaczek",
+    title: "Blog – Ratgeber zu Websites & Apps | Grzegorz Słowiaczek",
     description:
-      "Dowiedz się, jak zaprojektować skuteczną stronę, zoptymalizować ją pod kątem SEO i zwiększyć konwersję.",
+      "Erfahre, wie du eine erfolgreiche Website gestaltest, für SEO optimierst und mehr Conversions erzielst.",
     url: "https://slowiaczek.pl/blog",
     type: "website",
     images: [
@@ -26,44 +26,46 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog – Strony internetowe i aplikacje | Grzegorz Słowiaczek",
+    title: "Blog – Websites und Apps für Unternehmen | Grzegorz Słowiaczek",
     description:
-      "Praktyczne porady i inspiracje dla firm. Sprawdź, jak lepiej wykorzystać technologię w swoim biznesie.",
+      "Praktische Tipps und Inspirationen für Unternehmen. Nutze Technologie gezielt für deinen Geschäftserfolg.",
     images: ["https://slowiaczek.pl/images/logo-fb.webp"],
   },
 };
 
+
 export default async function BlogPage() {
 
   const posts = getAllPosts(); // działa bez getStaticProps w App Routerze
-
+  
   return (
     <main className={styles.container}>
       <section className={styles.banner}>
         <div className={styles.content}>
           <h1>Blog</h1>
-          <p>Wskazówki, inspiracje i porady dla właścicieli stron, firm i twórców treści.</p>
+          <p>Tipps, Inspirationen und Ratschläge für Website-Betreiber, Unternehmen und Content-Ersteller.</p>
         </div>
       </section>
 
       <section className={styles.blogGrid}>
         {posts.map((post) => (
-            <div className={styles.blogCard} key={post.slug}>
+          <div className={styles.blogCard} key={post.slug}>
             {post.image && (
-                <Image src={post.image} alt={post.title} className={styles.blogCardImage} />
+              <Image src={post.image} alt={post.title} className={styles.blogCardImage} />
             )}
             <div className={styles.blogCardContent}>
-                <h2>{post.title}</h2>
-                <p>{post.description}</p>
-                <Link href={`/blog/${post.slug}`} className={styles.readMore}>
-                Czytaj więcej →
-                </Link>
+              <h2>{post.title}</h2>
+              <p>{post.description}</p>
+              <Link href={`/blog/${post.slug}`} className={styles.readMore}>
+                Mehr erfahren →
+              </Link>
             </div>
-            </div>
+          </div>
         ))}
       </section>
     </main>
   );
+
 }
 
 

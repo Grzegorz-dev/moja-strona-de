@@ -26,33 +26,33 @@ import ScrollButton from '@/components/ScrollButton';
 
 
 export const metadata = {
-  title: "Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
+  title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
   description:
-    "Tworzę nowoczesne strony internetowe i aplikacje dla firm – mobilne, webowe, szybkie i dostosowane do Twoich celów biznesowych.",
+    "Ich entwickle moderne Webseiten und Anwendungen für Unternehmen – mobil, webbasiert, schnell und auf Ihre Geschäftsziele zugeschnitten.",
   robots: "index,follow",
   openGraph: {
-    title: "Strony internetowe i aplikacje dla firm | Grzegorz Słowiaczek",
+    title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
     description:
-      "Tworzę nowoczesne strony i aplikacje internetowe – szybkie, mobilne, dopasowane do Twoich celów biznesowych.",
-    url: "https://slowiaczek.pl/",
-    siteName: "Grzegorz Słowiaczek – strony i aplikacje dla firm",
+      "Ich entwickle moderne Web- und App-Lösungen – schnell, mobil und auf Ihre Geschäftsziele abgestimmt.",
+    url: "https://sloweck.de/",
+    siteName: "Gregor Sloweck – Webseiten und Anwendungen für Unternehmen",
     images: [
       {
-        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        url: "https://sloweck.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Grzegorz Słowiaczek – strony internetowe i aplikacje dla firm",
+        alt: "Gregor Sloweck – Webseiten und Anwendungen für Unternehmen",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Strony i aplikacje dla firm | Grzegorz Słowiaczek",
+    title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
     description:
-      "Nowoczesne rozwiązania webowe i mobilne dla Twojego biznesu. Od prostych stron po rozbudowane systemy.",
+      "Moderne Web- und Mobile-Lösungen für Ihr Business. Von einfachen Webseiten bis zu komplexen Systemen.",
     creator: "@twojTwitter",
-    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+    images: ["https://sloweck.de/images/logo-fb.webp"],
   },
 };
 
@@ -62,29 +62,64 @@ export default function Home() {
       <section className={styles.heroSection}>
         <div className={styles.heroContentWrapper}>
           <div className={styles.heroText}>
-            <h1>Aplikacje mobilne i strony internetowe</h1>
+            <h1>Mobile Apps und Webseiten</h1>
             <p>
-              Tworzę szybkie, skalowalne strony i aplikacje dla firm – od prostych wizytówek i sklepów internetowych po rozbudowane systemy webowe i mobilne.
+              Ich entwickle schnelle, skalierbare Webseiten und Apps für Unternehmen – von einfachen Visitenkarten und Onlineshops bis hin zu komplexen Web- und Mobile-Systemen.
             </p>
             <ScrollButton />
           </div>
           <div className={styles.heroImageWrapper}>
-            <Image src="/images/baner-strona-glowna-aplikacja-responsive.webp" alt="Nowoczesna aplikacja mobilna i strona internetowa dla firm – interfejs użytkownika na laptopie i smartfonie" width="1079" height="1256" priority fetchPriority="high"/>
-            
+            <Image
+              src="/images/baner-strona-glowna-aplikacja-responsive.webp"
+              alt="Moderne mobile App und Unternehmens-Website – Benutzeroberfläche auf Laptop und Smartphone"
+              width="1079"
+              height="1256"
+              priority
+              fetchPriority="high"
+            />
+
             <div className={styles.overlayBoxOne}>
-              <Image className={styles.overlayImageOne} src="/images/grafika-karta-elementu-interfejsu.webp" alt="Przykład karty interfejsu aplikacji dla firm – grafika z ikoną i opisem funkcji" width="408" height="239" loading="lazy" />
+              <Image
+                className={styles.overlayImageOne}
+                src="/images/grafika-karta-elementu-interfejsu.webp"
+                alt="Beispiel einer App-Oberflächenkarte für Unternehmen – Grafik mit Icon und Funktionsbeschreibung"
+                width="408"
+                height="239"
+                loading="lazy"
+              />
             </div>
 
             <div className={styles.overlayBoxTwo}>
-              <Image className={styles.overlayImageTwo} src="/images/grafika-statystyki-uzytkownika-aplikacji.webp" alt="Panel statystyk użytkownika w aplikacji dla firm – analiza danych i realizacja celów" width="404" height="245" loading="lazy" />
+              <Image
+                className={styles.overlayImageTwo}
+                src="/images/grafika-statystyki-uzytkownika-aplikacji.webp"
+                alt="Statistik-Dashboard in der Unternehmens-App – Datenanalyse und Zielverfolgung"
+                width="404"
+                height="245"
+                loading="lazy"
+              />
             </div>
 
             <div className={styles.overlayBoxThree}>
-              <Image className={styles.overlayImageThree} src="/images/grafika-integracja-zewnetrzna-api-chmura.webp" alt="Integracja aplikacji dla firm z zewnętrznymi systemami i chmurą – synchronizacja danych" width="404" height="398" loading="lazy" />
+              <Image
+                className={styles.overlayImageThree}
+                src="/images/grafika-integracja-zewnetrzna-api-chmura.webp"
+                alt="Integration der App mit externen Systemen und Cloud – Datensynchronisation"
+                width="404"
+                height="398"
+                loading="lazy"
+              />
             </div>
 
             <div className={styles.overlayBoxFour}>
-              <Image className={styles.overlayImageFour} src="/images/grafika-ocena-uzytkownikow-aplikacja.webp" alt="System ocen w aplikacji firmowej – pięć gwiazdek i wysoka ocena użytkowników" width="404" height="135" loading="lazy" />
+              <Image
+                className={styles.overlayImageFour}
+                src="/images/grafika-ocena-uzytkownikow-aplikacja.webp"
+                alt="Bewertungssystem in der Unternehmens-App – fünf Sterne und hohe Nutzerzufriedenheit"
+                width="404"
+                height="135"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -94,14 +129,20 @@ export default function Home() {
         <div className={styles.benefitsContainer}>
           <div className={styles.benefitsIntro}>
             <div className={styles.benefitsIntroLeft}>
-              <Link href="/" className={styles.logoWrapper} aria-label="Strona główna – Grzegorz Słowiaczek">
-                <Image src="/images/logo-grzegorz-slowiaczek-ciemne.webp" alt="Logo Grzegorz Słowiaczek – projektowanie stron i aplikacji" width="768" height="427" loading="lazy" />
-                <span className={styles.logoText}>Grzegorz<br/>Słowiaczek</span>
+              <Link href="/" className={styles.logoWrapper} aria-label="Startseite – Gregor Sloweck">
+                <Image
+                  src="/images/logo-grzegorz-slowiaczek-ciemne.webp"
+                  alt="Logo Gregor Sloweck – Webdesign und App-Entwicklung"
+                  width="768"
+                  height="427"
+                  loading="lazy"
+                />
+                <span className={styles.logoText}>Gregor<br/>Sloweck</span>
               </Link>
             </div>
             <div className={styles.benefitsIntroRight}>
               <p>
-                Tworzę strony internetowe i aplikacje dla firm, które nie tylko dobrze wyglądają — ale są szybkie, intuicyjne i dopasowane do Twoich celów biznesowych.
+                Ich entwickle Webseiten und Anwendungen für Unternehmen, die nicht nur gut aussehen – sondern auch schnell, intuitiv und auf Ihre Geschäftsziele zugeschnitten sind.
               </p>
             </div>
           </div>
@@ -109,27 +150,27 @@ export default function Home() {
           <div className={styles.benefitsGrid}>
             <div className={styles.benefitCard}>
               <FaRocket className={styles.benefitIcon} />
-              <p>Szybkie ładowanie</p>
+              <p>Schnelle Ladezeiten</p>
             </div>
             <div className={styles.benefitCard}>
               <FaMobileAlt className={styles.benefitIcon} />
-              <p>Dostosowanie do smartfonów</p>
+              <p>Mobile Optimierung</p>
             </div>
             <div className={styles.benefitCard}>
               <FaUserShield className={styles.benefitIcon} />
-              <p>Bezpieczeństwo danych</p>
+              <p>Maximale Sicherheit</p>
             </div>
             <div className={styles.benefitCard}>
               <FaCogs className={styles.benefitIcon} />
-              <p>Łatwa rozbudowa</p>
+              <p>Modulare Erweiterung</p>
             </div>
             <div className={styles.benefitCard}>
               <FaChartLine className={styles.benefitIcon} />
-              <p>Skuteczność i wyniki</p>
+              <p>Ergebnisse und Effizienz</p>
             </div>
             <div className={styles.benefitCard}>
               <FaHeadset className={styles.benefitIcon} />
-              <p>Stała opieka i wsparcie</p>
+              <p>Kontinuierliche Betreuung</p>
             </div>
           </div>
         </div>
@@ -138,71 +179,72 @@ export default function Home() {
 
       <section className={styles.servicesSection}>
         <div className={`${styles.servicesGrid} fadeInUp`}>
-          <Link href="/stronywww" className={styles.serviceCard}>
+          <Link href="/webseiten" className={styles.serviceCard}>
             <FaLaptopCode className={styles.serviceIcon} />
-            <h3>Strony internetowe</h3>
-            <p>Nowoczesne, responsywne strony idealnie dopasowane do Twojej branży.</p>
+            <h3>Webseiten</h3>
+            <p>Moderne, responsive Seiten – perfekt auf Ihre Branche zugeschnitten.</p>
           </Link>
 
-          <Link href="/stronywww" className={styles.serviceCard}>
+          <Link href="/webseiten" className={styles.serviceCard}>
             <FaShoppingCart className={styles.serviceIcon} />
-            <h3>Sklepy internetowe</h3>
-            <p>Funkcjonalne sklepy z prostym panelem zarządzania i szybkim działaniem.</p>
+            <h3>Onlineshops</h3>
+            <p>Funktionale Shops mit einfacher Verwaltung und hoher Geschwindigkeit.</p>
           </Link>
 
-          <Link href="/stronywww" className={styles.serviceCard}>
+          <Link href="/apps" className={styles.serviceCard}>
             <FaMobileAlt className={styles.serviceIcon} />
-            <h3>Aplikacje mobilne</h3>
-            <p>Tworzę nowoczesne aplikacje mobilne na Android i iOS.</p>
+            <h3>Mobile Apps</h3>
+            <p>Moderne mobile Anwendungen für Android und iOS.</p>
           </Link>
 
-          <Link href="/stronywww" className={styles.serviceCard}>
+          <Link href="/" className={styles.serviceCard}>
             <FaPaintBrush className={styles.serviceIcon} />
-            <h3>Grafika</h3>
-            <p>Logo, identyfikacja wizualna, banery i materiały reklamowe.</p>
+            <h3>Grafikdesign</h3>
+            <p>Logos, visuelle Identität, Banner und Werbematerialien.</p>
           </Link>
 
           <Link href="/stronywww" className={styles.serviceCard}>
             <FaSearch className={styles.serviceIcon} />
-            <h3>Pozycjonowanie</h3>
-            <p>Skuteczne SEO — Twoja strona widoczna w Google.</p>
+            <h3>SEO-Optimierung</h3>
+            <p>Effektives SEO – Ihre Seite sichtbar bei Google.</p>
           </Link>
 
           <Link href="/klienci" className={styles.serviceCard}>
             <FaTools className={styles.serviceIcon} />
-            <h3>Wsparcie techniczne</h3>
-            <p>Stała opieka nad stroną, kopie zapasowe i aktualizacje.</p>
+            <h3>Technischer Support</h3>
+            <p>Laufende Betreuung, Backups und regelmäßige Updates.</p>
           </Link>
         </div>
       </section>
 
 
+
       <section className={`${styles.featuresSection} fadeInUp`}>
-        <h2>Funkcje, które robią różnicę</h2>
+        <h2>Funktionen, die den Unterschied machen</h2>
         <p className={styles.leadText}>
-          Twoja aplikacja lub strona to coś więcej niż ładny wygląd. Dbam o techniczne detale, które realnie wpływają na wygodę, bezpieczeństwo i rozwój Twojego biznesu.
+          Ihre App oder Website ist mehr als nur schönes Design. Ich achte auf technische Details, die Komfort, Sicherheit und das Wachstum Ihres Unternehmens wirklich fördern.
         </p>
 
         <div className={styles.featuresGrid}>
           <div className={styles.featuresLeft}>
             <div className={`${styles.featureItem} ${styles.reversed}`}>
               <FaMobileAlt className={styles.featureIcon} />
-              <p><b>Responsywny interfejs</b><br />Dostosowany do każdego urządzenia</p>
+              <p><b>Responsives Interface</b><br />Optimiert für jedes Gerät</p>
             </div>
             <div className={`${styles.featureItem} ${styles.reversed}`}>
               <FaRocket className={styles.featureIcon} />
-              <p><b>Błyskawiczne ładowanie</b><br />Zoptymalizowane pod wydajność</p>
+              <p><b>Blitzschnelles Laden</b><br />Leistungsoptimiert und reaktionsschnell</p>
             </div>
             <div className={`${styles.featureItem} ${styles.reversed}`}>
               <FaLock className={styles.featureIcon} />
-              <p><b>Bezpieczne logowanie</b><br />Aktualne standardy zabezpieczeń</p>
+              <p><b>Sicheres Login</b><br />Aktuelle Sicherheitsstandards</p>
             </div>
           </div>
 
           <div className={styles.featuresImage}>
             <Image
               src="/images/grafika-aplikacja-mobilna-zarzadzanie-zadaniami.webp"
-              alt="Widok aplikacji mobilnej dla firm – zarządzanie zadaniami, kalendarz i funkcje użytkownika na ekranie smartfona"
+              alt="Mobile App für Unternehmen – Aufgabenverwaltung, Kalender und Nutzerfunktionen auf dem Smartphone-Bildschirm"
               width="525"
               height="879"
               loading="lazy"
@@ -212,21 +254,20 @@ export default function Home() {
           <div className={styles.featuresRight}>
             <div className={styles.featureItem}>
               <FaSyncAlt className={styles.featureIcon} />
-              <p><b>Integracje z systemami</b><br />Automatyczne połączenia z API</p>
+              <p><b>Systemintegrationen</b><br />Automatische Anbindungen per API</p>
             </div>
             <div className={styles.featureItem}>
               <FaUsers className={styles.featureIcon} />
-              <p><b>Zarządzanie użytkownikami</b><br />Role, konta, uprawnienia</p>
+              <p><b>Nutzerverwaltung</b><br />Rollen, Konten, Berechtigungen</p>
             </div>
             <div className={styles.featureItem}>
               <FaChartBar className={styles.featureIcon} />
-              <p><b>Statystyki i analizy</b><br />Wgląd w dane i skuteczność</p>
+              <p><b>Statistiken & Analysen</b><br />Dateneinblicke und Performance</p>
             </div>
           </div>
         </div>
       </section>
 
-          
       <section className={styles.coverageSection}>
         <div className={`${styles.coverageGrid} fadeInUp`}>
           <div className={styles.coverageText}>
@@ -234,16 +275,16 @@ export default function Home() {
               <div className={styles.iconLine}>
                 <FaMinus className={styles.iconMinus} />
               </div>
-              <h2>Strony internetowe i aplikacje dla firm na terenie całej Polski</h2>
+              <h2>Webseiten und Apps für Unternehmen in ganz Deutschland</h2>
             </div>
             <p>
-              Realizuję projekty z zakresu <strong>tworzenia stron internetowych</strong> i <strong>aplikacji mobilnych</strong> dla firm z całej Polski – bez względu na lokalizację. Dzięki sprawdzonemu procesowi pracy zdalnej i dobrej komunikacji zapewniam <strong>pełną obsługę online</strong> – od wyceny po wdrożenie.
+              Ich realisiere Projekte im Bereich <strong>Webentwicklung</strong> und <strong>mobile Anwendungen</strong> für Unternehmen in ganz Deutschland – unabhängig vom Standort. Dank bewährter Remote-Prozesse und klarer Kommunikation biete ich <strong>vollständigen Online-Service</strong> – von der Angebotserstellung bis zur Umsetzung.
             </p>
           </div>
           <div className={styles.coverageImage}>
             <Image
               src="/images/grafika-polska-zasieg-uslug-strony-aplikacje.webp"
-              alt="Obsługa firm w całej Polsce – mapa kraju z zaznaczonymi lokalizacjami klientów"
+              alt="Dienstleistungen für Unternehmen in ganz Deutschland – Karte mit markierten Standorten"
               width="874"
               height="900"
               loading="lazy"
@@ -253,15 +294,15 @@ export default function Home() {
       </section>
 
       <section className={`${styles.ctaSection} fadeInUp`}>
-        <h2>Masz pytania? Porozmawiajmy!</h2>
-        <p>Wpisz swój numer telefonu – oddzwonię i odpowiem na wszystkie pytania.</p>
+        <h2>Fragen? Schreiben Sie mir!</h2>
+        <p>Hinterlassen Sie Ihre E-Mail-Adresse – ich melde mich schnellstmöglich zurück.</p>
 
         <CtaForm />
 
         <div className={styles.ctaAltAction}>
-          <span>lub</span>
+          <span>oder</span>
           <Link href="/kontakt" className={styles.ctaLinkButton}>
-            Przejdź do kontaktu
+            Zum Kontaktformular
           </Link>
         </div>
       </section>
