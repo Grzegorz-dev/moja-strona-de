@@ -36,7 +36,7 @@ export default function NoOrphans() {
     nodes.forEach((t) => {
       let text = t.nodeValue ?? "";
       regs.forEach((re) => {
-        text = text.replace(re, (_m, pre, word, post) => `${pre}${word}\u00A0`);
+        text = text.replace(re, (_m, pre, word) => `${pre}${word}\u00A0`);
       });
       t.nodeValue = text;
     });
