@@ -2,12 +2,12 @@ import "./regulamin.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Dienstleistungsbedingungen | Grzegorz Słowiaczek",
+  title: "Dienstleistungsbedingungen | Gregor Slowiaczek",
   description:
     "Informieren Sie sich über die Bedingungen für die Erstellung von Websites und Apps. Klare Regeln für Zusammenarbeit, Verantwortung und Zahlungen.",
   robots: "index,follow",
   openGraph: {
-    title: "Dienstleistungsbedingungen | Grzegorz Słowiaczek",
+    title: "Dienstleistungsbedingungen | Gregor Slowiaczek",
     description:
       "Erfahren Sie mehr über die Projektabwicklung, Zahlungsbedingungen und klare Grundsätze der Zusammenarbeit bei der Erstellung von Webseiten und Apps.",
     url: "https://slowiaczek.pl/regulamin",
@@ -17,13 +17,13 @@ export const metadata = {
         url: "https://slowiaczek.pl/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "AGB – Grzegorz Słowiaczek",
+        alt: "AGB – Gregor Slowiaczek",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dienstleistungsbedingungen | Grzegorz Słowiaczek",
+    title: "Dienstleistungsbedingungen | Gregor Slowiaczek",
     description:
       "Erfahren Sie, unter welchen Bedingungen Web- und App-Entwicklungsdienstleistungen erbracht werden. Transparente Zusammenarbeit.",
     images: ["https://slowiaczek.pl/images/logo-fb.webp"],
@@ -40,12 +40,12 @@ export default function Regulamin() {
         <p><strong>Letzte Aktualisierung:</strong> 04.06.2025</p>
 
         <h2>1. Allgemeine Informationen</h2>
-        <p>Diese AGB regeln die Nutzung der Website unter der Adresse <strong>www.twojadomena.pl</strong>, betrieben von <strong>Grzegorz Słowiaczek</strong>, mit Sitz in Polen, im Rahmen elektronisch erbrachter Dienstleistungen.</p>
+        <p>Diese AGB regeln die Nutzung der Website unter der Adresse www.slowiaczek.de, betrieben von Grzegorz Słowiaczek, mit Sitz in Polen, im Rahmen der elektronisch erbrachten Dienstleistungen.</p>
 
         <h2>2. Begriffsbestimmungen</h2>
         <p><strong>Dienstanbieter</strong> – Betreiber der Website, Grzegorz Słowiaczek.</p>
         <p><strong>Nutzer</strong> – jede Person, die die Website nutzt.</p>
-        <p><strong>Website</strong> – die unter www.twojadomena.pl erreichbare Internetseite.</p>
+        <p><strong>Website</strong> – die unter www.slowiaczek.de erreichbare Internetseite.</p>
         <p><strong>Dienstleistungen</strong> – elektronisch bereitgestellte Dienstleistungen, darunter technischer Support, Zugang zu Inhalten und kostenpflichtige Abonnements.</p>
 
         <h2>3. Art und Umfang der Dienstleistungen</h2>
@@ -66,7 +66,7 @@ export default function Regulamin() {
         <p>Die Preise werden vor dem Kauf deutlich angezeigt. Eine Zahlungsbestätigung wird per E-Mail an die vom Nutzer angegebene Adresse gesendet.</p>
 
         <h2>6. Reklamationen</h2>
-        <p>Reklamationen sind per E-Mail an <strong>kontakt@slowiaczek.pl</strong> zu richten. Die Bearbeitung erfolgt innerhalb von 14 Werktagen.</p>
+        <p>Reklamationen sind per E-Mail an <strong>kontakt@slowiaczek.de</strong> zu richten. Die Bearbeitung erfolgt innerhalb von 14 Werktagen.</p>
 
         <h2>7. Widerrufsrecht</h2>
         <p>Verbraucher haben das Recht, innerhalb von 14 Tagen nach Vertragsabschluss ohne Angabe von Gründen vom Vertrag zurückzutreten, sofern die Dienstleistung noch nicht begonnen wurde.</p>

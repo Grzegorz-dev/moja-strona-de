@@ -25,11 +25,11 @@ export default function Menu() {
   return (
     <nav className={`menu ${scrolled ? 'scrolled' : ''}`}>
       <div className="menu-container">
-        <Link href="/" className="logo" aria-label="Startseite – Gregor Sloweck">
-          <Image src="/images/logo-grzegorz-slowiaczek.webp" alt="Gregor Sloweck - Logo des Erstellers von Webseiten und Apps" width="768" height="427"/>
+        <Link href="/" className="logo" aria-label="Startseite – Gregor Slowiaczek">
+          <Image src="/images/logo-gregor-slowiaczek.webp" alt="Gregor Slowiaczek - Logo des Erstellers von Webseiten und Apps" width="768" height="427"/>
           <span className="logo-text">
             Gregor<br />
-            Sloweck
+            Slowiaczek
           </span>
         </Link>
 

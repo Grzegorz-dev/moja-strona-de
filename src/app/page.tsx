@@ -26,33 +26,33 @@ import ScrollButton from '@/components/ScrollButton';
 
 
 export const metadata = {
-  title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
+  title: "Webseiten und Anwendungen für Unternehmen | Gregor Slowiaczek",
   description:
     "Ich entwickle moderne Webseiten und Anwendungen für Unternehmen – mobil, webbasiert, schnell und auf Ihre Geschäftsziele zugeschnitten.",
   robots: "index,follow",
   openGraph: {
-    title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
+    title: "Webseiten und Anwendungen für Unternehmen | Gregor Slowiaczek",
     description:
       "Ich entwickle moderne Web- und App-Lösungen – schnell, mobil und auf Ihre Geschäftsziele abgestimmt.",
-    url: "https://sloweck.de/",
-    siteName: "Gregor Sloweck – Webseiten und Anwendungen für Unternehmen",
+    url: "https://Slowiaczek.de/",
+    siteName: "Gregor Slowiaczek – Webseiten und Anwendungen für Unternehmen",
     images: [
       {
-        url: "https://sloweck.de/images/logo-fb.webp",
+        url: "https://Slowiaczek.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Gregor Sloweck – Webseiten und Anwendungen für Unternehmen",
+        alt: "Gregor Slowiaczek – Webseiten und Anwendungen für Unternehmen",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
+    title: "Webseiten und Anwendungen für Unternehmen | Gregor Slowiaczek",
     description:
       "Moderne Web- und Mobile-Lösungen für Ihr Business. Von einfachen Webseiten bis zu komplexen Systemen.",
     creator: "@twojTwitter",
-    images: ["https://sloweck.de/images/logo-fb.webp"],
+    images: ["https://Slowiaczek.de/images/logo-fb.webp"],
   },
 };
 
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
           <div className={styles.heroImageWrapper}>
             <Image
-              src="/images/baner-strona-glowna-aplikacja-responsive.webp"
+              src="/images/banner-startseite-app-responsive.webp"
               alt="Moderne mobile App und Unternehmens-Website – Benutzeroberfläche auf Laptop und Smartphone"
               width="1079"
               height="1256"
@@ -81,7 +81,7 @@ export default function Home() {
             <div className={styles.overlayBoxOne}>
               <Image
                 className={styles.overlayImageOne}
-                src="/images/grafika-karta-elementu-interfejsu.webp"
+                src="/images/grafik-karten-element-interface.webp"
                 alt="Beispiel einer App-Oberflächenkarte für Unternehmen – Grafik mit Icon und Funktionsbeschreibung"
                 width="408"
                 height="239"
@@ -92,7 +92,7 @@ export default function Home() {
             <div className={styles.overlayBoxTwo}>
               <Image
                 className={styles.overlayImageTwo}
-                src="/images/grafika-statystyki-uzytkownika-aplikacji.webp"
+                src="/images/grafik-nutzungsstatistik.webp"
                 alt="Statistik-Dashboard in der Unternehmens-App – Datenanalyse und Zielverfolgung"
                 width="404"
                 height="245"
@@ -103,7 +103,7 @@ export default function Home() {
             <div className={styles.overlayBoxThree}>
               <Image
                 className={styles.overlayImageThree}
-                src="/images/grafika-integracja-zewnetrzna-api-chmura.webp"
+                src="/images/grafik-externe-api-cloud-integration.webp"
                 alt="Integration der App mit externen Systemen und Cloud – Datensynchronisation"
                 width="404"
                 height="398"
@@ -114,7 +114,7 @@ export default function Home() {
             <div className={styles.overlayBoxFour}>
               <Image
                 className={styles.overlayImageFour}
-                src="/images/grafika-ocena-uzytkownikow-aplikacja.webp"
+                src="/images/grafik-benutzerbewertung-app.webp"
                 alt="Bewertungssystem in der Unternehmens-App – fünf Sterne und hohe Nutzerzufriedenheit"
                 width="404"
                 height="135"
@@ -129,15 +129,15 @@ export default function Home() {
         <div className={styles.benefitsContainer}>
           <div className={styles.benefitsIntro}>
             <div className={styles.benefitsIntroLeft}>
-              <Link href="/" className={styles.logoWrapper} aria-label="Startseite – Gregor Sloweck">
+              <Link href="/" className={styles.logoWrapper} aria-label="Startseite – Gregor Slowiaczek">
                 <Image
-                  src="/images/logo-grzegorz-slowiaczek-ciemne.webp"
-                  alt="Logo Gregor Sloweck – Webdesign und App-Entwicklung"
+                  src="/images/logo-gregor-slowiaczek-dunkel.webp"
+                  alt="Logo Gregor Slowiaczek – Webdesign und App-Entwicklung"
                   width="768"
                   height="427"
                   loading="lazy"
                 />
-                <span className={styles.logoText}>Gregor<br/>Sloweck</span>
+                <span className={styles.logoText}>Gregor<br/>Slowiaczek</span>
               </Link>
             </div>
             <div className={styles.benefitsIntroRight}>
@@ -243,7 +243,7 @@ export default function Home() {
 
           <div className={styles.featuresImage}>
             <Image
-              src="/images/grafika-aplikacja-mobilna-zarzadzanie-zadaniami.webp"
+              src="/images/grafik-mobile-app-aufgabenverwaltung.webp"
               alt="Mobile App für Unternehmen – Aufgabenverwaltung, Kalender und Nutzerfunktionen auf dem Smartphone-Bildschirm"
               width="525"
               height="879"
@@ -283,7 +283,7 @@ export default function Home() {
           </div>
           <div className={styles.coverageImage}>
             <Image
-              src="/images/grafika-polska-zasieg-uslug-strony-aplikacje.webp"
+              src="/images/grafik-deutschland-reichweite-dienste-website-apps.webp"
               alt="Dienstleistungen für Unternehmen in ganz Deutschland – Karte mit markierten Standorten"
               width="874"
               height="900"

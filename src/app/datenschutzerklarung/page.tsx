@@ -1,31 +1,31 @@
 import "./politykaprywatnosci.css";
 
 export const metadata = {
-  title: "Polityka prywatności | Grzegorz Słowiaczek",
+  title: "Polityka prywatności | Gregor Slowiaczek",
   description:
     "Zapoznaj się z polityką prywatności dotyczącą przetwarzania danych na stronie internetowej Grzegorza Słowiaczka. Dowiedz się, jakie dane są zbierane i w jakim celu.",
   robots: "index,follow",
   openGraph: {
-    title: "Polityka prywatności | Grzegorz Słowiaczek",
+    title: "Polityka prywatności | Gregor Slowiaczek",
     description:
       "Zasady przetwarzania danych osobowych, plików cookies i ochrony prywatności użytkowników na stronie Grzegorza Słowiaczka.",
-    url: "https://slowiaczek.pl/polityka-prywatnosci",
+    url: "https://slowiaczek.de/datenschutzerklarung",
     type: "website",
     images: [
       {
-        url: "https://slowiaczek.pl/images/logo-fb.webp",
+        url: "https://slowiaczek.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Polityka prywatności – Grzegorz Słowiaczek",
+        alt: "Polityka prywatności – Gregor Slowiaczek",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Polityka prywatności | Grzegorz Słowiaczek",
+    title: "Polityka prywatności | Gregor Slowiaczek",
     description:
       "Sprawdź, jak dbamy o Twoją prywatność. Przejrzysta polityka ochrony danych osobowych i cookies.",
-    images: ["https://slowiaczek.pl/images/logo-fb.webp"],
+    images: ["https://slowiaczek.de/images/logo-fb.webp"],
   },
 };
 
@@ -39,8 +39,7 @@ export default function PolitykaPrywatnosci() {
         <h2>1. Verantwortlicher für die Datenverarbeitung</h2>
         <p>Verantwortlich für die Verarbeitung personenbezogener Daten ist:<br />
           <strong>Grzegorz Słowiaczek</strong><br />
-          kontakt@slowiaczek.pl<br />
-          ul. Przykładowa 1, 00-000 Stadt, Polen
+          kontakt@slowiaczek.de<br />
         </p>
 
         <h2>2. Welche Daten werden erhoben?</h2>
@@ -48,7 +47,6 @@ export default function PolitykaPrywatnosci() {
         <ul>
           <li>Vor- und Nachname,</li>
           <li>E-Mail-Adresse,</li>
-          <li>Telefonnummer,</li>
           <li>Nachrichtentext aus dem Kontaktformular,</li>
           <li>Daten zur Zahlungsabwicklung (z. B. bei Abonnements).</li>
         </ul>
@@ -107,7 +105,7 @@ export default function PolitykaPrywatnosci() {
 
         <h2>Kontakt</h2>
         <p>Bei Fragen zum Datenschutz kannst du uns jederzeit kontaktieren:<br />
-          <strong>kontakt@slowiaczek.pl</strong>
+          <strong>kontakt@slowiaczek.de</strong>
         </p>
       </section>
     </main>

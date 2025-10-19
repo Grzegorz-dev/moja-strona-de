@@ -22,7 +22,7 @@ import CtaForm from "../CtaForm";
 
 
 export const metadata = {
-  title: "Webseiten für Unternehmen – modern und günstig | Gregor Sloweck",
+  title: "Webseiten für Unternehmen – modern und günstig | Gregor Slowiaczek",
   description:
     "Ich entwerfe Webseiten für Unternehmen – Visitenkarten, Shops und Portale. Günstig, schnell und auf Ihre Geschäftsziele abgestimmt.",
   robots: "index,follow",
@@ -30,23 +30,23 @@ export const metadata = {
     title: "Webseiten für Unternehmen | Modern und bezahlbar",
     description:
       "Visitenkarten, Shops, Portale – individuell auf Ihr Business zugeschnitten. Schauen Sie sich die Projekte an.",
-    url: "https://sloweck.de/stronywww",
+    url: "https://Slowiaczek.de/stronywww",
     type: "website",
     images: [
       {
-        url: "https://sloweck.de/images/logo-fb.webp",
+        url: "https://Slowiaczek.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Webseiten für Unternehmen – Gregor Sloweck",
+        alt: "Webseiten für Unternehmen – Gregor Slowiaczek",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webseiten für Unternehmen | Gregor Sloweck",
+    title: "Webseiten für Unternehmen | Gregor Slowiaczek",
     description:
       "Responsiv, schnell und genau auf Ihre Branche abgestimmt – Webseiten für moderne Unternehmen.",
-    images: ["https://sloweck.de/images/logo-fb.webp"],
+    images: ["https://Slowiaczek.de/images/logo-fb.webp"],
   },
 };
 
@@ -61,7 +61,7 @@ export default function StronaWWW() {
         </p>
         <Image
           className={styles.heroImage}
-          src="/images/nowoczesna-strona-www-na-laptopie-i-telefonie.webp"
+          src="/images/moderne-website-auf-laptop-und-smartphone.webp"
           alt="Moderne und responsive Website für Unternehmen – Darstellung auf Laptop und Smartphone"
           width="2048"
           height="1602"
@@ -135,7 +135,7 @@ export default function StronaWWW() {
         <div className={styles.projectGallery}>
           <div className={`${styles.projectCard} fadeInUp`}>
             <Image
-              src="/images/realizacja-strony-www-firma-dachowa.webp"
+              src="/images/webseiten-projekt-dachdeckerfirma.webp"
               alt="Günstige Website für ein Dachdeckerunternehmen – Projekt mit Leistungsangebot"
               width={600}
               height={400}
@@ -147,7 +147,7 @@ export default function StronaWWW() {
           </div>
           <div className={`${styles.projectCard} fadeInUp`}>
             <Image
-              src="/images/realizacja-strony-www-biuro-nieruchomosci.webp"
+              src="/images/webseiten-projekt-immobilienbüro.webp"
               alt="Website für ein Immobilienbüro – mit Angebots-Suchfunktion für Kunden"
               width={600}
               height={400}
@@ -159,7 +159,7 @@ export default function StronaWWW() {
           </div>
           <div className={`${styles.projectCard} fadeInUp`}>
             <Image
-              src="/images/realizacja-strony-www-pasieka-sklep.webp"
+              src="/images/webseiten-projekt-imkerei-shop.webp"
               alt="Website für eine Imkerei – Online-Verkauf von natürlichen Produkten"
               width={600}
               height={400}
@@ -171,7 +171,7 @@ export default function StronaWWW() {
           </div>
           <div className={`${styles.projectCard} fadeInUp`}>
             <Image
-              src="/images/realizacja-strony-www-deweloper-luksusowe-apartamenty.webp"
+              src="/images/webseiten-projekt-developer-luxusapartments.webp"
               alt="Website für ein Immobilienbüro – modernes Design mit Angebotspräsentation"
               width={600}
               height={400}

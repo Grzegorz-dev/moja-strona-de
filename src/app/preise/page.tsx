@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 export const metadata = {
   title:
-    "Preisliste für Webseiten und Apps – OnePage, MultiPage, Shops, individuelle Anwendungen | Grzegorz Słowiaczek",
+    "Preisliste für Webseiten und Apps – OnePage, MultiPage, Shops, individuelle Anwendungen | Gregor Slowiaczek",
   description:
     "Erfahre die Preise für die Erstellung von Webseiten und Apps. Wähle die passende Lösung: OnePage, MultiPage, Vorlagen oder maßgeschneiderte Projekte.",
   robots: "index,follow",
   openGraph: {
-    title: "Preisliste für Webseiten und Apps – Grzegorz Słowiaczek",
+    title: "Preisliste für Webseiten und Apps – Gregor Slowiaczek",
     description:
       "Informiere dich über die Preise für moderne Webseiten und Apps – von einfachen Visitenkarten bis zu individuellen Projekten.",
     url: "https://slowiaczek.pl/cennik",
@@ -20,13 +20,13 @@ export const metadata = {
         url: "https://slowiaczek.pl/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Preisliste – Grzegorz Słowiaczek",
+        alt: "Preisliste –Gregor Slowiaczek",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Preise für Webseiten und Apps – Grzegorz Słowiaczek",
+    title: "Preise für Webseiten und Apps – Gregor Slowiaczek",
     description:
       "Hier findest du alle Preise – OnePage, MultiPage, vorgefertigte oder individuelle Projekte.",
     images: ["https://slowiaczek.pl/images/logo-fb.webp"],

@@ -22,31 +22,31 @@ import Image from 'next/image';
 import CtaForm from "../CtaFormBlue";
 
 export const metadata = {
-  title: "Apps für Unternehmen – Web und Mobil | Gregor Sloweck",
+  title: "Apps für Unternehmen – Web und Mobil | Gregor Slowiaczek",
   description:
     "Ich entwickle maßgeschneiderte Web- und Mobile-Apps für Unternehmen – schnell, sicher und skalierbar.",
   robots: "index,follow",
   openGraph: {
-    title: "Mobile und Web-Apps für Unternehmen | Gregor Sloweck",
+    title: "Mobile und Web-Apps für Unternehmen | Gregor Slowiaczek",
     description:
       "Ich entwickle Apps für Android, iOS und Browser – perfekt abgestimmt auf Ihre Nutzer und Geschäftsprozesse.",
-    url: "https://sloweck.de/aplikacje",
+    url: "https://Slowiaczek.de/aplikacje",
     type: "website",
     images: [
       {
-        url: "https://sloweck.de/images/logo-fb.webp",
+        url: "https://Slowiaczek.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Apps für Unternehmen – Gregor Sloweck",
+        alt: "Apps für Unternehmen – Gregor Slowiaczek",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile und Web-Apps für Unternehmen | Gregor Sloweck",
+    title: "Mobile und Web-Apps für Unternehmen | Gregor Slowiaczek",
     description:
       "Intuitive und skalierbare Mobile- und Webanwendungen – maßgeschneidert für Ihre Geschäftsziele.",
-    images: ["https://sloweck.de/images/logo-fb.webp"],
+    images: ["https://Slowiaczek.de/images/logo-fb.webp"],
   },
 };
 
@@ -67,7 +67,7 @@ export default function Aplikacje() {
             <div className={styles.centerPhone}>
               <Image
                 className={styles.phoneImage}
-                src="/images/interfejs-aplikacji-mobilnej-na-telefonach.webp"
+                src="/images/mobile-app-interface-auf-smartphones.webp"
                 alt="App-Oberfläche für Unternehmen – mobile und Web-Ansicht auf Smartphones"
                 width="652"
                 height="829"
@@ -129,17 +129,17 @@ export default function Aplikacje() {
           <div className={`${styles.appFeaturesBox} animacja-z-dolu`}>
             <div className={styles.intro}>
               <div className={styles.leftIntroColumn}>
-                <Link href="/" className={styles.logoWrapper} aria-label="Startseite – Gregor Sloweck">
+                <Link href="/" className={styles.logoWrapper} aria-label="Startseite – Gregor Slowiaczek">
                   <Image
-                    src="/images/logo-grzegorz-slowiaczek-ciemne.webp"
-                    alt="Logo Gregor Sloweck – Web- und App-Entwicklung"
+                    src="/images/logo-gregor-slowiaczek-dunkel.webp"
+                    alt="Logo Gregor Slowiaczek – Web- und App-Entwicklung"
                     width="768"
                     height="427"
                     loading="lazy"
                   />
                   <span className={styles.logoText}>
                     Gregor<br />
-                    Sloweck
+                    Slowiaczek
                   </span>
                 </Link>
               </div>
@@ -205,7 +205,7 @@ export default function Aplikacje() {
 
           <div className={`${styles.imageColumn} animacja-z-dolu`}>
             <Image
-              src="/images/interfejs-aplikacji-mobilnej-na-telefonach.webp"
+              src="/images/mobile-app-interface-auf-smartphones.webp"
               alt="Beispielhafte Benutzeroberfläche einer mobilen und webbasierten Business-App"
               width="652"
               height="829"

@@ -47,7 +47,7 @@ export default function KontaktForm() {
         <input type="checkbox" required />
         <span>
           Ich erkläre mich mit der Verarbeitung meiner personenbezogenen Daten gemäß der{" "}
-          <Link href="/polityka-prywatnosci" target="_blank">Datenschutzerklärung</Link> einverstanden.
+          <Link href="/datenschutzerklarung" target="_blank">Datenschutzerklärung</Link> einverstanden.
         </span>
       </label>
 
