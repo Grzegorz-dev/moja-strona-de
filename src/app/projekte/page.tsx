@@ -55,14 +55,14 @@ export default function Projekty() {
 <div className={styles.galleryGrid}>
   <Image
     src="/images/portfolio/webseiten-projekt-physiotherapie-ernaehrung-training-responsive.webp"
-    alt="Responsywny projekt strony internetowej dla gabinetu fizjoterapii, dietetyki i treningów personalnych, wyświetlany na różnych urządzeniach: komputerze, laptopie, tablecie i smartfonie"
+    alt="Responsives Webdesign für eine Praxis für Physiotherapie, Ernährungsberatung und Personal Training, dargestellt auf verschiedenen Geräten: Computer, Laptop, Tablet und Smartphone."
     width="2085"
     height="1527"
     loading="lazy"
   />
   <div className={styles.gallerytext}>
     <a href="https://activmed.net/" target="_blank" rel="noopener noreferrer">
-      <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
+      <FaArrowRight className={styles.strzalka} /> Ganze Website ansehen
     </a>
   </div>
 </div>
@@ -70,14 +70,14 @@ export default function Projekty() {
   <div className={styles.galleryGrid}>
     <Image
       src="/images/portfolio/webseiten-projekt-tierhäuser.webp"
-      alt="Responsywny projekt sklepu internetowego z domkami i akcesoriami dla psów i kotów, wyświetlany na różnych urządzeniach: komputerze, laptopie, tablecie i smartfonie"
+      alt="Responsives Webdesign für einen Onlineshop mit Häusern und Zubehör für Hunde und Katzen, dargestellt auf verschiedenen Geräten: Computer, Laptop, Tablet und Smartphone."
       width="2085"
       height="1527"
       loading="lazy"
     />
     <div className={styles.gallerytext}>
       <a href="https://dachdlalap.pl/" target="_blank" rel="noopener noreferrer">
-        <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
+        <FaArrowRight className={styles.strzalka} /> Ganze Website ansehen
       </a>
     </div>
   </div>
@@ -85,14 +85,14 @@ export default function Projekty() {
   <div className={styles.galleryGrid}>
     <Image
       src="/images/portfolio/webseiten-projekt-rechtsberatung-responsive.webp"
-      alt="Responsywny projekt strony internetowej dla prawnika zajmującego się unieważnianiem małżeństw w Kościele katolickim, wyświetlany na różnych urządzeniach: komputerze, laptopie, tablecie i smartfonie"
+      alt="Responsives Webdesign für eine Anwaltskanzlei, die sich auf die Annullierung von Ehen in der katholischen Kirche spezialisiert, dargestellt auf verschiedenen Geräten: Computer, Laptop, Tablet und Smartphone."
       width="2085"
       height="1527"
       loading="lazy"
     />
     <div className={styles.gallerytext}>
       <a href="https://maniarski-konsultacje.pl/" target="_blank" rel="noopener noreferrer">
-        <FaArrowRight className={styles.strzalka} /> Zobacz pełną wersję strony
+        <FaArrowRight className={styles.strzalka} /> Ganze Website ansehen
       </a>
     </div>
   </div>
@@ -129,7 +129,7 @@ export default function Projekty() {
 
   <div className={styles.galleryGrid}>
     <Image
-      src="/images/portfolio/projekt-strony-pracownia-architektoniczna-responsive.webp"
+      src="/images/portfolio/webseiten-projekt-architekturbüro-responsive.webp"
       alt="Website für ein Architekturbüro – modernes, minimalistisches Design mit Gebäudevisualisierungen"
       width="2085"
       height="1527"
