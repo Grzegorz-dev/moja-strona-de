@@ -99,7 +99,7 @@ export default function Projekty() {
 
   <div className={styles.galleryGrid}>
     <Image
-      src="/images/portfolio/projekt-strony-pasieki-na-urzadzeniach.webp"
+      src="/images/portfolio/webseiten-projekt-imkerei-auf-geräten.webp"
       alt="Responsives Webdesign für eine Imkerei – Online-Shop mit Honig auf Laptop, PC, Tablet und Smartphone"
       width="2085"
       height="1527"
