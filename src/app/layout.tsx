@@ -79,7 +79,7 @@ export default function RootLayout({
             </div>
 
             <div className="footer-right">
-              <p>kontakt@sloweck.pl</p>
+              <p>kontakt@sloweck.de</p>
               <div className="socials">
                 <a
                   href="https://facebook.pl/"
