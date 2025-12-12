@@ -47,16 +47,16 @@ export default function RootLayout({
         <footer className="footer">
           <div className="footer-container">
             <div className="footer-left">
-              <Link href="/" className="logo" aria-label="Startseite – Gregor Slowiaczek">
+              <Link href="/" className="logo" aria-label="Startseite – Gregor Sloweck">
                 <Image
                   src="/images/logo-gregor-slowiaczek.webp"
-                  alt="Gregor Slowiaczek – Logo des Web- und App-Entwicklers"
+                  alt="Gregor Sloweck – Logo des Web- und App-Entwicklers"
                   width="768"
                   height="427"
                   loading="lazy"
                 />
               </Link>
-              <p>© {new Date().getFullYear()} Gregor Slowiaczek. Alle Rechte vorbehalten.</p>
+              <p>© {new Date().getFullYear()} Gregor Sloweck. Alle Rechte vorbehalten.</p>
             </div>
 
             <div className="footer-center">
@@ -79,7 +79,7 @@ export default function RootLayout({
             </div>
 
             <div className="footer-right">
-              <p>kontakt@slowiaczek.pl</p>
+              <p>kontakt@Sloweck.pl</p>
               <div className="socials">
                 <a
                   href="https://facebook.pl/"

@@ -7,31 +7,31 @@ import {
 import KontaktForm from "./KontaktForm";
 
 export const metadata = {
-  title: "Kontakt – Webseiten und Apps für Unternehmen | Gregor Slowiaczek",
+  title: "Kontakt – Webseiten und Apps für Unternehmen | Gregor Sloweck",
   description:
     "Nimm Kontakt mit mir auf – frag nach einer Website, App oder technischer Unterstützung. Ich antworte schnell und direkt. Fülle das Formular aus oder schreibe mir direkt.",
   robots: "index,follow",
   openGraph: {
-    title: "Kontakt aufnehmen – Gregor Slowiaczek",
+    title: "Kontakt aufnehmen – Gregor Sloweck",
     description:
       "Du hast eine Frage zu einer Website oder App? Fülle das Kontaktformular aus oder schreibe mir direkt. Ich biete schnelle Antworten und klare Kommunikation.",
-    url: "https://slowiaczek.de/kontakt",
+    url: "https://Sloweck.de/kontakt",
     type: "website",
     images: [
       {
-        url: "https://slowiaczek.de/images/logo-fb.webp",
+        url: "https://Sloweck.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Kontakt – Gregor Slowiaczek",
+        alt: "Kontakt – Gregor Sloweck",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kontakt – Gregor Slowiaczek | Webseiten und Apps für Unternehmen",
+    title: "Kontakt – Gregor Sloweck | Webseiten und Apps für Unternehmen",
     description:
       "Du brauchst eine Website oder App? Kontaktiere mich – ich antworte schnell.",
-    images: ["https://slowiaczek.de/images/logo-fb.webp"],
+    images: ["https://Sloweck.de/images/logo-fb.webp"],
   },
 };
 
@@ -73,7 +73,7 @@ export default function Kontakt() {
                 <span className={styles.contactIcon}>
                   <FaEnvelope />
                 </span>
-                kontakt@slowiaczek.de
+                kontakt@sloweck.de
               </li>
             </ul>
           </div>

@@ -26,33 +26,33 @@ import ScrollButton from '@/components/ScrollButton';
 
 
 export const metadata = {
-  title: "Webseiten und Anwendungen für Unternehmen | Gregor Slowiaczek",
+  title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
   description:
     "Ich entwickle moderne Webseiten und Anwendungen für Unternehmen – mobil, webbasiert, schnell und auf Ihre Geschäftsziele zugeschnitten.",
   robots: "index,follow",
   openGraph: {
-    title: "Webseiten und Anwendungen für Unternehmen | Gregor Slowiaczek",
+    title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
     description:
       "Ich entwickle moderne Web- und App-Lösungen – schnell, mobil und auf Ihre Geschäftsziele abgestimmt.",
-    url: "https://Slowiaczek.de/",
-    siteName: "Gregor Slowiaczek – Webseiten und Anwendungen für Unternehmen",
+    url: "https://Sloweck.de/",
+    siteName: "Gregor Sloweck – Webseiten und Anwendungen für Unternehmen",
     images: [
       {
-        url: "https://Slowiaczek.de/images/logo-fb.webp",
+        url: "https://Sloweck.de/images/logo-fb.webp",
         width: 726,
         height: 353,
-        alt: "Gregor Slowiaczek – Webseiten und Anwendungen für Unternehmen",
+        alt: "Gregor Sloweck – Webseiten und Anwendungen für Unternehmen",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Webseiten und Anwendungen für Unternehmen | Gregor Slowiaczek",
+    title: "Webseiten und Anwendungen für Unternehmen | Gregor Sloweck",
     description:
       "Moderne Web- und Mobile-Lösungen für Ihr Business. Von einfachen Webseiten bis zu komplexen Systemen.",
     creator: "@twojTwitter",
-    images: ["https://Slowiaczek.de/images/logo-fb.webp"],
+    images: ["https://Sloweck.de/images/logo-fb.webp"],
   },
 };
 
@@ -137,7 +137,7 @@ export default function Home() {
                   height="427"
                   loading="lazy"
                 />
-                <span className={styles.logoText}>Gregor<br/>Slowiaczek</span>
+                <span className={styles.logoText}>Gregor<br/>Sloweck</span>
               </Link>
             </div>
             <div className={styles.benefitsIntroRight}>
